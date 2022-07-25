@@ -1,0 +1,4 @@
+1. Установить Advanced X-Ray 1.6.26 или Global Stalker Weather Rework 1.2.48
+2. Перенести папку gamedata в корень игры с заменой всех файлов
+3. Если установлен STCoP Addon, то после 2-ого пункта, перенести в корень игры папку gamedata
+из папки STCoP Addon

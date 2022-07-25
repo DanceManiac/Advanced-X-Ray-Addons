@@ -1,0 +1,1050 @@
+;Базовые предметы и их настройки для работы системы анимированных худовых предметов
+[gwr_base_usable]:identity_immunities,weapon_probability,default_weapon_params
+GroupControlSection			= spawn_group
+discovery_dependency		=
+$npc						= on							; option for Level Editor
+$prefetch 					= 8
+scheduled					= off							; option for ALife Simulator
+cform						= skeleton
+class						= WP_BINOC
+hud							= gwr_base_item_hud
+
+ef_main_weapon_type			= 5
+ef_weapon_type				= 0
+
+;---DOF-------------------------------------------------------------------------
+;zoom_dof					= -1.0, 10.0, 350
+reload_dof				= 0.0, 0.5, 5, 1.7
+;-------------------------------------------------------------------------------
+
+flame_particles		   		= weapons\generic_weapon05
+smoke_particles		   		= weapons\generic_shoot_00
+
+fire_point               	= 0.0, 0.133, 0.161
+shell_point		 			= 0.0, 0.133, 0.047
+shell_dir		 			= 0.0, 0.0, 0.4
+shell_particles	 			= weapons\generic_shells
+
+position					= -0.08 , -0.05 , 0.05
+normal						= 0, 1, 0
+direction					= 0, 0, 1
+orientation					= 0 , -90, 70
+
+attach_angle_offset			= 3.080506,-1.493053,-1.202040   ;устанавливается в радианах Angle*PI/180
+attach_position_offset		= 0.080000,0.021273,0.100000
+attach_bone_name			= bip01_r_hand
+auto_attach					= false
+
+visual						= dynamics\devices\dev_binoculars\dev_binoculars.ogf
+description					= st_binocular_descr
+hand_dependence		 		= 1
+single_handed				= 0
+
+slot 			 		= 16		; // binocular
+animation_slot				= 13	; type of the animation that will be used
+default_to_ruck				= false
+sprint_allowed					= true
+control_inertion_factor		= 1
+
+
+ammo_limit		 			= 0
+ammo_current		 		= 0
+ammo_elapsed		 		= 0
+
+ammo_mag_size		 		= 0
+ammo_class		 			= ammo_9x19_fmj
+
+inv_name		 			= st_binocular_name
+inv_name_short				= st_binocular_name
+inv_weight		 			= 1.0
+
+show_ammo					= false
+
+inv_grid_width				= 2
+inv_grid_height				= 1
+inv_grid_x					= 16
+inv_grid_y					= 8
+
+min_radius					= 100
+max_radius					= 150
+
+cost						= 800
+
+cam_relax_speed				= 5.5
+cam_dispersion				= 2
+cam_max_angle				= 5
+cam_max_angle_horz			= 5.0
+cam_step_angle_horz			= 0.5
+
+disp_vel_factor				= 0.1
+disp_crouch_factor			= 0.75
+disp_jump_factor			= 3
+
+ph_mass						= 1
+
+scope_status				= 1
+silencer_status				= 0
+grenade_launcher_status		= 0
+
+zoom_enabled				= true
+scope_texture				= wpn_crosshair_bino
+scope_zoom_factor			= 1.0
+
+
+fire_dispersion_base		= 0.1
+
+cam_relax_speed         	= 1.5
+cam_dispersion          	= 1.5
+cam_max_angle				= 7
+cam_max_angle_horz			= 10.0
+cam_step_angle_horz			= 1.5
+
+fire_dispersion_condition_factor = 5
+misfire_probability        = 0.0001 ;вероятность осечки при максимальном износе  !!!old - now not working
+;изношенность, при которой появляется шанс осечки
+misfire_start_condition		= 0.6
+;изношеность при которой шанс осечки становится константным
+misfire_end_condition		= 0.1
+;шанс осечки при изношености больше чем misfireStartCondition
+misfire_start_prob	     	= 0.001
+;шанс осечки при изношености больше чем misfireEndCondition
+misfire_end_prob	     	= 0.02
+;увеличение изношености при одиночном выстреле
+condition_shot_dec      	= 0.00001
+;увеличение изношености при выстреле очередью
+condition_queue_shot_dec	= 0.00002
+
+PDM_disp_base           = 1.0
+PDM_disp_vel_factor     = 1.0
+PDM_disp_accel_factor   = 1.0
+PDM_disp_crouch         = 1.0
+PDM_disp_crouch_no_acc  = 1.0
+
+hit_power                	= 1
+hit_impulse		 		 	= 1
+hit_type					= fire_wound
+
+fire_distance            	= 1
+bullet_speed		 	 	= 1
+rpm                      	= 1
+rpm_empty_click 	 		= 1
+
+
+light_color		 			= 0.6,0.5,0.3
+light_range		 			= 3.0
+light_var_color		 		= 0.05
+light_var_range		 		= 0.5
+light_time 		 			= 0.2
+
+
+
+vision_present				= false
+vis_frame_speed				= 4				; скорость, с которой наводится рамка на цель
+vis_frame_color				= 0.7,0.7,0.7,1.0	; цвет рамки RGBA (A) Не учитывается
+found_snd					= detectors\DA-2_beep1
+catch_snd					= detectors\DA-2_beep1
+hud                     = vodka_hud
+visual                  = dynamics\devices\dev_vodka\dev_vodka.ogf
+
+position                = -0.021, -0.085, 0.024
+orientation             = 0, 90, 0
+
+fire_point              = 0.0, 0.133, 0.161
+
+flame_particles		   	=
+smoke_particles		   	=
+
+shell_point		 				= 0.0, 0.133, 0.047
+shell_dir		 				= 0.0, 0.0, 0.4
+shell_particles	 			= weapons\generic_shells
+
+;-------------------------------------------------------------------------------
+startup_ammo           		= 1000
+wm_size                  	= 0.10
+
+light_disabled					= true
+
+ph_mass			 				= 4
+;cost			 					= 350
+
+;addons
+scope_status					= 0
+silencer_status					= 0
+grenade_launcher_status				= 0
+zoom_enabled					= false
+
+;звуки
+snd_draw   = $silent
+snd_holster= $silent 
+snd_shoot  = $silent
+snd_empty  = $silent
+snd_reload = $silent
+snd_close  = $silent
+
+snd_gyro					= $silent
+snd_zoomin					= $silent
+snd_zoomout					= $silent
+
+
+[gwr_base_usable_hud]:hud_base
+zoom_hide_crosshair			= true
+
+;стрейф влево
+hud_move_left_offset_pos = -0.01,0,0
+hud_move_left_offset_rot = 0,0,-2
+
+hud_move_left_offset_pos_16x9 = -0.01,0,0
+hud_move_left_offset_rot_16x9 = 0,0,-2
+
+;стрейф вправо
+hud_move_right_offset_pos = 0.01,0,0
+hud_move_right_offset_rot = 0,0,2
+
+hud_move_right_offset_pos_16x9 = 0.01,0,0
+hud_move_right_offset_rot_16x9 = 0,0,2
+
+;движение вперед
+hud_move_forward_offset_pos = 0,0,0.0
+hud_move_forward_offset_pos_16x9 = 0,0,0.0
+
+;движение назад
+hud_move_back_offset_pos = 0,0,0.0
+hud_move_back_offset_pos_16x9 = 0,0,0.0
+
+;прыжок
+hud_move_jump_offset_pos = 0,0,0
+hud_move_jump_offset_rot = 0,0,0
+
+hud_move_jump_offset_pos_16x9 = 0,0,0
+hud_move_jump_offset_rot_16x9 = 0,0,0
+
+;падение
+hud_move_fall_offset_pos = 0,0,0
+hud_move_fall_offset_rot = 0,0,0
+
+hud_move_fall_offset_pos_16x9 = 0,0,0
+hud_move_fall_offset_rot_16x9 = 0,0,0
+
+;приземление - первая фаза
+hud_move_landing_offset_pos = 0,0,0
+hud_move_landing_offset_rot = 0,0,0
+
+hud_move_landing_offset_pos_16x9 = 0,0,0
+hud_move_landing_offset_rot_16x9 = 0,0,0
+
+;приземление - вторая фаза
+hud_move_landing_offset_pos = 0,0,0
+hud_move_landing_offset_rot = 0,0,0
+
+hud_move_landing_offset_pos_16x9 = 0,0,0
+hud_move_landing_offset_rot_16x9 = 0,0,0
+
+;переход из стойки в присяд
+to_crouch_time = 0.15
+hud_move_to_crouch_offset_pos = 0,0,0
+hud_move_to_crouch_offset_rot = 0,0,0
+
+hud_move_to_crouch_offset_pos_16x9 = 0,0,0
+hud_move_to_crouch_offset_rot_16x9 = 0,0,0
+
+;переход из присяда в стойку
+from_crouch_time = 0.15
+hud_move_from_crouch_offset_pos = 0,0,0
+hud_move_from_crouch_offset_rot = 0,0,0
+
+hud_move_from_crouch_offset_pos_16x9 = 0,0,0
+hud_move_from_crouch_offset_rot_16x9 = 0,0,0
+
+;переход из присяда в низкий присяд
+to_slow_crouch_time = 0.15
+hud_move_to_slow_crouch_offset_pos = 0,0,0
+hud_move_to_slow_crouch_offset_rot = 0,0,0
+
+hud_move_to_slow_crouch_offset_pos_16x9 = 0,0,0
+hud_move_to_slow_crouch_offset_rot_16x9 = 0,0,0
+
+;переход из низкого присяда в присяд
+from_slow_crouch_time = 0.15
+hud_move_from_slow_crouch_offset_pos = 0,0,0
+hud_move_from_slow_crouch_offset_rot = 0,0,0
+
+hud_move_from_slow_crouch_offset_pos_16x9 = 0,0,0
+hud_move_from_slow_crouch_offset_rot_16x9 = 0,0,0
+
+;переход из обычного в наклон влево
+to_llookout_time = 0.15
+hud_move_to_llookout_offset_pos 		= 0, 0, 0
+hud_move_to_llookout_offset_rot			= 0,0,0
+hud_move_to_llookout_offset_pos_16x9 	= 0, 0, 0
+hud_move_to_llookout_offset_rot_16x9	= 0,0,0
+
+;переход из наклона влево в обычный
+from_llookout_time = 0.15
+hud_move_from_llookout_offset_pos 		= 0, 0, 0
+hud_move_from_llookout_offset_rot			= 0,0,0
+hud_move_from_llookout_offset_pos_16x9 	= 0, 0, 0
+hud_move_from_llookout_offset_rot_16x9	= 0,0,0
+
+
+;переход из обычного в наклон вправо
+to_rlookout_time = 0.15
+hud_move_to_rlookout_offset_pos 		= 0, 0, 0
+hud_move_to_rlookout_offset_rot			= 0,0,0
+hud_move_to_rlookout_offset_pos_16x9 	= 0, 0, 0
+hud_move_to_rlookout_offset_rot_16x9	= 0,0,0
+
+;переход из наклона вправо в обычный
+from_rlookout_time = 0.15
+hud_move_from_rlookout_offset_pos 		= 0, 0, 0
+hud_move_from_rlookout_offset_rot			= 0,0,0
+hud_move_from_rlookout_offset_pos_16x9 	= 0, 0, 0
+hud_move_from_rlookout_offset_rot_16x9	= 0,0,0
+
+;наклон влево (постоянная компонента)
+hud_move_llookout_offset_pos 		= 0, 0, 0
+hud_move_llookout_offset_pos_16x9 	= 0, 0, 0
+hud_move_llookout_offset_rot 		= 0, 0, 0
+hud_move_llookout_offset_rot_16x9 	= 0, 0, 0
+
+;наклон вправо (постоянная компонента)
+hud_move_rlookout_offset_pos 		= 0, 0, 0
+hud_move_rlookout_offset_pos_16x9 	= 0, 0, 0
+hud_move_rlookout_offset_rot 		= 0, 0, 0
+hud_move_rlookout_offset_rot_16x9 	= 0, 0, 0
+
+
+
+use_dof_anm_show = true
+dof_time_offset_anm_show = -0.6
+dof_anm_show_far = 3
+dof_anm_show_focus = 0.3
+dof_speed_in_anm_show = 2 ;0.7
+
+hands_position				= -0.008000,-10.244998,0.371497
+hands_orientation			= 5.450003,2.649999,-1.200001
+hands_position_16x9				= -0.008500,-10.250998,0.319998
+hands_orientation_16x9			= 5.850004,5.450003,-0.950000
+
+item_position					= 0.000746,-0.000321,0.003479
+item_orientation				= 1.239378,-0.134046,-2.052052
+
+item_visual             	= dynamics\devices\dev_binoculars\dev_binoculars_hud
+attach_place_idx				= 0
+
+anm_show						= binocular_draw
+anm_hide						= binocular_hide
+anm_idle						= binocular_idle
+anm_idle_aim				= binocular_idle
+anm_idle_moving			= binocular_move
+anm_idle_sprint			= binocular_sprint
+anm_bore						= binocular_bore
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+gl_hud_offset_pos				= 0,0,0
+gl_hud_offset_rot				= 0,0,0
+
+lean_hud_offset_pos			= 0,0,0
+lean_hud_offset_rot			= 0,0,0
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[conserva_beef_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\conservi\wpn_conserva.ogf
+hud                     	= anm_conserva_beef_hud
+
+inv_name			= st_tushenka_conserva
+inv_name_short		        = st_tushenka_conserva
+description			= st_tushenka_conserva_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 22
+inv_grid_y         = 17
+inv_weight			= 0.05
+
+cost				= 80
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\conserva_use
+
+[anm_conserva_beef_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 20
+inertion_origin_offset = 0
+
+dof_time_offset_anm_show = -0.6
+dof_anm_show_far = 3
+dof_anm_show_focus = 0.3
+dof_speed_in_anm_show = 0.7
+
+
+hands_position 				= 0.0, -0.143296, 0.284578
+hands_orientation		    = 0.0, 16.4738, 0.0
+hands_position_16x9			= 0.003000,-0.165296,0.185578
+hands_orientation_16x9		= 0.000000,16.473801,0.000000
+item_position				= 0,0,0
+item_orientation			= 0,0,0
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+item_visual             	= dynamics\weapons\wpn_eat\conservi\wpn_eat_tushonka.ogf
+
+anm_show				= tushka_draw
+anm_hide				= eat_apt_draw		;binoculars_holster
+anm_idle				= eat_apt_idle			;binoculars_idle
+anm_idle_aim			= eat_apt_idle			;binoculars_idle
+anm_idle_moving			= eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			= eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				= eat_apt_use		;binoculars_idle_bore
+
+[vodka_hud_model]:gwr_base_usable
+visual				= dynamics\weapons\wpn_eat\world_models\vodki\vodka_kazaki_world.ogf
+hud = anm_vodka_hud
+hud_fov_factor = 0.9 
+
+description			= st_vodka_descr
+inv_name			= st_vodka
+inv_name_short			= st_vodka
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 27
+inv_grid_y         = 14
+cost				= 40
+inv_weight		 	= 0.6
+
+snd_draw   = $silent
+snd_using   = interface\item_usage\vodka_use
+timing = 4000					;задержка на время проигрывания анимации перед назначением эффекта (мс)
+
+[anm_vodka_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 20
+inertion_origin_offset = 0
+
+hands_position				= 0.0000,-0.1000,0.4000
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9				= 0.0000,-0.1000,0.4000
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position    = 0.000075,-0.004612,0.001283
+item_orientation   = 0.045015,1.047468,0.056850
+
+item_visual             	= dynamics\weapons\wpn_eat\vodki\wpn_vodka_kazaki_hud.ogf
+
+anm_show				= vodka_hands_eat_invtrans, vodka_wpn_eat		;binoculars_draw
+anm_hide				= eat_vodka_draw		;binoculars_holster
+anm_idle				= eat_vodka_idle			;binoculars_idle
+anm_idle_aim			= eat_vodka_idle			;binoculars_idle
+anm_idle_moving			= eat_vodka_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			= eat_vodka_idle_sprint	;binoculars_idle_sprint
+anm_bore				= eat_vodka_use		;binoculars_idle_bore
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+gl_hud_offset_pos				= 0,0,0
+gl_hud_offset_rot				= 0,0,0
+
+lean_hud_offset_pos			= 0,0,0
+lean_hud_offset_rot			= 0,0,0
+
+[energy_drink_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\banki\banka_1_redbull_world.ogf
+hud                     	= anm_energy_drink_hud
+
+inv_name			= st_redbull
+inv_name_short		= st_redbull
+description			= st_redbull_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 21
+inv_grid_y         = 14
+inv_weight			= 0.2
+
+cost				= 50
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\drink_soda_use
+
+[anm_energy_drink_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 20
+inertion_origin_offset = 0
+
+dof_time_offset_anm_show = -0.6
+dof_anm_show_far = 3
+dof_anm_show_focus = 0.3
+dof_speed_in_anm_show = 0.7
+
+hands_position				= 0.0000,-0.0800,0.5000
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9				= 0.0000,-0.0800,0.5000
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position    = 0.000075,-0.004612,0.001283
+item_orientation   = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+gl_hud_offset_pos				= 0,0,0
+gl_hud_offset_rot				= 0,0,0
+
+lean_hud_offset_pos			= 0,0,0
+lean_hud_offset_rot			= 0,0,0
+
+item_visual             	= dynamics\weapons\wpn_eat\banki\wpn_banka_1_redbull_hud.ogf
+
+anm_show				= banka_1_hands_eat_invtrans, banka_1_wpn_eat
+anm_hide				= eat_red_bull_draw		;binoculars_holster
+anm_idle				= eat_red_bull_idle			;binoculars_idle
+anm_idle_aim			= eat_red_bull_idle			;binoculars_idle
+anm_idle_moving			= eat_red_bull_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			= eat_red_bull_idle_sprint	;binoculars_idle_sprint
+anm_bore				= eat_red_bull_use		;binoculars_idle_bore
+
+[bandage_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\bints\bint_basic_world.ogf
+hud                     	= anm_bandage_hud
+
+inv_name			= st_bandage
+inv_name_short		        = st_bandage
+description			= st_bandage_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 22
+inv_grid_y         = 16
+inv_weight			= 0.05
+
+cost				= 80
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\bandage_use
+
+[anm_bandage_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 20
+inertion_origin_offset = 0
+
+dof_time_offset_anm_show = -0.6
+dof_anm_show_far = 3
+dof_anm_show_focus = 0.3
+dof_speed_in_anm_show = 0.7
+
+hands_position                           = -0.0055,-0.05, 0.35
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.05, 0.35
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position    = 0.000075,-0.004612,0.001283
+item_orientation   = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+item_visual             	= dynamics\weapons\wpn_eat\bints\wpn_bint_basic_hud.ogf
+
+anm_show				= bint_hands_eat_alt_1_invtrans, bint_wpn_eat
+anm_hide				= eat_apt_draw		;binoculars_holster
+anm_idle				= eat_apt_idle			;binoculars_idle
+anm_idle_aim			= eat_apt_idle			;binoculars_idle
+anm_idle_moving			= eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			= eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				= eat_apt_use		;binoculars_idle_bore
+
+[antirad_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\injectors\injector_big_world.ogf
+hud                     	= anm_antirad_hud
+
+inv_name			= st_antirad
+inv_name_short		        = st_antirad
+description			= st_antirad_descr
+
+inv_grid_width      = 1
+inv_grid_height     = 1
+inv_grid_x          = 21
+inv_grid_y          = 16
+
+cost					= 250
+inv_weight				= 0.05
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\antirad_use
+
+[anm_antirad_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+hands_position                           = -0.0055,-0.05, 0.32
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.05, 0.32
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position    = 0.000075,-0.004612,0.001283
+item_orientation   = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+item_visual             	= dynamics\weapons\wpn_eat\injectors\wpn_injector_big_antirad_hud.ogf
+
+anm_show				= antirad_hands_eat_invtrans, antirad_wpn_eat
+anm_hide				= eat_vakcina_draw		;binoculars_holster
+anm_idle				= eat_vakcina_idle			;binoculars_idle
+anm_idle_aim			= eat_vakcina_idle			;binoculars_idle
+anm_idle_moving			= eat_vakcina_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			= eat_vakcina_idle_sprint	;binoculars_idle_sprint
+anm_bore				= eat_vakcina_use		;binoculars_idle_bore
+
+[medkit_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\aptechki\aptechka_basic_world.ogf
+hud                     	= anm_medkit_hud
+
+inv_name				= st_medkit
+inv_name_short			= st_medkit
+description					= st_medkit_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 21
+inv_grid_y         = 15
+
+cost					= 650
+inv_weight				= 0.1
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\medkit_use
+
+[anm_medkit_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+hands_position                           = -0.0055,-0.07, 0.36
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.07, 0.36
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position    = 0.000075,-0.004612,0.001283
+item_orientation   = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+item_visual             	= dynamics\weapons\wpn_eat\aptechki\wpn_aptechka_basic_hud.ogf
+
+anm_show				= aptechka_hands_eat_invtrans,aptechka_wpn_eat	;binoculars_draw
+anm_hide				= eat_apt_draw		;binoculars_holster
+anm_idle				= eat_apt_idle			;binoculars_idle
+anm_idle_aim			= eat_apt_idle			;binoculars_idle
+anm_idle_moving			= eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			= eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				= eat_apt_use		;binoculars_idle_bore
+
+[medkit_army_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\aptechki\aptechka_army_world.ogf
+hud                     	= anm_medkit_army_hud
+
+inv_name				= st_medkit_army
+inv_name_short			= st_medkit_army
+description					= st_medkit_army_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 22
+inv_grid_y         = 15
+
+cost					= 650
+inv_weight				= 0.1
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\medkit_use
+
+[anm_medkit_army_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+hands_position                           = -0.0055,-0.07, 0.36
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.07, 0.36
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position    = 0.000075,-0.004612,0.001283
+item_orientation   = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+item_visual             	= dynamics\weapons\wpn_eat\aptechki\wpn_aptechka_army_hud.ogf
+
+anm_show				= aptechka_hands_eat_invtrans,aptechka_wpn_eat	;binoculars_draw
+anm_hide				= eat_apt_draw		;binoculars_holster
+anm_idle				= eat_apt_idle			;binoculars_idle
+anm_idle_aim			= eat_apt_idle			;binoculars_idle
+anm_idle_moving			= eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			= eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				= eat_apt_use		;binoculars_idle_bore
+
+[medkit_sci_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\aptechki\aptechka_scientific_world.ogf
+hud                     	= anm_medkit_scientic_hud
+
+inv_name				= st_medkit_science
+inv_name_short			= st_medkit_science
+description					= st_medkit_science_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 23
+inv_grid_y         = 15
+
+cost				= 800
+inv_weight				= 0.1
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\medkit_use
+
+[anm_medkit_scientic_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+hands_position                           = -0.0055,-0.07, 0.36
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.07, 0.36
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position    = 0.000075,-0.004612,0.001283
+item_orientation   = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+item_visual             	= dynamics\weapons\wpn_eat\aptechki\wpn_aptechka_scientific_hud.ogf
+
+anm_show				= aptechka_hands_eat_invtrans,aptechka_wpn_eat	;binoculars_draw
+anm_hide				= eat_apt_draw		;binoculars_holster
+anm_idle				= eat_apt_idle			;binoculars_idle
+anm_idle_aim			= eat_apt_idle			;binoculars_idle
+anm_idle_moving			= eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			= eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				= eat_apt_use		;binoculars_idle_bore
+
+[drug_coagulant_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\tabletki\tabletki_coagulant_world.ogf
+hud                     	= anm_drug_coagulant_hud
+
+inv_name			= st_drug_coagulant
+inv_name_short		        = st_drug_coagulant
+description			= st_drug_coagulant_descr
+
+inv_grid_width      = 1
+inv_grid_height     = 1
+inv_grid_x          = 25
+inv_grid_y          = 14
+inv_weight			= 0.03
+
+cost				= 50
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\pills_use
+
+[anm_drug_coagulant_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 20
+inertion_origin_offset = 0
+
+dof_time_offset_anm_show = -0.6
+dof_anm_show_far = 3
+dof_anm_show_focus = 0.3
+dof_speed_in_anm_show = 0.7
+
+hands_position                           = -0.0055,-0.07, 0.32
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.07, 0.32
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position               = 0.000075,-0.004612,0.001283
+item_orientation            = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+gl_hud_offset_pos				= 0,0,0
+gl_hud_offset_rot				= 0,0,0
+
+lean_hud_offset_pos			= 0,0,0
+lean_hud_offset_rot			= 0,0,0
+
+item_visual             	= dynamics\weapons\wpn_eat\tabletki\wpn_tabletki_1_0_drug_coagulant_hud.ogf
+
+anm_show					= tabletki_1_hands_eat_invtrans, tabletki_1_wpn_eat
+anm_hide				    = eat_apt_draw		;binoculars_holster
+anm_idle				    = eat_apt_idle			;binoculars_idle
+anm_idle_aim			    = eat_apt_idle			;binoculars_idle
+anm_idle_moving			    = eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			    = eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				    = eat_apt_use		;binoculars_idle_bore
+
+[drug_antidot_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\tabletki\tabletki_antidot_world.ogf
+hud                     	= anm_drug_antidot_hud
+
+inv_name			= st_drug_antidot
+inv_name_short		        = st_drug_antidot
+description			= st_drug_antidot_descr
+
+
+inv_grid_width      = 1
+inv_grid_height     = 1
+inv_grid_x          = 25
+inv_grid_y          = 15
+inv_weight			= 0.03
+
+cost				= 50
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\pills_use
+
+[anm_drug_antidot_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 20
+inertion_origin_offset = 0
+
+dof_time_offset_anm_show = -0.6
+dof_anm_show_far = 3
+dof_anm_show_focus = 0.3
+dof_speed_in_anm_show = 0.7
+
+hands_position                           = -0.0055,-0.07, 0.32
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.07, 0.32
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position               = 0.000075,-0.004612,0.001283
+item_orientation            = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+gl_hud_offset_pos			= 0,0,0
+gl_hud_offset_rot			= 0,0,0
+
+lean_hud_offset_pos			= 0,0,0
+lean_hud_offset_rot			= 0,0,0
+
+item_visual             	= dynamics\weapons\wpn_eat\tabletki\wpn_tabletki_2_0_drug_antidot_hud.ogf
+
+anm_show					= tabletki_1_hands_eat_invtrans, tabletki_2_wpn_eat
+anm_hide				    = eat_apt_draw		;binoculars_holster
+anm_idle				    = eat_apt_idle			;binoculars_idle
+anm_idle_aim			    = eat_apt_idle			;binoculars_idle
+anm_idle_moving			    = eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			    = eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				    = eat_apt_use		;binoculars_idle_bore
+
+[drug_radioprotector_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\tabletki\tabletki_radioprotector_world.ogf
+hud                     	= anm_drug_radioprotector_hud
+
+inv_name			= st_drug_radioprotector
+inv_name_short		        = st_drug_radioprotector
+description			= st_drug_radioprotector_descr
+
+inv_grid_width      = 1
+inv_grid_height     = 1
+inv_grid_x          = 25
+inv_grid_y          = 16
+inv_weight			= 0.03
+
+cost				= 50
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\pills_use
+
+[anm_drug_radioprotector_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 20
+inertion_origin_offset = 0
+
+dof_time_offset_anm_show = -0.6
+dof_anm_show_far = 3
+dof_anm_show_focus = 0.3
+dof_speed_in_anm_show = 0.7
+
+hands_position                           = -0.0055,-0.07, 0.32
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.07, 0.32
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position               = 0.000075,-0.004612,0.001283
+item_orientation            = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+gl_hud_offset_pos				= 0,0,0
+gl_hud_offset_rot				= 0,0,0
+
+lean_hud_offset_pos			= 0,0,0
+lean_hud_offset_rot			= 0,0,0
+
+item_visual             	= dynamics\weapons\wpn_eat\tabletki\wpn_tabletki_3_0_drug_radioprotector_hud.ogf
+
+anm_show					= tabletki_1_hands_eat_invtrans, tabletki_3_wpn_eat
+anm_hide				    = eat_apt_draw		;binoculars_holster
+anm_idle				    = eat_apt_idle			;binoculars_idle
+anm_idle_aim			    = eat_apt_idle			;binoculars_idle
+anm_idle_moving			    = eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			    = eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				    = eat_apt_use		;binoculars_idle_bore
+
+[drug_psy_blockade_hud_model]:gwr_base_usable
+visual                  	= dynamics\weapons\wpn_eat\world_models\tabletki\tabletki_coagulant_world.ogf
+hud                     	= anm_drug_psy_blockade_hud
+
+inv_name			= st_drug_coagulant
+inv_name_short		        = st_drug_coagulant
+description			= st_drug_coagulant_descr
+
+inv_grid_width      = 1
+inv_grid_height     = 1
+inv_grid_x          = 25
+inv_grid_y          = 14
+inv_weight			= 0.03
+
+cost				= 50
+
+;звуки
+snd_draw   = $silent
+snd_using   = interface\item_usage\pills_use
+
+[anm_drug_psy_blockade_hud]:gwr_base_usable_hud
+zoom_hide_crosshair			= true
+
+inertion_pitch_offset_r = 0
+inertion_pitch_offset_n = 0
+inertion_pitch_offset_d = 0
+inertion_speed = 20
+inertion_origin_offset = 0
+
+dof_time_offset_anm_show = -0.6
+dof_anm_show_far = 3
+dof_anm_show_focus = 0.3
+dof_speed_in_anm_show = 0.7
+
+hands_position                           = -0.0055,-0.07, 0.32
+hands_orientation			= -0.500000,1.000000,1.149999
+
+hands_position_16x9                      = -0.0055,-0.07, 0.32
+hands_orientation_16x9			= 2.349998,2.749999,2.849998
+
+item_position               = 0.000075,-0.004612,0.001283
+item_orientation            = 0.045015,1.047468,0.056850
+
+aim_hud_offset_pos			= 0.0,0.022,0.0
+aim_hud_offset_rot			= 0.0,0.0,0.0
+
+aim_hud_offset_pos_16x9		= 0.0,0.022,0.0
+aim_hud_offset_rot_16x9		= 0.0,0.0,0.0
+
+gl_hud_offset_pos				= 0,0,0
+gl_hud_offset_rot				= 0,0,0
+
+lean_hud_offset_pos			= 0,0,0
+lean_hud_offset_rot			= 0,0,0
+
+item_visual             	= dynamics\weapons\wpn_eat\tabletki\wpn_tabletki_psy_blocade_hud.ogf
+
+anm_show					= tabletki_1_hands_eat_invtrans, tabletki_1_wpn_eat
+anm_hide				    = eat_apt_draw		;binoculars_holster
+anm_idle				    = eat_apt_idle			;binoculars_idle
+anm_idle_aim			    = eat_apt_idle			;binoculars_idle
+anm_idle_moving			    = eat_apt_idle_moving	;binoculars_idle_moving
+anm_idle_sprint			    = eat_apt_idle_sprint	;binoculars_idle_sprint
+anm_bore				    = eat_apt_use		;binoculars_idle_bore
