@@ -310,9 +310,17 @@ pp_eff_name	 = mfs_team\post_effects\sleepeness.ppe
 pp_eff_cyclic	= 1
 pp_eff_overlap = true
 
+[effector_drugs]
+pp_eff_name	 = mfs_team\post_effects\drugs.ppe
+pp_eff_cyclic	= 1
+pp_eff_overlap = true
+
+cam_eff_name	= camera_effects\drunk.anm
+cam_eff_cyclic	= 1
+
 ;; Items Animations Addon
 
-[aptechka_use]:effector_monster_hit
+[medkit_use]:effector_monster_hit
 cam_eff_name	= itemuse_anm_effects\aptechka_use.anm
 
 [vodka_use]:effector_monster_hit
@@ -321,11 +329,14 @@ cam_eff_name	= itemuse_anm_effects\vodka_use.anm
 [banka_use]:effector_monster_hit
 cam_eff_name	= itemuse_anm_effects\banka_use.anm
 
-[bint_use]:effector_monster_hit
+[bandage_use]:effector_monster_hit
 cam_eff_name	= itemuse_anm_effects\bint_use.anm
 
 [antirad_use]:effector_monster_hit
 cam_eff_name	= itemuse_anm_effects\antirad_use.anm
 
-[tabletki_use]:effector_monster_hit
+[pills_use]:effector_monster_hit
 cam_eff_name	= itemuse_anm_effects\tabletki_use.anm
+
+[antigas_filter_use]:effector_monster_hit
+cam_eff_name	= itemuse_anm_effects\filter_use_on.anm
