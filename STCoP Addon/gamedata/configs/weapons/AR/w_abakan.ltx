@@ -1,190 +1,190 @@
 ; Автомат Никонова АН-94 "Абакан" (6П33)
 ;-(TrickSR, Ga2z)-----------------------------------------
-; калибр 				5.45х39
-; длина ствола 				405 мм
-; магазин				30/60
+; калибр 						5.45х39
+; длина ствола 					405 мм
+; магазин						30/60
 ; вес с пустым магазином		4.08 кг
 ; максимальная дальность стрельбы	3150 м
 ; эффективная дальность стрельбы	650 м
 ; прицельная дальность			1000 м
 ; дульная скорость пули			900 м/с
-; темп стрельбы				600 в/м (1800 в/м отсечка на 2 патрона)
+; темп стрельбы					600 в/м (1800 в/м отсечка на 2 патрона)
 ;---------------------------------------------------
 [wpn_abakan]:weapon_probability,default_weapon_params,wpn_abakan_sounds
-GroupControlSection			= spawn_group
-$spawn					= "weapons\abakan"
-$npc					= on
-$prefetch				= 8
-scheduled				= off
-cform					= skeleton
-class					= WP_AK74
-description				= st_wpn_abakan_descr
+GroupControlSection				= spawn_group
+$spawn							= "weapons\abakan"
+$npc							= on
+$prefetch						= 8
+scheduled						= off
+cform							= skeleton
+class							= WP_AK74
+description						= st_wpn_abakan_descr
 
-scopes 					= 1p78,1pn34,kobra,pso,ekp,okp
-parent_section  			= wpn_abakan
+scopes 							= 1p78,1pn93-1,ekp,okp
+parent_section  				= wpn_abakan
 
-ef_main_weapon_type			= 2
-ef_weapon_type				= 7
+ef_main_weapon_type				= 2
+ef_weapon_type					= 7
 
-inv_name				= st_wpn_abakan
-inv_name_short				= st_wpn_abakan
+inv_name						= st_wpn_abakan
+inv_name_short					= st_wpn_abakan
 
-inv_grid_width				= 5
-inv_grid_height				= 2
-inv_grid_x				= 6
-inv_grid_y				= 2
+inv_grid_width					= 5
+inv_grid_height					= 2
+inv_grid_x						= 6
+inv_grid_y						= 2
 
-upgr_icon_x				= 0
-upgr_icon_y				= 0
-upgr_icon_width				= 300
-upgr_icon_height 			= 100
+upgr_icon_x						= 0
+upgr_icon_y						= 0
+upgr_icon_width					= 300
+upgr_icon_height 				= 100
 
-kill_msg_x				= 119
-kill_msg_y				= 199
-kill_msg_width				= 93
-kill_msg_height				= 32
+kill_msg_x						= 119
+kill_msg_y						= 199
+kill_msg_width					= 93
+kill_msg_height					= 32
 
-cost					= 6000
-weapon_class				= assault_rifle
-inv_weight				= 4.08
-hud					= wpn_abakan_hud
-visual					= dynamics\weapons\wpn_abakan\wpn_abakan.ogf
+cost							= 6000
+weapon_class					= assault_rifle
+inv_weight						= 4.08
+hud								= wpn_abakan_hud
+visual							= dynamics\weapons\wpn_abakan\wpn_abakan.ogf
 
 upgrades                		= up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
 installed_upgrades      		=
 upgrade_scheme          		= upgrade_scheme_abakan
 
-ph_mass					= 4
+ph_mass							= 4
 
-ammo_class				= ammo_5.45x39_fmj, ammo_5.45x39_ap
+ammo_class						= ammo_5.45x39_fmj, ammo_5.45x39_ap
 
-startup_ammo				= 90
-ammo_current				= 180
-ammo_elapsed				= 30
-ammo_limit				= 210
-ammo_mag_size				= 30
+startup_ammo					= 90
+ammo_current					= 180
+ammo_elapsed					= 30
+ammo_limit						= 210
+ammo_mag_size					= 30
 
-fire_modes				= 1, 2, -1
+fire_modes						= 1, 2, -1
 
-grenade_class				= ammo_vog-25, ammo_vog-25p
+grenade_class					= ammo_vog-25, ammo_vog-25p
 
-grenade_vel 				= 76
-launch_speed				= 76
-hand_dependence				= 1
-single_handed				= 0
+grenade_vel 					= 76
+launch_speed					= 76
+hand_dependence					= 1
+single_handed					= 0
 
-hit_power				= 0.3
-;hit_impulse				= 10
-hit_type				= fire_wound
-fire_distance				= 1000
-bullet_speed				= 900
-rpm					= 600
-rpm_empty_click				= 200
+hit_power						= 0.3
+;hit_impulse					= 10
+hit_type						= fire_wound
+fire_distance					= 1000
+bullet_speed					= 900
+rpm								= 600
+rpm_empty_click					= 200
 
-use_aim_bullet				= false
-time_to_aim				= 0
+use_aim_bullet					= false
+time_to_aim						= 0
 
-misfire_probability			= 0.005
-misfire_start_condition			= 0.6
-misfire_end_condition			= 0.1
-misfire_start_prob	 		= 0.0037
-misfire_end_prob	 		= 0.05
-condition_shot_dec			= 0.000125
-condition_queue_shot_dec		= 0.00025
+misfire_probability					= 0.005
+misfire_start_condition				= 0.6
+misfire_end_condition				= 0.1
+misfire_start_prob	 				= 0.0037
+misfire_end_prob	 				= 0.05
+condition_shot_dec					= 0.000125
+condition_queue_shot_dec			= 0.00025
 
-zoom_dof				= 0.5, 1.0, 150
-reload_dof				= 0, 0.5, 5, 2
+zoom_dof							= 0.5, 1.0, 150
+reload_dof							= 0, 0.5, 5, 2
 
-fire_dispersion_base			= 0.29
+fire_dispersion_base				= 0.29
 fire_dispersion_condition_factor	= 2
 
-dispersion_start			= 2
+dispersion_start					= 2
 
 base_dispersioned_bullets_count		= 2 
 base_dispersioned_bullets_speed		= 900
 
 control_inertion_factor			= 1.35f
-crosshair_inertion			= 6.65
+crosshair_inertion				= 6.65
 
-cam_return				= 0
-cam_relax_speed				= 12
-cam_relax_speed_ai			= 120.75
-cam_dispersion				= 0.8
-cam_dispersion_inc			= 0.4
-cam_dispersion_frac			= 1.0
-cam_max_angle				= 50
-cam_max_angle_horz			= 50
-cam_step_angle_horz			= 0.2
+cam_return						= 0
+cam_relax_speed					= 12
+cam_relax_speed_ai				= 120.75
+cam_dispersion					= 0.8
+cam_dispersion_inc				= 0.4
+cam_dispersion_frac					= 1.0
+cam_max_angle					= 50
+cam_max_angle_horz				= 50
+cam_step_angle_horz				= 0.2
 
 zoom_cam_relax_speed			= 13
 zoom_cam_relax_speed_ai			= 120.75
-zoom_cam_dispersion			= 0.7
+zoom_cam_dispersion				= 0.7
 zoom_cam_dispersion_inc			= 0.35
 zoom_cam_dispersion_frac		= 0.6
-zoom_cam_max_angle			= 50.0
+zoom_cam_max_angle				= 50.0
 zoom_cam_max_angle_horz			= 50.0
 zoom_cam_step_angle_horz		= 0.1
 
-PDM_disp_base 				= 0.5
+PDM_disp_base 					= 0.5
 PDM_disp_vel_factor 			= 2
 PDM_disp_accel_factor 			= 2
-PDM_disp_crouch	 			= 1
+PDM_disp_crouch	 				= 1
 PDM_disp_crouch_no_acc 			= 1
 
-min_radius				= 30
-max_radius				= 50
+min_radius						= 30
+max_radius						= 50
 
 holder_range_modifier			= 1.00
-holder_fov_modifier			= 1.00
+holder_fov_modifier				= 1.00
 
-slot					= 2
-animation_slot				= 2
+slot							= 2
+animation_slot					= 2
 
-position				= -0.026, -0.178, 0
-orientation				= 0,0,0
+position						= -0.026, -0.178, 0.015
+orientation						= 0,0,0
 
-fire_point				= 0,0.228,0.713
-fire_point2				= 0,0,153.608
+fire_point						= 0,0.228,0.713
+fire_point2						= 0,0,153.608
 
-flame_particles               		= ;amik\weapons\flame_particles\flame_particles_04
+flame_particles               	= amik\weapons\flame_particles\flame_particles_04
 smoke_particles            		= ghost_particles\weapons\flame_eft_ak
-grenade_flame_particles        		= weapons\generic_shoot_00
+grenade_flame_particles        	= amik\weapons\grenade_flame_particles\grenade_flame_particles_00
 silencer_smoke_particles   		= ghost_particles\weapons\generic_smoke_eft_sil
 
-shell_point		 		= 0.02,0.04,0.5
-shell_dir				= 0,0,0.4
-shell_particles				= weapons\545x39
+shell_point		 				= 0.02,0.04,0.5
+shell_dir						= 0,0,0.4
+shell_particles					= ghost_particles\weapons\shells\shells_545_right
 
-strap_position				= -0.26,-0.11,0.25
-strap_orientation			= -15,-9,110
+strap_position					= -0.26,-0.11,0.25
+strap_orientation				= -15,-9,110
 
-strap_bone0				= bip01_spine2
-strap_bone1				= bip01_spine1
+strap_bone0						= bip01_spine2
+strap_bone1						= bip01_spine1
 
-light_disabled				= false
-light_color				= 0.6,0.5,0.3
-light_range				= 5
-light_var_color				= 0.05
-light_var_range				= 0.5
-light_time				= 0.2
+light_disabled					= false
+light_color						= 0.6,0.5,0.3
+light_range						= 5
+light_var_color					= 0.05
+light_var_range					= 0.5
+light_time						= 0.2
 
-scope_status				= 2
-silencer_status				= 0
+scope_status					= 2
+silencer_status					= 0
 grenade_launcher_status			= 2
 
-zoom_enabled				= true
-zoom_rotate_time			= 0.20
-scope_zoom_factor			= 90
+zoom_enabled					= true
+zoom_rotate_time				= 0.20
+scope_zoom_factor				= 83.3
 
-scope_name				= pso
-scope_x					= 44
-scope_y					= 2
+scope_name						= pso
+scope_x							= 44
+scope_y							= 2
 
 grenade_launcher_name			= wpn_addon_grenade_launcher
-grenade_launcher_x			= 118
-grenade_launcher_y			= 24
+grenade_launcher_x				= 119
+grenade_launcher_y				= 33
 
-silencer_name				= wpn_addon_silencer
+silencer_name						= wpn_addon_silencer
 silencer_x                  		= 236
 silencer_y                  		= 15
 
@@ -204,203 +204,161 @@ zoom_hide_crosshair        		= true
 attach_place_idx           		= 0
 item_visual                		= dynamics\weapons\wpn_abakan\wpn_abakan_hud.ogf
 
-hands_position				= -0.152625,-0.125249,-0.05
-hands_orientation			= -3.912575,-1.610046,0
+hands_position					= 0.058400,0.022820,-0.255134
+hands_orientation				= 0.193000,0.460998,0
 
-hands_position_16x9			= -0.152625,-0.125249,-0.05
-hands_orientation_16x9			= -3.912575,-1.610046,0
+hands_position_16x9				= 0.058400,0.022820,-0.255134
+hands_orientation_16x9			= 0.193000,0.460998,0
 
-hud_collision_enabled			= true
-hud_collision_offset_pos		= 0,-0.25,0
-hud_collision_offset_pos_16x9		= 0,-0.25,0
-hud_collision_offset_rot		= -0.8,0,0
-hud_collision_offset_rot_16x9		= -0.8,0,0
+item_position					= 0,0,0
+item_orientation				= 0,0,0
 
-item_position				= 0,0,0
-item_orientation			= 0,0,0
+aim_hud_offset_pos				= -0.067919,0.035520,-0.098551
+aim_hud_offset_rot				= 0.006400,0.003500,0.000300
 
-aim_hud_offset_pos			= -0.071475,0.026625,-0.139001
-aim_hud_offset_rot			= -0.026875,-0.068463,0.000250
+aim_hud_offset_pos_16x9			= -0.067919,0.035520,-0.098551
+aim_hud_offset_rot_16x9			= 0.006400,0.003500,0.000300
 
-aim_hud_offset_pos_16x9			= -0.071475,0.026625,-0.139001
-aim_hud_offset_rot_16x9			= -0.026875,-0.068463,0.000250
+gl_hud_offset_pos	 			= -0.023750,-0.212499,-0.118501
+gl_hud_offset_rot				= -0.447938,0.045763,0.089000
 
-gl_hud_offset_pos	 		= -0.031250,-0.003000,-0.129001
-gl_hud_offset_rot			= -0.132938,-0.071237,0
+gl_hud_offset_pos_16x9			= -0.023750,-0.212499,-0.118501
+gl_hud_offset_rot_16x9			= -0.447938,0.045763,0.089000
 
-gl_hud_offset_pos_16x9			= -0.031250,-0.003000,-0.129001
-gl_hud_offset_rot_16x9			= -0.132938,-0.071237,0
-
-shell_point                		= 0,0,0
-shell_dir               		= 0,1,0
-shell_bone                		= gilza
-
-fire_point				= 0,0,0
-fire_bone                 	 	= muzzle
-fire_point2                 		= 0,0,0
-fire_bone2                		= muzzle_gl
-
-anm_show				= abakan_draw
-anm_hide                		= abakan_holster
-anm_idle                		= abakan_idle
-anm_idle_sprint         		= abakan_idle_sprint
-anm_idle_moving         		= abakan_idle_moving
-anm_idle_moving_crouch			= abakan_idle_crouch
-anm_shots               		= abakan_shoot
-anm_reload              		= abakan_reload
-anm_reload_empty        		= abakan_reload_empty
-anm_reload_misfire       		= abakan_misfire, misfire
-anm_idle_aim            		= abakan_idle_aim
-anm_switch              		= abakan_idle_aim_w_gl          
-anm_switch_g            		= abakan_idle_aim_w_gl          
-anm_bore                		= abakan_idle_aim		
-anm_hide_w_gl           		= abakan_holster_w_gl
-anm_show_w_gl           		= abakan_draw_w_gl
-anm_idle_w_gl           		= abakan_idle_w_gl
-anm_shots_w_gl          		= abakan_shoot_w_gl
-anm_reload_w_gl         		= abakan_reload_w_gl
-anm_reload_empty_w_gl   		= abakan_reload_empty_w_gl
-anm_reload_misfire_w_gl   		= abakan_misfire_w_gl, misfire_w_gl
-anm_idle_w_gl_aim       		= abakan_idle_aim_w_gl
-anm_idle_sprint_w_gl    		= abakan_idle_sprint_w_gl
-anm_idle_moving_w_gl    		= abakan_idle_moving_w_gl
-anm_idle_moving_crouch_w_gl    		= abakan_idle_crouch_w_gl
-anm_bore_w_gl           		= abakan_idle_aim_w_gl
-anm_show_g              		= abakan_draw_w_gl				
-anm_hide_g              		= abakan_holster_w_gl				
-anm_idle_g              		= abakan_idle_w_gl				
-anm_reload_g            		= abakan_reload_grenade
-anm_idle_g_aim          		= abakan_idle_aim_w_gl			
-anm_shots_g             		= abakan_shoot_grenade
-anm_idle_sprint_g       		= abakan_idle_sprint_w_gl			
-anm_idle_moving_g       		= abakan_idle_moving_w_gl	
-anm_idle_moving_crouch_g		= abakan_idle_crouch_w_gl		
-anm_bore_g              		= abakan_idle_aim_w_gl
-
+shell_bone                  	= wpn_body
+shell_dir                   	= 0, 1, 0
+shell_point                 	= 0, 0, 0
+        
+fire_bone                  	 	= wpn_body
+fire_bone2                  	= wpn_body
+fire_point						= 0.002,-0.003500,0.412998
+fire_point2                 	= 0, 0, 0
+ 
+anm_show						= abakan_guns_draw
+anm_hide                              	= abakan_guns_holster
+anm_idle                              	= abakan_guns_idle
+anm_idle_aim                          	= abakan_guns_idle_aim
+anm_idle_sprint                       	= abakan_guns_sprint
+anm_idle_moving                       	= abakan_guns_move
+anm_idle_moving_slow                  	= abakan_guns_move_slow
+anm_idle_moving_crouch                	= abakan_guns_move_crouch
+anm_shots_when_aim                    	= abakan_guns_shoot_aim, shoot_aim
+anm_shots                             	= abakan_guns_shoot, shoot
+anm_reload                            	= abakan_guns_reload, reload
+anm_reload_empty                      	= abakan_guns_reload_empty, reload_empty
+anm_reload_misfire                   	= abakan_guns_misfire, misfire
+anm_bore                              	= abakan_guns_idle_aim
+anm_switch                            	= abakan_guns_switch_g_off, switch_off
+anm_switch_g                          	= abakan_guns_switch_g_on, switch_on
+anm_hide_w_gl                         	= abakan_guns_holster_w_gl
+anm_show_w_gl                         	= abakan_guns_draw_w_gl
+anm_idle_w_gl                         	= abakan_guns_idle_w_gl
+anm_shots_w_gl                       	= abakan_guns_shoot_w_gl, shoot
+anm_shots_w_gl_when_aim               	= abakan_guns_shoot_aim_w_gl, shoot
+anm_reload_w_gl                       	= abakan_guns_reload_w_gl, reload
+anm_reload_empty_w_gl                 	= abakan_guns_reload_empty_w_gl, reload_empty
+anm_reload_w_gl_misfire               	= abakan_guns_misfire_w_gl, misfire
+anm_idle_w_gl_aim                     	= abakan_guns_idle_aim_w_gl
+anm_idle_sprint_w_gl                  	= abakan_guns_sprint_w_gl
+anm_idle_moving_slow_w_gl             	= abakan_guns_move_slow_w_gl
+anm_idle_moving_w_gl                  	= abakan_guns_move_w_gl
+anm_idle_moving_crouch_w_gl           	= abakan_guns_move_crouch_w_gl
+anm_bore_w_gl                         	= abakan_guns_idle_aim_w_gl
+anm_show_g                            	= abakan_guns_draw_g, idle_g
+anm_hide_g                           	= abakan_guns_holster_g, idle_g
+anm_idle_g                            	= abakan_guns_idle_g, idle_g
+anm_reload_g                          	= abakan_guns_reload_g, reload_g
+anm_idle_g_aim                        	= abakan_guns_idle_aim_g, idle_g
+anm_shots_g                           	= abakan_guns_shoot_g, shoot_g
+anm_idle_sprint_g                     	= abakan_guns_sprint_g, idle_g
+anm_idle_moving_g                     	= abakan_guns_move_g, idle_g
+anm_idle_moving_slow_g                	= abakan_guns_move_slow_g, idle_g
+anm_idle_moving_crouch_g		= abakan_guns_move_crouch_g, idle_g
+anm_bore_g						= abakan_guns_idle_aim_g, idle_g
+      
 lean_hud_offset_pos        		= 0,0,0
 lean_hud_offset_rot        		= 0,0,0
 ;-----------------------------------------------------------------------------
 ; Аддоны
 ;-----------------------------------------------------------------------------
 [wpn_abakan_ekp]:wpn_abakan
-$spawn             			= "weapons\wpn_abakan_ekp"
-hud					= wpn_abakan_ekp_hud
-visual					= dynamics\weapons\wpn_abakan\wpn_abakan_ekp.ogf
+$spawn             				= "weapons\wpn_abakan_ekp"
+hud								= wpn_abakan_ekp_hud
+visual							= dynamics\weapons\wpn_abakan\wpn_abakan_ekp.ogf
 
-scope_x					= 67
-scope_y					= 3
+scope_x							= 66
+scope_y							= 11
 
 [wpn_abakan_ekp_hud]:wpn_abakan_hud
 item_visual                		= dynamics\weapons\wpn_abakan\wpn_abakan_ekp_hud.ogf
 
-aim_hud_offset_pos			= -0.065100,-0.015125,-0.176625
-aim_hud_offset_rot			= -0.015437,-0.070062,0.000375
+aim_hud_offset_pos				= -0.062919,-0.003230,-0.11
+aim_hud_offset_rot				= 0.026650,0.003750,0.000300
 
-aim_hud_offset_pos_16x9			= -0.065100,-0.015125,-0.176625
-aim_hud_offset_rot_16x9			= -0.015437,-0.070062,0.000375
+aim_hud_offset_pos_16x9			= -0.062919,-0.003230,-0.11
+aim_hud_offset_rot_16x9			= 0.026650,0.003750,0.000300
 
 [wpn_abakan_kobra]:wpn_abakan
-$spawn             			= "weapons\wpn_abakan_kobra"
-hud					= wpn_abakan_kobra_hud
-visual					= dynamics\weapons\wpn_abakan\wpn_abakan_kobra.ogf
+$spawn             				= "weapons\wpn_abakan_kobra"
+hud								= wpn_abakan_kobra_hud
+visual							= dynamics\weapons\wpn_abakan\wpn_abakan_kobra.ogf
 
-scope_x					= 70
-scope_y					= 7
+scope_x							= 70
+scope_y							= 7
 
 [wpn_abakan_kobra_hud]:wpn_abakan_hud
 item_visual                		= dynamics\weapons\wpn_abakan\wpn_abakan_kobra_hud.ogf
 
-aim_hud_offset_pos			= -0.057100,-0.009125,-0.181125
-aim_hud_offset_rot			= -0.030937,-0.085875,0.000375
+aim_hud_offset_pos				= -0.057100,-0.009125,-0.181125
+aim_hud_offset_rot				= -0.030937,-0.085875,0.000375
 
 aim_hud_offset_pos_16x9			= -0.057100,-0.009125,-0.181125
 aim_hud_offset_rot_16x9			= -0.030937,-0.085875,0.000375
 
 [wpn_abakan_1p78]:wpn_abakan
-$spawn             			= "weapons\wpn_abakan_1p78"
-hud					= wpn_abakan_1p78_hud
-visual					= dynamics\weapons\wpn_abakan\wpn_abakan_1p78.ogf
+$spawn             				= "weapons\wpn_abakan_1p78"
+hud								= wpn_abakan_1p78_hud
 
-scope_x					= 58
-scope_y					= -5
+scope_x							= 58
+scope_y							= 3
 
 [wpn_abakan_1p78_hud]:wpn_abakan_hud
-item_visual                		= dynamics\weapons\wpn_abakan\wpn_abakan_1p78_hud.ogf
+aim_hud_offset_pos				= -0.064419,-0.004230,-0.098551
+aim_hud_offset_rot				= 0.005775,0.003625,0.000300
 
-anm_shots_when_aim               	= abakan_shoot_scope
-anm_shots_w_gl_when_aim          	= abakan_shoot_scope_w_gl
+aim_hud_offset_pos_16x9			= -0.064419,-0.004230,-0.098551
+aim_hud_offset_rot_16x9			= 0.005775,0.003625,0.000300
 
-aim_hud_offset_pos			= -0.063225,0.002375,-0.169626
-aim_hud_offset_rot			= 0.015775,-0.075475,0.000375
+[wpn_abakan_1pn93-1]:wpn_abakan
+$spawn             				= "weapons\wpn_abakan_1pn93-1"
+hud								= wpn_abakan_1pn93-1_hud
+visual							= dynamics\weapons\wpn_abakan\wpn_abakan_1pn93-1.ogf
 
-aim_hud_offset_pos_16x9			= -0.063225,0.002375,-0.169626
-aim_hud_offset_rot_16x9			= 0.015775,-0.075475,0.000375
+scope_x							= 34
+scope_y							= 11
 
-[wpn_abakan_1pn34]:wpn_abakan
-$spawn             			= "weapons\wpn_abakan_1pn34"
-hud					= wpn_abakan_1pn34_hud
-visual					= dynamics\weapons\wpn_abakan\wpn_abakan_1pn34.ogf
+[wpn_abakan_1pn93-1_hud]:wpn_abakan_hud
+item_visual                		= dynamics\weapons\wpn_abakan\wpn_abakan_1pn93-1_hud.ogf
 
-scope_x					= 69
-scope_y					= -4
+aim_hud_offset_pos				= -0.048919,-0.007480,-0.098551
+aim_hud_offset_rot				= 0.003525,-0.000625,0.000300
 
-[wpn_abakan_1pn34_hud]:wpn_abakan_hud
-item_visual                		= dynamics\weapons\wpn_abakan\wpn_abakan_1pn34_hud.ogf
-
-hands_position				= -0.107125,-0.125249,-0.050000
-hands_orientation			= -3.912575,-1.610046,0
-
-hands_position_16x9			= -0.107125,-0.125249,-0.050000
-hands_orientation_16x9			= -3.912575,-1.610046,0
-
-hud_collision_enabled			= true
-hud_collision_offset_pos		= 0,-0.25,0
-hud_collision_offset_pos_16x9		= 0,-0.25,0
-hud_collision_offset_rot		= -0.8,0,0
-hud_collision_offset_rot_16x9		= -0.8,0,0
-
-aim_hud_offset_pos			= -0.111475,-0.042875,-0.158001
-aim_hud_offset_rot			= -0.027875,-0.068713,0.000250
-
-aim_hud_offset_pos_16x9			= -0.111475,-0.042875,-0.158001
-aim_hud_offset_rot_16x9			= -0.027875,-0.068713,0.000250
-
-gl_hud_offset_pos			= -0.018250,-0.003000,-0.129001
-gl_hud_offset_rot			= -0.132938,-0.144736,0
-
-gl_hud_offset_pos_16x9			= -0.018250,-0.003000,-0.129001
-gl_hud_offset_rot_16x9			= -0.132938,-0.144736,0
-
-[wpn_abakan_pso]:wpn_abakan
-$spawn             			= "weapons\wpn_abakan_pso"
-hud					= wpn_abakan_pso_hud
-
-scope_x					= 44
-scope_y					= 2
-
-[wpn_abakan_pso_hud]:wpn_abakan_hud
-anm_shots_when_aim               	= abakan_shoot_scope
-anm_shots_w_gl_when_aim          	= abakan_shoot_scope_w_gl
-
-aim_hud_offset_pos			= -0.062975,0.014625,-0.123
-aim_hud_offset_rot			= 0.048250,-0.024363,0.000250
-
-aim_hud_offset_pos_16x9			= -0.062975,0.014625,-0.123
-aim_hud_offset_rot_16x9			= 0.048250,-0.024363,0.000250
+aim_hud_offset_pos_16x9			= -0.048919,-0.007480,-0.098551
+aim_hud_offset_rot_16x9			= 0.003525,-0.000625,0.000300
 
 [wpn_abakan_okp]:wpn_abakan
-$spawn             			= "weapons\wpn_abakan_okp"
-hud					= wpn_abakan_okp_hud
-visual					= dynamics\weapons\wpn_abakan\wpn_abakan_okp.ogf
+$spawn             				= "weapons\wpn_abakan_okp"
+hud								= wpn_abakan_okp_hud
+visual							= dynamics\weapons\wpn_abakan\wpn_abakan_okp.ogf
 
-scope_x					= 75
-scope_y					= 2
+scope_x							= 71
+scope_y							= 11
 
 [wpn_abakan_okp_hud]:wpn_abakan_hud
 item_visual                		= dynamics\weapons\wpn_abakan\wpn_abakan_okp_hud.ogf
 
-aim_hud_offset_pos			= -0.062850,0.015125,-0.147998
-aim_hud_offset_rot			= 0.012000,-0.062938,0.000375
+aim_hud_offset_pos				= -0.067919,0.023770,-0.143550
+aim_hud_offset_rot				= 0.045150,0.036000,0.000300
 
-aim_hud_offset_pos_16x9			= -0.062850,0.015125,-0.147998
-aim_hud_offset_rot_16x9			= 0.012000,-0.062938,0.000375
+aim_hud_offset_pos_16x9			= -0.067919,0.023770,-0.143550
+aim_hud_offset_rot_16x9			= 0.045150,0.036000,0.000300

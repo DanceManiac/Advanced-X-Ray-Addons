@@ -887,18 +887,18 @@ end
 --Zaton B52
 
 function actor_has_nimble_weapon(first_speaker, second_speaker)
-	return db.actor:object("wpn_m249") ~= nil or
-	db.actor:object("wpn_colt1911_m1") ~= nil or
-	db.actor:object("wpn_kar98k") ~= nil or
+	return db.actor:object("wpn_vssk") ~= nil or
+	db.actor:object("wpn_fnx45") ~= nil or
+	db.actor:object("wpn_ak12_m1") ~= nil or
 	db.actor:object("wpn_desert_eagle_nimble") ~= nil or
 	db.actor:object("wpn_usp_nimble") ~= nil or
 	db.actor:object("wpn_l96") ~= nil or
-	db.actor:object("wpn_m98b") ~= nil or
+	db.actor:object("wpn_dvl10") ~= nil or
 	db.actor:object("wpn_m82") ~= nil or
 	db.actor:object("wpn_m79") ~= nil or
-	db.actor:object("wpn_remington700") ~= nil or
+	db.actor:object("wpn_saiga_m1") ~= nil or
 	db.actor:object("wpn_vintorez_nimble") ~= nil or
-	db.actor:object("wpn_ak12_m1") ~= nil
+	db.actor:object("wpn_l85_m1") ~= nil
 end
 
 function zat_b51_robbery(first_speaker, second_speaker)
@@ -924,18 +924,18 @@ function zat_b51_robbery(first_speaker, second_speaker)
 	need_item["wpn_pkm_zulus"] = true
 	need_item["wpn_wincheaster1300_trapper"] = true
 	need_item["wpn_gauss"] = true
-	need_item["wpn_m249"] = true
-	need_item["wpn_colt1911_m1"] = true
-	need_item["wpn_kar98k"] = true
+	need_item["wpn_vssk"] = true
+	need_item["wpn_fnx45"] = true
+	need_item["wpn_ak12_m1"] = true
 	need_item["wpn_desert_eagle_nimble"] = true
 	need_item["wpn_usp_nimble"] = true
 	need_item["wpn_l96"] = true
-	need_item["wpn_m98b"] = true
+	need_item["wpn_dvl10"] = true
 	need_item["wpn_m82"] = true
 	need_item["wpn_m79"] = true
-	need_item["wpn_remington700"] = true
+	need_item["wpn_saiga_m1"] = true
 	need_item["wpn_vintorez_nimble"] = true
-	need_item["wpn_ak12_m1"] = true
+	need_item["wpn_l85_m1"] = true
 
 	for k,v in pairs(need_item) do
 		if db.actor:object(k) ~= nil then
@@ -949,18 +949,18 @@ function zat_b51_rob_nimble_weapon(first_speaker, second_speaker)
 	local need_item = {}
 	local actor_has_item = {}
 
-	need_item["wpn_m249"] = true
-	need_item["wpn_colt1911_m1"] = true
-	need_item["wpn_kar98k"] = true
+	need_item["wpn_vssk"] = true
+	need_item["wpn_fnx45"] = true
+	need_item["wpn_ak12_m1"] = true
 	need_item["wpn_desert_eagle_nimble"] = true
 	need_item["wpn_usp_nimble"] = true
 	need_item["wpn_l96"] = true
-	need_item["wpn_m98b"] = true
+	need_item["wpn_dvl10"] = true
 	need_item["wpn_m82"] = true
 	need_item["wpn_m79"] = true
-	need_item["wpn_remington700"] = true
+	need_item["wpn_saiga_m1"] = true
 	need_item["wpn_vintorez_nimble"] = true
-	need_item["wpn_ak12_m1"] = true
+	need_item["wpn_l85_m1"] = true
 
 	for k,v in pairs(need_item) do
 		if db.actor:object(k) ~= nil then
@@ -1006,21 +1006,21 @@ zat_b51_costs_table[6] = {prepay_agreed = 6000, 	prepay_refused = 12000,	cost = 
 zat_b51_costs_table[7] = {prepay_agreed = 12000,	prepay_refused = 24000,	cost = 48000}
 
 local zat_b51_buy_item_table = {}
-zat_b51_buy_item_table[1] = {		[1] = {item = {"wpn_colt1911_m1"}},
-					[2] = {item = {"wpn_desert_eagle_nimble"}},
-					[3] = {item = {"wpn_usp_nimble"}}
+zat_b51_buy_item_table[1] = {	[1] = {item = {"wpn_fnx45"}},
+								[2] = {item = {"wpn_desert_eagle_nimble"}},
+								[3] = {item = {"wpn_usp_nimble"}}
 	}
-zat_b51_buy_item_table[2] = {		[1] = {item = {"wpn_remington700"}},
-					[2] = {item = {"wpn_m249"}},
-					[3] = {item = {"wpn_m79"}}
+zat_b51_buy_item_table[2] = {	[1] = {item = {"wpn_saiga_m1"}},
+								[2] = {item = {"wpn_vssk"}},
+								[3] = {item = {"wpn_m79"}}
 	}
-zat_b51_buy_item_table[3] = {		[1] = {item = {"wpn_kar98k"}},
-					[2] = {item = {"wpn_ak12_m1"}},
-					[3] = {item = {"wpn_vintorez_nimble"}}
+zat_b51_buy_item_table[3] = {	[1] = {item = {"wpn_ak12_m1"}},
+								[2] = {item = {"wpn_l85_m1"}},
+								[3] = {item = {"wpn_vintorez_nimble"}}
 	}
-zat_b51_buy_item_table[4] = {		[1] = {item = {"wpn_m98b"}},
-					[2] = {item = {"wpn_l96"}},
-					[3] = {item = {"wpn_m82"}}
+zat_b51_buy_item_table[4] = {	[1] = {item = {"wpn_dvl10"}},
+								[2] = {item = {"wpn_l96"}},
+								[3] = {item = {"wpn_m82"}}
 	}
 zat_b51_buy_item_table[5] = {		[1] = {item = {"helm_tactic", "cs_heavy_outfit"}}
 	}
@@ -1570,7 +1570,7 @@ function is_not_zat_b106_hunting_time (first_speaker, second_speaker)
 end
 
 function zat_b106_transfer_weap_to_actor(first_speaker, second_speaker)
-	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_toz34_nimble")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_vepr")
 end
 
 function zat_b106_soroka_reward(first_speaker, second_speaker)

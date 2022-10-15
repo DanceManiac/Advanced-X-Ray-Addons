@@ -35,7 +35,7 @@ function main_menu:InitControls()
 	local _mfsVer = xml:InitStatic		("mod_version",self)
 	local _mfs_team	= xml:InitStatic("mfs_team_info",self)
 	local mm						= _G.main_menu.get_main_menu()
-	_gVer:TextControl():SetText		("Advanced X-Ray ver. " .. mm:GetGSVer())
+	_ver:TextControl():SetText		("Advanced X-Ray ver. " .. mm:GetGSVer() .. " (" .. mm:GetAxrPlatform() .. ")")
 
 	local ConfVer = ReadString("mfs_ver","version",ini_file("menu_configs.ltx"))
 	local Year = ReadString("Year","year",ini_file("menu_configs.ltx"))

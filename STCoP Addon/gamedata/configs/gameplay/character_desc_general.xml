@@ -24,10 +24,10 @@
 
    			grenade_rgd5 = 2 \n
 
-			wpn_pm_actor  \n
+			wpn_pb = 1, silencer \n
    			ammo_9x18_fmj = 3 \n
 
-   			wpn_ak74u_actor \n
+   			wpn_ak74u \n
    			ammo_5.45x39_fmj = 3 \n
 
 			bandage = 2 \n
@@ -350,7 +350,7 @@
     <visual>actors\stalker_dolg\stalker_dolg_2</visual>
     <supplies>
       [spawn] \n
-      wpn_ak \n
+      wpn_ak104 \n
       ammo_7.62x39_fmj = 1 \n
       wpn_pm \n
       ammo_9x18_fmj = 1 \n
@@ -378,7 +378,7 @@
     <visual>actors\stalker_dolg\stalker_dolg_2</visual>
     <supplies>
       [spawn] \n
-      wpn_ak74u_sk1 \n
+      wpn_ak74u \n
       ammo_5.45x39_fmj = 1 \n
       wpn_fort \n
       ammo_9x18_fmj = 1 \n
@@ -406,7 +406,7 @@
     <visual>actors\stalker_dolg\stalker_dolg_2</visual>
     <supplies>
       [spawn] \n
-      wpn_ak74u_sk1 \n
+      wpn_ak74u \n
       ammo_5.45x39_fmj = 1 \n
       wpn_pm \n
       ammo_9x18_fmj = 1 \n
@@ -437,9 +437,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak74m \n
-      ammo_5.45x39_fmj = 1 \n
-      wpn_tt33_sk1 \n
+      wpn_ak103 \n
+      ammo_7.62x39_fmj = 1 \n
+      wpn_tt33 \n
       ammo_7.62x25_p = 1 \n
       grenade_rgd5 = 1 \n
 #include "gameplay\character_items.xml"
@@ -497,7 +497,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak \n
+      wpn_ak104 \n
       ammo_7.62x39_fmj = 1 \n
       wpn_pm = 1 \n
       ammo_9x18_fmj = 1 \n
@@ -559,7 +559,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak74m_sk1 \n
+      wpn_ak74_sk1 \n
       ammo_5.45x39_fmj = 1 \n
       wpn_pm = 1 \n
       ammo_9x18_fmj = 1 \n
@@ -620,9 +620,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_mr153 \n
+      wpn_spas12 \n
       ammo_12x70_buck = 1 \n
-	  wpn_tt33_sk1 \n
+	  wpn_tt33 \n
       ammo_7.62x25_p = 1 \n
       grenade_rgd5 = 2 \n
 #include "gameplay\character_items_2.xml"
@@ -654,7 +654,7 @@
       [spawn] \n
       wpn_saiga \n
       ammo_12x70_buck = 1 \n
-	  wpn_mp443 \n
+	  wpn_gsh18 \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -749,9 +749,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak74m_sk1 = 1, scope=6 \n
-      ammo_5.45x39_fmj = 1 \n
-      wpn_mp443 \n
+      wpn_ak104 = 1, scope=2 \n
+      ammo_7.62x39_fmj = 1 \n
+      wpn_gsh18 \n
       ammo_9x19_pbp = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -784,7 +784,7 @@
       
       wpn_akms \n
       ammo_7.62x39_fmj = 1 \n
-      wpn_tt33_sk1 \n
+      wpn_tt33 \n
       ammo_7.62x25_ps = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -817,9 +817,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_rpk \n
-      ammo_7.62x39_ap = 1 \n
-      wpn_mp443 \n
+      wpn_rpk74 = 1, scope \n
+      ammo_5.45x39_ap = 1 \n
+      wpn_gsh18 \n
       ammo_9x19_pbp = 1 \n
       grenade_f1 = 3 \n
 
@@ -887,7 +887,7 @@
       
       wpn_val = 1, scope=3 \n
       ammo_9x39_pab9 = 1 \n
-      wpn_mp443 \n
+      wpn_gsh18 \n
       ammo_9x19_pbp = 1 \n
       grenade_f1 = 3 \n
 
@@ -921,7 +921,7 @@
       
       wpn_saiga = 1, scope=2 \n
       ammo_12x76_zhekan = 1 \n
-      wpn_fort = 1 \n
+      wpn_pmm = 1 \n
       ammo_9x18_pmm = 1 \n
       grenade_f1 = 3 \n
 
@@ -989,9 +989,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak12 \n
+      wpn_ak12 = 1, launcher \n
       ammo_5.45x39_ap = 1 \n
-      wpn_mp443 \n
+      wpn_gsh18 \n
       ammo_9x19_fmj  = 1 \n
       grenade_f1 = 4 \n
 #include "gameplay\character_items_3.xml"
@@ -1055,10 +1055,10 @@
     <supplies>
       [spawn] \n
       
-      wpn_rpk74 = 1, scope=2 \n
-      ammo_5.45x39_ap = 1 \n
+      wpn_vsk94 = 1, scope=1 \n
+      ammo_9x39_ap = 1 \n
       wpn_aps \n
-      ammo_9x19_pbp  = 1 \n
+      ammo_9x18_fmj  = 1 \n
       grenade_f1 = 4 \n
 
 #include "gameplay\character_items_3.xml"
@@ -1125,7 +1125,7 @@
       
       wpn_saiga \n
       ammo_12x76_zhekan = 1 \n
-      wpn_mp443 \n
+      wpn_gsh18 \n
       ammo_9x19_pbp = 1 \n
       grenade_f1 = 4 \n
 
@@ -1258,7 +1258,7 @@
       [spawn] \n
       
       wpn_l85 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
 	  ammo_5.56x45_ss190 = 1 \n
       ammo_11.43x23_fmj = 1 \n
 
@@ -1286,8 +1286,8 @@
     <visual>actors\stalker_freedom\stalker_freedom_2_mask</visual>
     <supplies>
       [spawn] \n
-      wpn_pp2000 \n
-      wpn_hpsa_sk1 \n
+      wpn_mp5 \n
+      wpn_hpsa \n
       ammo_9x19_fmj = 1 \n
 
 #include "gameplay\character_items.xml"
@@ -1316,7 +1316,7 @@
       [spawn] \n
 	  
       wpn_ump45 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_fmj = 2 \n
 
 #include "gameplay\character_items.xml"
@@ -1346,7 +1346,7 @@
 	  
 	  wpn_wincheaster1300 \n
 	  ammo_12x70_buck = 1 \n
-      wpn_beretta_sk1 \n
+      wpn_beretta \n
       ammo_9x19_fmj = 1 \n
 
 #include "gameplay\character_items.xml"
@@ -1377,7 +1377,7 @@
       [spawn] \n
       
 	  ammo_12x70_buck = 1 \n
-	  wpn_remington870 \n
+	  wpn_wincheaster1300 \n
       wpn_beretta \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
@@ -1409,7 +1409,7 @@
       
       wpn_ak101 \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_cz75_auto \n
+      wpn_walther \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -1471,7 +1471,7 @@
       
       wpn_sig552 \n
 	ammo_5.56x45_ss190 = 1 \n
-      wpn_beretta_sk1 \n
+      wpn_beretta \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -1501,7 +1501,7 @@
       [spawn] \n
       
 	  ammo_12x70_buck = 1 \n
-	  wpn_wincheaster1300 \n
+	  wpn_vepr \n
       wpn_hpsa \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
@@ -1533,7 +1533,7 @@
       
       wpn_hk416 \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -1563,7 +1563,7 @@
       [spawn] \n
 	  
       wpn_ump45 = 1, silencer \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_fmj  = 1 \n
       grenade_rgd5 = 1 \n
 #include "gameplay\character_items.xml"
@@ -1593,7 +1593,7 @@
       
       wpn_ak101 \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_hpsa_sk1 \n
+      wpn_hpsa \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -1657,7 +1657,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_m4a1 \n
+      wpn_lr300 \n
       ammo_5.56x45_ap = 1 \n
       wpn_beretta \n
       ammo_9x19_pbp = 1 \n
@@ -1688,9 +1688,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_m4a1 = 1, silencer  \n
+      wpn_lr300 = 1, silencer  \n
 	  ammo_5.56x45_ss190 = 1 \n
-      wpn_beretta_sk1 \n
+      wpn_beretta \n
       ammo_9x19_pbp = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -1723,7 +1723,7 @@
 	  
       wpn_mp5 = 1, silencer \n
       ammo_9x19_pbp = 1 \n
-      wpn_beretta_sk1 \n
+      wpn_beretta \n
       grenade_rgd5 = 2 \n
 
 #include "gameplay\character_items_2.xml"
@@ -1783,9 +1783,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_m4a1 \n
+      wpn_lr300 \n
 	  ammo_5.56x45_ss190 = 1 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_fmj  = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -1816,8 +1816,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_g3sg1 \n
-      ammo_7.62x51_fmj = 1 \n
+      wpn_m16a2 \n
+      ammo_5.56x45_ss190 = 1 \n
       wpn_fn57 \n
       ammo_5.7x28_fmj = 1 \n
 
@@ -1849,7 +1849,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_sig552 = 1, scope=4 \n
+      wpn_sig552 = 1, scope \n
       ammo_5.56x45_ap = 1 \n
       wpn_desert_eagle \n
       ammo_50ae \n
@@ -1918,8 +1918,8 @@
       [spawn] \n
       
       wpn_fn2000 \n
-      ammo_5.56x45_ap = 1 \n
-      wpn_sig220_sk1 \n
+      ammo_7.62x51_ap = 1 \n
+      wpn_sig220 \n
       ammo_11.43x23_fmj = 1 \n
       grenade_f1 = 3 \n
 
@@ -1951,8 +1951,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_l96 \n
-      ammo_7.62x51_ap = 1 \n
+      wpn_lr300 = 1, scope=2 \n
+      ammo_5.56x45_ap = 1 \n
       wpn_ump45 = 1, silencer \n
       ammo_11.43x23_hydro = 1 \n
 
@@ -1984,9 +1984,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_scar \n
+      wpn_fn2000 \n
       ammo_7.62x51_fmj = 1 \n
-      wpn_fnx45 \n
+      wpn_usp \n
       ammo_11.43x23_fmj = 1 \n
 
 #include "gameplay\character_items_2.xml"
@@ -2019,9 +2019,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_scar_sk1 \n
+      wpn_fn2000 = 1, scope=3 \n
       ammo_7.62x51_fmj = 1 \n
-      wpn_sig220_sk1 = 1, silencer \n
+      wpn_sig220 = 1, silencer \n
       ammo_11.43x23_hydro = 1 \n
 
 #include "gameplay\character_items_3.xml"
@@ -2052,7 +2052,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_fn2000 \n
+      wpn_sig550 \n
       ammo_5.56x45_ss190 = 1 \n
 	  wpn_walther \n
       ammo_9x19_pbp = 1 \n
@@ -2085,7 +2085,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_g36k \n
+      wpn_aug_a3 = 1, scope \n
       ammo_5.56x45_ap = 1 \n
       wpn_glock \n
       ammo_9x19_pbp = 1 \n
@@ -2119,7 +2119,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_hk416 \n
+      wpn_hk416 = 1, scope \n
       ammo_5.56x45_ap = 1 \n
       wpn_desert_eagle_sk1 \n
       ammo_50ae \n
@@ -2153,8 +2153,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_m249 \n
-      ammo_5.56x45_ap = 1 \n
+      wpn_fn2000 = 1, scope, launcher \n
+      ammo_7.62x51_fmj = 1 \n
       wpn_desert_eagle \n
       ammo_50ae \n
       grenade_f1 = 1 \n
@@ -2189,7 +2189,7 @@
       
       wpn_hk416 = 1, scope=1 \n
       ammo_5.56x45_ap = 1 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 1 \n
 
@@ -2258,8 +2258,8 @@
       [spawn] \n
       wpn_bm16_full \n
       ammo_12x70_buck = 1 \n
-      wpn_fort \n
-      ammo_9x18_fmj = 1 \n
+      wpn_tt33_sk1 \n
+      ammo_7.62x25_p = 1 \n
 
 #include "gameplay\character_items_nd.xml"
 #include "gameplay\character_food.xml"
@@ -2285,8 +2285,9 @@
     <visual>actors\stalker_bandit\stalker_bandit_1</visual>
     <supplies>
       [spawn] \n
-	  wpn_ppsh41 \n
-	  wpn_tt33  \n
+	  wpn_kiparis \n
+      ammo_9x18_fmj = 1 \n	  
+	  wpn_tt33_sk1 \n
       ammo_7.62x25_p = 2 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -2316,9 +2317,10 @@
     <supplies>
       [spawn] \n
       
-	  wpn_uzi_sk1 \n
+	  wpn_toz106_tacticool \n
 	  wpn_hpsa \n
       ammo_9x19_fmj = 1 \n
+	  ammo_20x70_buck = 1 \n
       grenade_rgd5 = 1 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -2346,9 +2348,9 @@
     <supplies>
       [spawn] \n
       
-	  wpn_ak74u_sk1 \n
-	  ammo_5.45x39_fmj  = 1 \n
-	  wpn_tt33_sk1  \n
+	  wpn_sks \n
+	  ammo_7.62x39_fmj  = 1 \n
+	  wpn_tt33 \n
       ammo_7.62x25_p = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -2377,8 +2379,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak \n
-      ammo_7.62x39_fmj = 1 \n
+      wpn_ak74u \n
+      ammo_5.45x39_fmj = 1 \n
       wpn_pm \n
       ammo_9x18_fmj = 1 \n
       grenade_rgd5 = 1 \n
@@ -2408,8 +2410,8 @@
     <supplies>
       [spawn] \n
       
-	  wpn_sks \n
-	  ammo_7.62x39_fmj  = 1 \n
+	  wpn_svt40 \n
+	  ammo_7.62x54_7h1  = 1 \n
 	  wpn_pm \n
       ammo_9x18_fmj = 1 \n
       grenade_rgd5 = 1 \n
@@ -2439,9 +2441,9 @@
     <supplies>
       [spawn] \n
       
-	  wpn_ak74u \n
-	  ammo_5.45x39_fmj  = 1 \n
-	  wpn_hpsa_sk1 \n
+	  wpn_bizon \n
+	  ammo_9x18_fmj  = 1 \n
+	  wpn_hpsa \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -2502,9 +2504,9 @@
     <supplies>
       [spawn] \n
       
-	  wpn_toz194 \n
-      ammo_12x76_zhekan = 1 \n
-      wpn_hpsa_sk1 \n
+	  wpn_saiga \n
+      ammo_12x70_buck = 1 \n
+      wpn_hpsa \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -2534,9 +2536,9 @@
     <supplies>
       [spawn] \n
       
-	  wpn_aks74 \n
-	  ammo_5.45x39_fmj  = 1 \n
-	  wpn_cz75 \n
+	  wpn_akm \n
+	  ammo_7.62x39_fmj  = 1 \n
+	  wpn_glock \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -2565,9 +2567,9 @@
     <visual>actors\stalker_bandit\stalker_bandit_2</visual>
     <supplies>
       [spawn] \n
-      wpn_pp2000 \n
+      wpn_mp5 \n
       ammo_9x19_pbp  = 1 \n
-	  wpn_beretta_sk1 \n
+	  wpn_beretta \n
       grenade_rgd5 = 2 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -2596,10 +2598,9 @@
     <supplies>
       [spawn] \n
       
-	  wpn_ak74u_sk1 \n
-	  ammo_5.45x39_fmj  = 1 \n
-	  wpn_cz75 \n
-      ammo_9x19_pbp = 1 \n
+	  wpn_vityaz \n
+	  wpn_glock \n
+      ammo_9x19_pbp = 2 \n
       grenade_rgd5 = 2 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -2627,9 +2628,10 @@
     <visual>actors\stalker_bandit\stalker_bandit_2</visual>
     <supplies>
       [spawn] \n
-      wpn_vityaz \n
-	  wpn_cz75_auto \n
-	  ammo_9x19_fmj  = 1 \n
+      wpn_ak105 \n
+	  ammo_5.45x39_fmj = 1 \n
+	  wpn_tt33_sk1 \n
+	  ammo_7.62x25_p = 1 \n
       grenade_rgd5 = 2 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -2658,9 +2660,9 @@
     <supplies>
       [spawn] \n
       
-	  wpn_ak74m \n
-	  ammo_5.45x39_fmj  = 1 \n
-	  wpn_hpsa_sk1 \n
+	  wpn_ak101 \n
+	  ammo_5.56x45_ss190 = 1 \n
+	  wpn_hpsa \n
       ammo_9x19_pbp = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -2691,10 +2693,10 @@
     <supplies>
       [spawn] \n
       
-      wpn_mr153 \n
+      wpn_spas12 \n
       ammo_12x76_zhekan = 1 \n
-      wpn_aps \n
-      ammo_9x18_fmj  = 1 \n
+      wpn_fn57 \n
+      ammo_5.7x28_fmj  = 1 \n
       grenade_f1 = 3 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -2724,7 +2726,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_spas12 \n
+      wpn_vepr \n
       ammo_12x70_buck = 1 \n
       wpn_tt33 \n
       ammo_7.62x25_p = 1 \n
@@ -2757,7 +2759,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_sks \n
+      wpn_akm \n
       ammo_7.62x39_fmj = 1 \n
       wpn_aps \n
       ammo_9x18_fmj = 1 \n
@@ -2792,7 +2794,7 @@
       
       wpn_ak12 \n
       ammo_5.45x39_fmj = 1 \n
-      wpn_tt33_sk1 \n
+      wpn_tt33 \n
       ammo_7.62x25_p = 1 \n
       grenade_f1 = 3 \n
 
@@ -2823,9 +2825,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak \n
+      wpn_ak104 \n
       ammo_7.62x39_ap = 1 \n
-      wpn_cz75 \n
+      wpn_glock \n
       ammo_9x19_pbp = 1 \n
       grenade_f1 = 3 \n
 
@@ -2858,8 +2860,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_g3 \n
-      ammo_7.62x51_ap = 1 \n
+      wpn_aug_a3 = 1, scope=2 \n
+      ammo_5.56x45_ap = 1 \n
       wpn_desert_eagle_sk1 \n
       ammo_50ae \n
       grenade_f1 = 4 \n
@@ -2892,7 +2894,7 @@
       [spawn] \n
       
       wpn_fn2000 \n
-      ammo_5.56x45_ap = 1 \n
+      ammo_7.62x51_fmj = 1 \n
       wpn_colt1911 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
@@ -2924,9 +2926,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_scar_sk1 \n
+      wpn_fn2000 = 1, scope=2 \n
       ammo_7.62x51_ap = 1 \n
-      wpn_desert_eagle_sk1 \n
+      wpn_desert_eagle \n
       ammo_50ae \n
       grenade_f1 = 4 \n
 
@@ -2959,7 +2961,7 @@
       
       wpn_protecta \n
       ammo_12x76_zhekan = 1 \n
-      wpn_desert_eagle \n
+      wpn_desert_eagle_sk1 \n
       ammo_50ae \n
       grenade_f1 = 4 \n
 
@@ -2992,7 +2994,7 @@
       
       wpn_val \n
       ammo_9x39_ap = 1 \n
-      wpn_sig220_sk1 \n
+      wpn_sig220 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
 
@@ -3030,9 +3032,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_vityaz \n
-      wpn_cz75_auto \n
-      ammo_9x19_fmj = 1 \n
+      wpn_mp5 \n  
+      wpn_glock \n
+      ammo_9x19_fmj = 2 \n
 
 #include "gameplay\character_items_nd.xml"
 #include "gameplay\character_food.xml"
@@ -3060,9 +3062,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak74_sk1 \n
+      wpn_ak105 \n
       ammo_5.45x39_fmj  = 1 \n
-      wpn_mp443 \n
+      wpn_glock \n
       ammo_9x19_fmj = 1 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -3093,9 +3095,10 @@
     <supplies>
       [spawn] \n
 
-      wpn_mp5sd \n
-      ammo_9x19_fmj = 1 \n
-      wpn_beretta_sk1 \n
+      wpn_ak101 \n
+      ammo_5.56x45_ss190 = 1 \n
+      wpn_beretta \n
+	  ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -3124,9 +3127,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_mp5sd \n
+      wpn_vityaz \n
       ammo_9x19_fmj = 1 \n
-      wpn_glock_sk1 \n
+      wpn_glock \n
       grenade_rgd5 = 1 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -3155,9 +3158,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_aks74 \n
-      ammo_5.45x39_fmj = 1 \n
-      wpn_mp443 \n
+      wpn_ak103 \n
+      ammo_7.62x39_fmj = 1 \n
+      wpn_walther \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -3189,9 +3192,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_fn2000 \n
+      wpn_m16a2 \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_fmj  = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -3221,7 +3224,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_wincheaster1300  \n
+      wpn_vepr \n
       ammo_12x76_zhekan = 1 \n
       wpn_hpsa \n
       ammo_9x19_pbp = 1 \n
@@ -3254,7 +3257,7 @@
       [spawn] \n
       wpn_l85 = 1, silencer \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_cz75 \n
+      wpn_glock \n
       ammo_9x19_pbp = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -3284,9 +3287,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_hk416 = 1, silencer \n
+      wpn_lr300 = 1, silencer \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_fmj  = 1 \n
 	  grenade_rgd5 = 2 \n
 
@@ -3316,8 +3319,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_g3 = 1, silencer \n
-      ammo_7.62x51_fmj = 1 \n
+      wpn_aug_a3 = 1, scope=2, silencer \n
+      ammo_5.56x45_ss190 = 1 \n
       wpn_sig220 = 1, silencer \n
       ammo_11.43x23_fmj  = 1 \n
 
@@ -3348,9 +3351,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_fnc \n
-      ammo_5.56x45_ss190 = 1 \n
-      wpn_fnp45 \n
+      wpn_sig550 \n
+      ammo_7.62x51_fmj = 1 \n
+      wpn_usp \n
       ammo_11.43x23_fmj  = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -3382,9 +3385,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak74m_sk1 \n
-      ammo_5.45x39_ap = 1 \n
-      wpn_sig220_sk1 = 1 \n
+      wpn_sig552 \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_sig220 = 1 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 3 \n
 
@@ -3416,7 +3419,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_scar_sk1 \n
+      wpn_fn2000 \n
       ammo_7.62x51_ap = 1 \n
       wpn_usp \n
       ammo_11.43x23_fmj = 1 \n
@@ -3454,7 +3457,7 @@
       wpn_ump45 \n
 	  ammo_11.43x23_fmj = 1 \n
       ammo_9x19_pbp = 1 \n
-      wpn_usp_nimble \n
+      wpn_usp \n
       grenade_f1 = 3 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -3485,10 +3488,10 @@
     <supplies>
       [spawn] \n
       
-      wpn_g36k \n
-      ammo_5.56x45_ap = 1 \n
-      wpn_usp_nimble \n
-      ammo_11.43x23_hydro = 1 \n
+      wpn_ak12 = 1, scope=2 \n
+      ammo_5.45x39_ap = 1 \n
+      wpn_usp \n
+      ammo_11.43x23_fmj = 1 \n
       grenade_f1 = 3 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -3519,7 +3522,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_remington870 \n
+      wpn_saiga = 1, scope=3 \n
       ammo_12x76_zhekan = 1 \n
       wpn_usp = 1 \n
       ammo_11.43x23_hydro = 1 \n
@@ -3553,9 +3556,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_fnc \n
-      ammo_7.62x51_ap = 1 \n
-      wpn_sig220_sk1 = 1 \n
+      wpn_sig552 \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_sig220 = 1 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 3 \n
 
@@ -3589,8 +3592,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_mk14 = 1,scope4 \n
-      ammo_7.62x51_ap = 1 \n
+      wpn_hk416 = 1, scope=2, silencer \n
+      ammo_5.56x45_ap = 1 \n
       wpn_usp \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
@@ -3623,9 +3626,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_g3 = 1, scope=4 \n
-      ammo_7.62x51_ap = 1 \n
-      wpn_sig220_sk1 = 1 \n
+      wpn_aug_a3 = 1, scope=2 \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_sig220 = 1 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
 
@@ -3664,8 +3667,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_vityaz \n
-      ammo_9x19_fmj  = 1 \n
+      wpn_svt40 \n
+      ammo_7.62x54_7h1  = 1 \n
       wpn_pm = 1 \n
       ammo_9x18_fmj = 1 \n
 
@@ -3726,8 +3729,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_toz34_sk1  \n
-      ammo_12x70_buck  = 1 \n
+      wpn_toz106 \n
+      ammo_20x70_buck  = 1 \n
       wpn_fort = 1 \n
       ammo_9x18_fmj = 1 \n
 
@@ -3757,9 +3760,9 @@
     <supplies>
       [spawn] \n
       
- 	  wpn_ak74u \n
-      ammo_5.45x39_fmj = 1 \n
-      wpn_tt33_sk1 \n
+ 	  wpn_sks \n
+      ammo_7.62x39_fmj = 1 \n
+      wpn_tt33 \n
       ammo_7.62x25_p = 1 \n
 
 #include "gameplay\character_items.xml"
@@ -3790,8 +3793,8 @@
     <supplies>
       [spawn] \n
       
- 	  wpn_ak74m_sk1 \n
-      ammo_5.45x39_fmj = 1 \n
+ 	  wpn_ak101 \n
+      ammo_5.56x45_ss190 = 1 \n
       wpn_pm \n
       ammo_9x18_fmj = 1 \n
       grenade_rgd5 = 1 \n
@@ -3822,9 +3825,9 @@
     <supplies>
       [spawn] \n
       
- 	  wpn_aks74 \n
+ 	  wpn_ak74u \n
       ammo_5.45x39_fmj = 1 \n
-      wpn_cz75_auto \n
+      wpn_beretta \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -3886,9 +3889,9 @@
     <supplies>
       [spawn] \n
       
- 	  wpn_ak74m_sk1 \n
-      ammo_5.45x39_fmj = 1 \n
-      wpn_tt33 \n
+ 	  wpn_bizon \n
+      ammo_9x18_fmj = 1 \n
+      wpn_tt33_sk1 \n
       ammo_7.62x25_p = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -3953,7 +3956,7 @@
       
  	  wpn_akms \n
       ammo_7.62x39_fmj = 1 \n
-      wpn_hpsa_sk1 \n
+      wpn_hpsa \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -4015,8 +4018,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak74u_sk1 \n
-      ammo_5.45x39_fmj = 1 \n
+      wpn_vityaz \n
+      ammo_9x19_fmj = 1 \n
       wpn_fort \n
       ammo_9x18_fmj = 1 \n
       grenade_rgd5 = 1 \n
@@ -4049,7 +4052,7 @@
       
  	  wpn_l85 \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_beretta_sk1 \n
+      wpn_beretta \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 1 \n
 
@@ -4113,7 +4116,7 @@
     <supplies>
       [spawn] \n
 
-      wpn_fort500 \n
+      wpn_wincheaster1300 \n
       ammo_12x70_buck = 1 \n      
       wpn_beretta \n
       ammo_9x19_fmj = 1 \n
@@ -4146,7 +4149,7 @@
     <supplies>
       [spawn] \n
 
-      wpn_ak \n
+      wpn_ak104 \n
       ammo_7.62x39_ap = 1 \n      
 	  wpn_tt33 \n
       ammo_7.62x25_p = 1 \n
@@ -4181,7 +4184,7 @@
 
       wpn_ak74 \n
       ammo_5.45x39_ap = 1 \n
-      wpn_glock_sk1 \n
+      wpn_glock \n
       ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -4212,7 +4215,7 @@
     <supplies>
       [spawn] \n
 
-      wpn_hk416 \n
+      wpn_lr300 \n
       ammo_5.56x45_ap = 1 \n      
       wpn_glock \n
       ammo_9x19_fmj = 1 \n
@@ -4245,9 +4248,9 @@
     <supplies>
       [spawn] \n
 
-      wpn_mr153_wood \n
+      wpn_vepr \n
       ammo_12x70_buck = 1 \n      
-      wpn_cz75_auto \n
+      wpn_beretta \n
       ammo_9x19_pbp = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -4278,7 +4281,7 @@
     <supplies>
       [spawn] \n
 
-      wpn_aks74 \n
+      wpn_ak105 \n
       ammo_5.45x39_fmj = 1 \n
       wpn_beretta \n
       ammo_9x19_pbp = 1 \n
@@ -4312,7 +4315,7 @@
       [spawn] \n
 
       wpn_bizon \n
-      wpn_glock_sk1 \n
+      wpn_glock \n
       ammo_9x18_fmj = 1 \n
 	  ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 2 \n
@@ -4344,9 +4347,9 @@
     <supplies>
       [spawn] \n
 
-	  wpn_ak \n
+	  wpn_ak104 \n
       ammo_7.62x39_ap = 1 \n
-      wpn_beretta_sk1 \n
+      wpn_beretta \n
       ammo_9x19_pbp = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -4377,9 +4380,9 @@
     <supplies>
       [spawn] \n
 
-      wpn_remington870 \n
+      wpn_wincheaster1300 \n
       ammo_12x70_buck = 1 \n
-	  wpn_colt1911_sk1 \n
+	  wpn_colt1911 \n
       ammo_11.43x23_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -4410,9 +4413,10 @@
     <supplies>
       [spawn] \n
 
-      wpn_uzi \n
-      ammo_9x19_fmj = 1 \n
-      wpn_glock_sk1 \n
+      wpn_kiparis \n
+      ammo_9x18_fmj = 1 \n
+	  ammo_9x19_fmj = 1 \n
+      wpn_glock \n
 	  grenade_rgd5 = 2 \n
 
 #include "gameplay\character_items_2.xml"
@@ -4479,9 +4483,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_toz194 \n
-      ammo_12x76_zhekan = 1 \n
-      wpn_colt1911_sk1 = 1 \n
+      wpn_toz106_tacticool \n
+      ammo_20x70_buck = 1 \n
+      wpn_colt1911 = 1 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 3 \n
 
@@ -4549,9 +4553,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_g3sg1 \n
-      ammo_7.62x51_ap = 1 \n
-      wpn_cz75_auto \n
+      wpn_g36 \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_beretta \n
       ammo_9x19_fmj = 1 \n
       grenade_f1 = 2 \n
 
@@ -4584,9 +4588,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_mr133 \n
+      wpn_vepr \n
       ammo_12x76_zhekan = 1 \n
-      wpn_colt1911_m1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 3 \n
 
@@ -4654,7 +4658,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_fort500 \n
+      wpn_wincheaster1300 \n
       ammo_12x76_zhekan = 1 \n
       wpn_glock \n
       ammo_9x19_pbp = 1 \n
@@ -4724,9 +4728,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_scar_sk1 = 1, silencer \n
-      ammo_7.62x51_fmj = 1 \n
-      wpn_sig220_sk1 \n
+      wpn_vsk94 = 1, scope=1, silencer \n
+      ammo_9x39_ap = 1 \n
+      wpn_sig220 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 3 \n
 
@@ -4760,8 +4764,8 @@
       [spawn] \n
       
       wpn_fn2000 \n
-      ammo_5.56x45_ap = 1 \n
-      wpn_desert_eagle_sk1 \n
+      ammo_7.62x51_fmj = 1 \n
+      wpn_desert_eagle \n
       ammo_50ae \n
       grenade_f1 = 3 \n
 
@@ -4796,7 +4800,7 @@
     <supplies>
       [spawn] \n
  	  
-      wpn_protecta = 1, scope=2 \n
+      wpn_protecta = 1, scope \n
       ammo_12x76_zhekan = 1 \n
       wpn_sig220 = 1 \n
       ammo_11.43x23_hydro = 1 \n
@@ -4832,8 +4836,8 @@
       [spawn] \n
       
       wpn_fn2000 \n
-      ammo_5.56x45_ap = 1 \n
-      wpn_colt1911_m1 \n
+      ammo_7.62x51_fmj = 1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
 
@@ -4869,7 +4873,7 @@
       
       wpn_groza = 1 \n
       ammo_9x39_ap = 1 \n
-      wpn_usp_nimble = 1 \n
+      wpn_usp = 1 \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
 
@@ -4902,9 +4906,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_vintorez = 1, scope=3 \n
+      wpn_vintorez = 1, scope \n
       ammo_9x39_ap = 1 \n
-	  wpn_sig220_sk1 = 1 \n
+	  wpn_sig220 = 1 \n
 	  ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
 
@@ -4939,7 +4943,7 @@
     <supplies>
 
       [spawn] \n
-	  wpn_ak74u_sk1 \n
+	  wpn_ak74u \n
       ammo_5.45x39_fmj = 1 \n
       wpn_pm \n
       ammo_9x18_fmj = 1 \n
@@ -4969,7 +4973,7 @@
     <visual>actors\stalker_soldier\stalker_soldier_2</visual>
     <supplies>
       [spawn] \n
-	  wpn_aks74 \n
+	  wpn_ak74 \n
       ammo_5.45x39_fmj = 1 \n
 	  wpn_pm \n
       ammo_9x18_fmj = 1 \n
@@ -5002,8 +5006,8 @@
     <supplies>
       [spawn] \n
 	  
-      wpn_aks74 \n
-      ammo_5.45x39_ap = 1 \n
+      wpn_ak103 \n
+      ammo_7.62x39_ap = 1 \n
       wpn_fort \n
       ammo_9x18_fmj = 1 \n
       grenade_rgd5 = 2 \n
@@ -5033,7 +5037,7 @@
     <supplies>
       [spawn] \n
 	  
-      wpn_ak74m \n
+      wpn_ak74_sk1 \n
       ammo_5.45x39_fmj = 1 \n
       wpn_fort \n
       ammo_9x18_fmj = 1 \n
@@ -5068,7 +5072,7 @@
 	  
       wpn_ak12 \n
       ammo_5.45x39_ap = 1 \n
-      wpn_aps \n
+      wpn_fort \n
       ammo_9x18_fmj = 1 \n
       grenade_f1 = 3 \n
 
@@ -5099,9 +5103,9 @@
     <supplies>
       [spawn] \n
 	  
-      wpn_vintorez = 1, scope1 \n
+      wpn_vintorez = 1, scope \n
       ammo_9x39_ap = 1 \n
-      wpn_fort \n
+      wpn_aps \n
       ammo_9x18_fmj = 1 \n
       grenade_f1 = 4 \n
 
@@ -5161,10 +5165,10 @@
     <supplies>
       [spawn] \n
 	  
-      wpn_abakan \n
+      wpn_abakan = 1, scope \n
       ammo_5.45x39_ap = 1 \n
-      wpn_fort \n
-      ammo_9x18_fmj = 1 \n
+      wpn_pmm \n
+      ammo_9x18_pmm = 1 \n
       grenade_f1 = 4 \n
 
 #include "gameplay\character_items_nd.xml"
@@ -5194,10 +5198,10 @@
     <supplies>
       [spawn] \n
       
-      wpn_svd = 1, scope=5 \n
+      wpn_svd = 1, scope \n
       ammo_7.62x54_7h14 = 1 \n
       wpn_gsh18 \n
-      ammo_9x18_fmj = 1 \n
+      ammo_9x19_fmj = 1 \n
 
 #include "gameplay\character_items_nd.xml"
 #include "gameplay\character_food.xml"
@@ -5294,7 +5298,7 @@
       
       wpn_ump45 \n
       ammo_11.43x23_fmj = 1 \n
-	  wpn_cz75 \n
+	  wpn_glock \n
       ammo_9x19_fmj = 1 \n		
 
 #include "gameplay\character_items_monolith.xml"
@@ -5325,7 +5329,7 @@
     <supplies>
       [spawn] \n
       
-      wpn_mr153_wood \n
+      wpn_spas12 \n
       ammo_12x70_buck = 1 \n
       wpn_fort \n
       ammo_9x18_fmj = 1 \n
@@ -5387,8 +5391,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_ak74_sk1 \n
-      ammo_5.45x39_fmj = 1 \n
+      wpn_ak103 \n
+      ammo_7.62x39_fmj = 1 \n
       wpn_pm \n
       ammo_9x18_fmj = 1 \n
 	  grenade_rgd5 = 1 \n
@@ -5418,9 +5422,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_g36k = 1, silencer \n
+      wpn_g36 = 1, silencer \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_cz75_auto \n
+      wpn_beretta \n
       ammo_9x19_fmj = 1 \n
 	  grenade_rgd5 = 1 \n
 
@@ -5482,7 +5486,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_mp5sd \n
+      wpn_ak101 \n
+	  ammo_5.56x45_ap = 1 \n
       ammo_9x19_fmj = 1 \n
       wpn_glock \n
       grenade_rgd5 = 2 \n
@@ -5512,9 +5517,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_scar_sk1 \n
+      wpn_fn2000 \n
       ammo_7.62x51_fmj = 1 \n
-      wpn_beretta_sk1 \n
+      wpn_beretta \n
       ammo_9x18_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -5605,9 +5610,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_fnc \n
+      wpn_sig552 \n
       ammo_5.56x45_ap = 1 \n
-      wpn_cz75_auto \n
+      wpn_beretta \n
       ammo_9x19_pbp = 1 \n
       grenade_rgd5 = 2 \n
 
@@ -5636,10 +5641,10 @@
     <supplies>
       [spawn] \n
       
-      wpn_g36k \n
+      wpn_m16a2 \n
       ammo_5.56x45_ap = 1 \n
-      wpn_glock_sk1 = 1, silencer \n
-      ammo_9x18_pmm = 1 \n
+      wpn_glock = 1, silencer \n
+      ammo_9x19_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
 #include "gameplay\character_items_monolith.xml"
@@ -5668,9 +5673,9 @@
       [spawn] \n
       
       wpn_ak12 \n
-      ammo_5.56x45_ap = 1 \n
+      ammo_5.45x39_ap = 1 \n
       wpn_fort \n
-      ammo_9x18_pmm = 1 \n
+      ammo_9x18_fmj = 1 \n
       grenade_rgd5 = 2 \n
 
 #include "gameplay\character_items_monolith.xml"
@@ -5700,8 +5705,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_fnc \n
-      ammo_7.62x51_ap = 1 \n
+      wpn_sig552 \n
+      ammo_5.56x45_ap = 1 \n
       wpn_walther = 1 \n
       ammo_9x19_pbp = 1 \n
       grenade_f1 = 3 \n
@@ -5735,7 +5740,7 @@
       
       wpn_rpk74 \n
       ammo_5.45x39_ap = 1 \n
-      wpn_tt33_sk1 \n
+      wpn_tt33 \n
       ammo_7.62x25_ps = 1 \n
       grenade_f1 = 3 \n
 
@@ -5766,9 +5771,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_vihr = 1, scope=2 \n
+      wpn_vsk94 = 1, scope=4 \n
       ammo_9x39_ap = 1 \n
-      wpn_fnp45 = 1, silencer \n
+      wpn_sig220 = 1, silencer \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 3 \n
 
@@ -5799,8 +5804,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_mk14 = 1, scope=5 \n
-      ammo_7.62x51_fmj = 1 \n
+      wpn_svu = 1, scope \n
+      ammo_7.62x54_7h1 = 1 \n
       wpn_usp = 1 \n
       ammo_11.43x23_fmj = 1 \n
 
@@ -5831,8 +5836,8 @@
     <supplies>
       [spawn] \n
       
-      wpn_m249 = 1, scope=4 \n
-      ammo_5.56x45_ap = 1 \n
+      wpn_fn2000 = 1, scope=2, launcher \n
+      ammo_7.62x51_ap = 1 \n
       wpn_usp \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 3 \n
@@ -5866,9 +5871,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_vintorez = 1, scope=3 \n
+      wpn_vintorez = 1, scope \n
       ammo_9x39_ap = 1 \n
-      wpn_sig220_sk1 = 1, silencer \n
+      wpn_sig220 = 1, silencer \n
       ammo_11.43x23_hydro = 1 \n
 
 #include "gameplay\character_items_monolith.xml"
@@ -5898,9 +5903,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_scar = 1, scope=1 \n
+      wpn_fn2000 = 1, scope=2 \n
       ammo_7.62x51_ap = 1 \n
-      wpn_fnp45 \n
+      wpn_usp \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
 
@@ -5933,7 +5938,7 @@
       
       wpn_protecta \n
       ammo_12x76_zhekan = 1 \n
-      wpn_usp_nimble \n
+      wpn_usp \n
       ammo_11.43x23_hydro = 1 \n
       grenade_f1 = 4 \n
 
@@ -5964,9 +5969,9 @@
     <supplies>
       [spawn] \n
       
-      wpn_g3 = 1, scope=5 \n
-      ammo_7.62x51_ap = 1 \n
-      wpn_cz75 \n
+      wpn_aug_a3 = 1, scope \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_glock \n
       ammo_9x19_fmj = 1 \n
       grenade_f1 = 4 \n
 
@@ -6004,10 +6009,10 @@
 		<supplies>
 			[spawn]\n
 			
-      		wpn_ak74u \n
-      		ammo_5.45x39_fmj = 1 \n
-      		wpn_fort \n
+      		wpn_kiparis \n
       		ammo_9x18_fmj = 1 \n
+      		wpn_tt33_sk1 \n
+      		ammo_7.62x25_p = 1 \n
 
 #include "gameplay\character_items_nl.xml"
 #include "gameplay\character_food.xml"
@@ -6035,8 +6040,8 @@
 		<supplies>
 			[spawn]\n
 			
-      		wpn_toz194 \n
-      		ammo_12x70_buck = 1 \n
+      		wpn_toz106 \n
+      		ammo_20x70_buck = 1 \n
       		wpn_pm \n
       		ammo_9x18_fmj = 1 \n
 
@@ -6066,7 +6071,7 @@
 		<supplies>
 			[spawn]\n
       		wpn_ppsh41 \n
-      		wpn_tt33 \n
+      		wpn_tt33_sk1 \n
       		ammo_7.62x25_p = 2 \n
 
 #include "gameplay\character_items_nl.xml"
@@ -6096,10 +6101,9 @@
 		<crouch_type>0</crouch_type>
 		<supplies>
 			[spawn]\n
-      		wpn_ak74_sk1 \n
-      		ammo_5.45x39_fmj = 1 \n
-      		wpn_aps \n
-      		ammo_9x18_fmj = 1 \n
+      		wpn_bizon \n
+      		wpn_pm \n
+      		ammo_9x18_fmj = 2 \n
 
 #include "gameplay\character_items_nl.xml"
 #include "gameplay\character_food.xml"
@@ -6129,7 +6133,7 @@
 			
       		wpn_saiga \n
       		ammo_12x70_buck = 1 \n
-      		wpn_mp443 \n
+      		wpn_beretta \n
       		ammo_9x19_fmj = 1 \n
 
 #include "gameplay\character_items_nl.xml"
@@ -6158,10 +6162,10 @@
 		<supplies>
 			[spawn]\n
 			
-      		wpn_bizon = 1 \n
-			ammo_9x18_fmj = 1 \n
+      		wpn_ak74 \n
+			ammo_5.45x39_fmj = 1 \n
       		ammo_9x19_pbp = 1 \n
-      		wpn_cz75_auto \n
+      		wpn_beretta \n
 
 #include "gameplay\character_items_2_nl.xml"
 #include "gameplay\character_food.xml"
@@ -6189,9 +6193,9 @@
 		<supplies>
 			[spawn]\n
 			
-			wpn_ak \n
+			wpn_ak104 \n
       		ammo_7.62x39_fmj = 1 \n
-			wpn_gsh18 \n
+			wpn_hpsa \n
       		ammo_9x19_fmj = 1 \n
 
 #include "gameplay\character_items_2_nl.xml"
@@ -6222,8 +6226,8 @@
     <supplies>
       [spawn]\n
       
-      wpn_ak74m \n
-      ammo_5.45x39_fmj = 1 \n
+      wpn_ak103 \n
+      ammo_7.62x39_fmj = 1 \n
 	  wpn_fort \n
       ammo_9x18_fmj = 1 \n
 
@@ -6254,10 +6258,10 @@
     <supplies>
       	[spawn]\n
 		
-   	    wpn_aks74 \n
+   	    wpn_ak105 \n
       	ammo_5.45x39_fmj = 1 \n
-	 	wpn_fort \n
-     	ammo_9x18_pmm = 1 \n
+	 	wpn_pm \n
+     	ammo_9x18_fmj = 1 \n
 
 #include "gameplay\character_items_nd_nl.xml"
 #include "gameplay\character_food.xml"
@@ -6288,8 +6292,8 @@
 	
    	wpn_akm \n
     ammo_7.62x39_fmj = 1 \n
-	wpn_aps \n
-    ammo_9x18_pmm = 1 \n
+	wpn_pb \n
+    ammo_9x18_fmj = 1 \n
 
 #include "gameplay\character_items_nd_nl.xml"
 #include "gameplay\character_food.xml"
@@ -6318,10 +6322,10 @@
     <supplies>
       	[spawn]\n
 		
-   	    wpn_ak \n
+   	    wpn_akms \n
       	ammo_7.62x39_fmj = 1 \n
-	 	wpn_aps \n
-     	ammo_9x18_fmj = 1 \n
+	 	wpn_gsh18 \n
+     	ammo_9x19_fmj = 1 \n
 
 #include "gameplay\character_items_nd_nl.xml"
 #include "gameplay\character_food.xml"
@@ -6354,7 +6358,7 @@
       
       wpn_rpk \n
       ammo_7.62x39_ap = 1 \n
-      wpn_mp443 \n
+      wpn_gsh18 \n
       ammo_9x19_pbp = 1 \n
 
 #include "gameplay\character_items_3_nl.xml"
@@ -6385,7 +6389,7 @@
     <crouch_type>0</crouch_type>
     <supplies>
       [spawn]\n
-      wpn_mr133 \n
+      wpn_wincheaster1300 \n
       ammo_12x76_zhekan = 1 \n
       wpn_usp = 1 \n
       ammo_11.43x23_hydro = 1 \n
@@ -6454,7 +6458,7 @@
       
       wpn_pkm  \n
       ammo_pkm_100 = 1 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_hydro = 1 \n
 
 #include "gameplay\character_items_3_nl.xml"
@@ -6511,7 +6515,7 @@
 	  
       wpn_lr300 \n
       ammo_5.56x45_ss190 = 1 \n
-      wpn_colt1911_sk1 \n
+      wpn_colt1911 \n
       ammo_11.43x23_fmj  = 1 \n
       grenade_rgd5 = 1 \n
 #include "gameplay\character_items.xml"

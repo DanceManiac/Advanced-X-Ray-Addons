@@ -1,3 +1,5 @@
+﻿#include "weapons\addon_tactical.ltx"
+
 [hud_base]
 aim_hud_offset_pos					=  0,0,0
 aim_hud_offset_rot					=  0,0,0
@@ -13,6 +15,12 @@ gl_hud_offset_rot					=  0,0,0
 
 lean_hud_offset_pos					=  0,0,0
 lean_hud_offset_rot					=  0,0,0
+
+hud_collision_enabled			= true
+hud_collision_offset_pos		= 0,-0.35,0
+hud_collision_offset_pos_16x9		= 0,-0.35,0
+hud_collision_offset_rot		= -0.8,0,0
+hud_collision_offset_rot_16x9		= -0.8,0,0
 
 [sect_identity_immunities]
 burn_immunity					= 1.0
@@ -78,6 +86,11 @@ hit_power_critical					= 0.41, 0.42, 0.43, 0.44
 silencer_hit_power					= 0.26, 0.25, 0.24, 0.23
 hit_impulse					= 20
 silencer_hit_impulse	 				= 9
+launch_speed					= 76
+grenade_flame_particles 			= amik\weapons\grenade_flame_particles\grenade_flame_particles_00
+grenade_class					= ammo_vog-25, ammo_vog-25p
+
+nearwall_target_hud_fov = 0.4
 
 ; Стрейфы
 strafe_enabled = true 
@@ -90,6 +103,10 @@ strafe_aim_enabled = false
 strafe_aim_transition_time = 0.15
 strafe_aim_hud_offset_pos = 0.005,0.0,0.00
 strafe_aim_hud_offset_rot = 0.0,0.0,2.5
+
+inertion_tendto_speed = 0.1
+inertion_tendto_ret_speed = 0.5
+pitch_offset_right = 0.5
 
 [common_ph_friction_params_on_npc_death]
 ph_skeleton_airr_lin_factor				= 2.0
