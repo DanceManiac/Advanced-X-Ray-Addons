@@ -1,3 +1,5 @@
+#include "items_animations.ltx"
+
 [booster]:identity_immunities
 GroupControlSection	= spawn_group
 discovery_dependency =
@@ -26,9 +28,14 @@ eat_radiation		= 0
 eat_alcohol			= 0
 wounds_heal_perc	= 0
 eat_portions_num	= 1
-eat_thirst		= 0
+eat_thirst			= 0
 eat_intoxication	= 0
 eat_sleepeness		= 0
+eat_alcoholism		= 0
+eat_hangover		= 0
+eat_narcotism		= 0
+eat_withdrawal		= 0
+eat_drugs		= 0
 
 boost_time				= 0.0
 boost_max_weight		= 0.0
@@ -52,6 +59,30 @@ boost_explosion_immunity	= 0.0
 boost_fire_wound_immunity	= 0.0
 ;use_sound			= characters_voice\multiplayer\team_1\voice_roger_3
 
+[base_quest_item]:booster
+GroupControlSection                                = spawn_group 
+discovery_dependency                               = 
+$spawn                                             = "devices\pda"
+$prefetch                                          = 16
+cform                                              = skeleton 
+visual                                   	   	   = dynamics\devices\dev_pda\dev_pda.ogf 
+default_to_ruck                                    = false
+sprint_allowed                                     = true
+description                                        = st_pda_descr
+inv_name                                           = st_pda_name
+inv_name_short                                     = st_pda_name
+inv_weight                               	   	   = 0.1
+inv_grid_width                                     = 1
+inv_grid_height                                    = 1
+inv_grid_x										   = 11
+inv_grid_y										   = 22
+cost                                     	   	   = 0
+attach_angle_offset                                = 0.000000, -1.204452, -1.262921 
+attach_position_offset                             = 0.081856, -0.035081, 0.011694 
+attach_bone_name                                   = bip01_l_hand 
+auto_attach                                        = false 
+can_trade                               	   = false
+can_use 					   = false
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;	FOOD
@@ -148,10 +179,11 @@ bone_name				= bip01_r_hand
 position_offset			 = 0.0,0.0,0.0
 angle_offset			 = 1.570790,1.570790,3.92699
 
-has_anim = true
 use_sound			= $silent
-animation_item = conserva_beef_hud_model
-timing = 8300
+
+has_anim = true
+use_cam_effector = aptechka_use
+hud_section = hud_conserva_beef
 
 [vodka]:booster
 $spawn 				= "food and drugs\vodka"
@@ -186,11 +218,11 @@ boost_radiation_restore	= 0.005
 eat_alcohol				= 0.1
 eat_satiety				= -0.2
 
-has_anim = true
 use_sound			= $silent
-animation_item = vodka_hud_model
-timing = 4000
+
+has_anim = true
 use_cam_effector = vodka_use
+hud_section = hud_vodka
 
 [vodka_script]:vodka ; не использовать
 $spawn 				= "food and drugs\vodka_script"
@@ -293,11 +325,11 @@ boost_power_restore		= 0.005 ;0.001
 eat_alcohol				= 0.0
 eat_satiety 			= 0.0
 
-has_anim = true
 use_sound			= $silent
-animation_item = energy_drink_hud_model
-timing = 2850
+
+has_anim = true
 use_cam_effector = banka_use
+hud_section = hud_energy_drink
 
 [bandage]:booster
 $spawn 				= "food and drugs\bandage"
@@ -317,11 +349,11 @@ inv_grid_y			= 18
 boost_time				= 5.0
 boost_bleeding_restore	= 0.02
 
-has_anim = true
 use_sound			= $silent
-animation_item = bandage_hud_model
-timing = 2850
-use_cam_effector = bint_use
+
+has_anim = true
+use_cam_effector = bandage_use
+hud_section = hud_bandage
 
 ;antirad new
 [antirad]:booster
@@ -344,11 +376,37 @@ cost				= 250
 boost_time			= 10.0
 boost_radiation_restore	= 0.01
 
-has_anim = true
 use_sound			= $silent
-animation_item = antirad_hud_model
-timing = 4350
+
+has_anim = true
 use_cam_effector = antirad_use
+hud_section = hud_antirad
+
+[demo_food]:booster
+$spawn 				= "food and drugs\antirad"
+visual				= dynamics\devices\dev_antirad\dev_antirad.ogf
+inv_name			= demo_food
+inv_name_short		= demo_food
+description			= st_demo_food_descr
+inv_weight			= 0.05
+
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 18
+inv_grid_y			= 12
+cost				= 250
+
+;eatable item
+;eat_radiation = -0.5
+
+boost_time			= 15.0
+boost_power_restore	= -0.005
+
+use_sound			= $silent
+
+has_anim = true
+use_cam_effector = antirad_use
+hud_section = hud_antirad
 
 ;medikits new
 [medkit_script]:booster ;Do not use! Used in xr_wounded
@@ -394,11 +452,11 @@ boost_health_restore	= 0.01
 boost_radiation_restore	= 0.0
 boost_bleeding_restore	= 0.005
 
-has_anim = true
 use_sound			= $silent
-animation_item = medkit_hud_model
-timing = 4350
-use_cam_effector = aptechka_use
+
+has_anim = true
+use_cam_effector = medkit_use
+hud_section = hud_medkit
 
 [medkit_army]:booster
 $spawn 				= "food and drugs\medkit_army"
@@ -419,11 +477,11 @@ boost_health_restore	= 0.02
 boost_radiation_restore	= 0.0
 boost_bleeding_restore	= 0.02
 
-has_anim = true
 use_sound			= $silent
-animation_item = medkit_army_hud_model
-timing = 4350
-use_cam_effector = aptechka_use
+
+has_anim = true
+use_cam_effector = medkit_use
+hud_section = hud_medkit_army
 
 [medkit_scientic]:booster
 $spawn 				= "food and drugs\medkit_scientic"
@@ -444,11 +502,11 @@ boost_health_restore	= 0.01
 boost_radiation_restore	= 0.01
 boost_bleeding_restore	= 0.005
 
-has_anim = true
 use_sound			= $silent
-animation_item = medkit_sci_hud_model
-timing = 4350
-use_cam_effector = aptechka_use
+
+has_anim = true
+use_cam_effector = medkit_use
+hud_section = hud_medkit_scientic
 
 ;boosters
 [drug_booster]:booster
@@ -486,11 +544,11 @@ boost_time				= 20.0
 ;boost_wound_immunity	= 1
 boost_bleeding_restore	= 0.03
 
-has_anim = true
 use_sound			= $silent
-animation_item = drug_coagulant_hud_model
-timing = 2585
-use_cam_effector = tabletki_use
+
+has_anim = true
+use_cam_effector = pills_use
+hud_section = hud_drug_coagulant
 
 [drug_psy_blockade]:booster
 $spawn 				= "food and drugs\drug_psy_blockade"
@@ -509,11 +567,11 @@ boost_time				= 60.0
 ;boost_telepat_immunity	= 0.05
 boost_telepat_protection 	= 0.05
 
-has_anim = true
 use_sound			= $silent
-animation_item = drug_psy_blockade_hud_model
-timing = 2585
-use_cam_effector = tabletki_use
+
+has_anim = true
+use_cam_effector = pills_use
+hud_section = hud_drug_psy_blockade
 
 [drug_antidot]:booster
 $spawn 				= "food and drugs\drug_antidot"
@@ -532,11 +590,11 @@ boost_time				= 60.0
 ;boost_chemburn_immunity	= 0.1
 boost_chemburn_protection 	= 0.1
 
-has_anim = true
 use_sound			= $silent
-animation_item = drug_antidot_hud_model
-timing = 2555
-use_cam_effector = tabletki_use
+
+has_anim = true
+use_cam_effector = pills_use
+hud_section = hud_drug_antidot
 
 [drug_radioprotector]:booster
 $spawn 				= "food and drugs\drug_radioprotector"
@@ -555,11 +613,11 @@ boost_time					= 60.0
 ;boost_radiation_immunity	= 0.015
 boost_radiation_protection	= 0.015
 
-has_anim = true
 use_sound			= $silent
-animation_item = drug_radioprotector_hud_model
-timing = 2585
-use_cam_effector = tabletki_use
+
+has_anim = true
+use_cam_effector = pills_use
+hud_section = hud_drug_radioprotector
 
 [drug_anabiotic]:booster
 $spawn 				= "food and drugs\drug_anabiotic"
@@ -645,14 +703,12 @@ use_sound			= interface\inv_pills
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;	DEVICES
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;--==========================< PDA >=============================
-;;--==========================< Devices >=============================
 [device_pda]:identity_immunities
 GroupControlSection                                = spawn_group
 discovery_dependency                               =
 $spawn                                             = "devices\pda"
 $prefetch                                          = 16
-class                                              = D_PDA	                                       ;Change to S_PDA if you want to use se_item.se_explosive script binding!
+class                                              = S_PDA	                                       ;Change to S_PDA if you want to use se_item.se_explosive script binding!
 cform                                              = skeleton
 visual                                             = dynamics\devices\dev_pda\dev_pda.ogf
 description                                        = st_pda_descr
@@ -662,7 +718,6 @@ default_to_ruck                                    = false
 sprint_allowed                                     = true
 control_inertion_factor                            = 1
 script_binding                                     = bind_physic_object.init
-release_on_first_update							   = true
 
 inv_name                                           = st_pda_name
 inv_name_short                                     = st_pda_name
@@ -673,11 +728,11 @@ inv_grid_height                                    = 1
 inv_grid_x                                         = 6
 inv_grid_y                                         = 13
 cost                                               = 0
-attach_angle_offset                                = -1.303,0.107,-1.702	                                       ;onoaiaaeeaaaony a ?aaeaiao Angle*PI/180
+attach_angle_offset                                = -1.303,0.107,-1.702 ;устанавливается в радианах Angle*PI/180
 attach_position_offset                             = 0.14,0.001,0.02
 attach_bone_name                                   = bip01_l_hand
 auto_attach                                        = false
-anim_item								           = true
+
 hud                                                = pda_hud
 animation_slot                                     = 2
 joystick_bone                                      = joystick
@@ -699,17 +754,17 @@ inertion_offset_LRUD_aim 							= 0.009, 0.009, 0.009, 0.009
 
 attach_place_idx                                   = 0
 item_visual                                        = dynamics\devices\dev_pda\dev_pda_hud.ogf
-hands_position                                     = 0.000,-0.130,0.150
-hands_position_16x9                                = -0.005,-0.11,0.1
+hands_position                                     = 0.000,-0.110,0.200
+hands_position_16x9                                = 0.000,-0.090,0.150
 hands_orientation                                  = 0,0,0
 hands_orientation_16x9                             = 0,0,0
 
-aim_hud_offset_pos		                           = 0.001,-0.069,-0.19
+aim_hud_offset_pos		                           = 0.001,-0.110,-0.19
 aim_hud_offset_rot		                           = -0.4,0,0.01
 gl_hud_offset_pos			                       = 0,0,0
 gl_hud_offset_rot			                       = 0,0,0
 
-aim_hud_offset_pos_16x9		                       = 0.001,-0.069,-0.19
+aim_hud_offset_pos_16x9		                       = 0.001,-0.110,-0.19
 aim_hud_offset_rot_16x9		                       = -0.4,0,0.01
 gl_hud_offset_pos_16x9		                       = 0,0,0
 gl_hud_offset_rot_16x9			                   = 0,0,0
@@ -780,31 +835,6 @@ inv_name_short		= st_pda_name
 description			= st_pda_descr
 cost				= 50
 can_trade			= false
-
-[base_quest_item]:identity_immunities
-GroupControlSection                                = spawn_group 
-discovery_dependency                               = 
-$spawn                                             = "devices\pda"
-$prefetch                                          = 16
-cform                                              = skeleton 
-visual                                   	   	   = dynamics\devices\dev_pda\dev_pda.ogf
-class                                              = II_ATTCH 
-default_to_ruck                                    = false
-sprint_allowed                                     = true
-description                                        = st_pda_descr
-inv_name                                           = st_pda_name
-inv_name_short                                     = st_pda_name
-inv_weight                               	   	   = 0.1
-inv_grid_width                                     = 1
-inv_grid_height                                    = 1
-inv_grid_x										   = 11
-inv_grid_y										   = 22
-cost                                     	   	   = 0
-attach_angle_offset                                = 0.000000, -1.204452, -1.262921 
-attach_position_offset                             = 0.081856, -0.035081, 0.011694 
-attach_bone_name                                   = bip01_l_hand 
-auto_attach                                        = false 
-can_trade                               	   	   = false
 
 [device_torch]:identity_immunities
 GroupControlSection	= spawn_group
@@ -897,7 +927,7 @@ inv_weight			= 0.025
 inv_grid_width			= 1
 inv_grid_height			= 1
 inv_grid_x				= 0
-inv_grid_y				= 34
+inv_grid_y				= 27
 
 cost				= 25
 
@@ -905,3 +935,27 @@ charge_level			= 1.0
 
 use_sound			= mfs_team\item_use\inv_battery
 
+[antigas_filter]:booster
+$spawn 				= "food and drugs\kolbasa"
+class				= D_FILTER
+visual				= mfs_team\items\itm_devices\antigas_filter.ogf
+description			= st_filter_descr
+
+inv_name			= st_filter
+inv_name_short			= st_filter
+inv_weight			= 0.25
+
+inv_grid_width			= 1
+inv_grid_height			= 1
+inv_grid_x				= 2
+inv_grid_y				= 27
+
+cost				= 250
+
+filter_condition		= 1.0
+
+use_sound			= $silent
+
+has_anim = true
+use_cam_effector = antigas_filter_use
+hud_section = hud_antigas_filter
