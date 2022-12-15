@@ -1034,10 +1034,8 @@ function is_squad_commander(actor, npc)  -- Повелитель Зоны --
 		npc_id = npc:id()
 	end
 
-
-
       local squad = get_object_squad(npc)
- 
+
       if squad==nil then return true end
 
       return squad ~= nil and squad:commander_id() == npc_id
@@ -1197,18 +1195,18 @@ end
 
 function actor_has_nimble_weapon(actor, npc)
 	local need_item = {}
-	need_item["wpn_m98b"] = true
+	need_item["wpn_vssk"] = true
+	need_item["wpn_fnx45"] = true
+	need_item["wpn_ak12_m1"] = true
 	need_item["wpn_desert_eagle_nimble"] = true
-	need_item["wpn_colt1911_m1"] = true
 	need_item["wpn_usp_nimble"] = true
 	need_item["wpn_l96"] = true
-	need_item["wpn_kar98k"] = true
+	need_item["wpn_dvl10"] = true
 	need_item["wpn_m82"] = true
 	need_item["wpn_m79"] = true
-	need_item["wpn_m249"] = true
+	need_item["wpn_saiga_m1"] = true
 	need_item["wpn_vintorez_nimble"] = true
-	need_item["wpn_ak12_m1"] = true
-	need_item["wpn_remington700"] = true
+	need_item["wpn_l85_m1"] = true
 	for k,v in pairs(need_item) do
 		if actor:object(k) ~= nil then
 			return true
@@ -1219,18 +1217,18 @@ end
 
 function actor_has_active_nimble_weapon(actor, npc)
 	local need_item = {}
-	need_item["wpn_m98b"] = true
+	need_item["wpn_vssk"] = true
+	need_item["wpn_fnx45"] = true
+	need_item["wpn_ak12_m1"] = true
 	need_item["wpn_desert_eagle_nimble"] = true
-	need_item["wpn_colt1911_m1"] = true
 	need_item["wpn_usp_nimble"] = true
 	need_item["wpn_l96"] = true
-	need_item["wpn_kar98k"] = true
+	need_item["wpn_dvl10"] = true
 	need_item["wpn_m82"] = true
 	need_item["wpn_m79"] = true
-	need_item["wpn_m249"] = true
+	need_item["wpn_saiga_m1"] = true
 	need_item["wpn_vintorez_nimble"] = true
-	need_item["wpn_ak12_m1"] = true
-	need_item["wpn_remington700"] = true
+	need_item["wpn_l85_m1"] = true
 
 	if actor:item_in_slot(2) ~= nil and need_item[actor:item_in_slot(2):section()] == true then
 		return true
@@ -1735,3 +1733,13 @@ function upgrade_hint_kardan(actor, npc, p)
 
 	return can_upgrade >= 2
 end
+
+function jup_b218_actor_outfit_precond(actor,npc)
+	local actor = db.actor
+	return actor:object("scientific_outfit") ~= nil or 
+	actor:object("dolg_scientific_outfit") ~= nil or
+	actor:object("svoboda_scientific_outfit") ~= nil or
+	actor:object("monolith_scientific_outfit") ~= nil or
+	actor:object("ecolog_outfit") ~= nil
+end
+

@@ -68,7 +68,8 @@ end
 -- Pripyat B35
 
 function pri_b35_transfer_svd(first_speaker, second_speaker)
-	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_svd_pso1m2")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_svd")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "pso1m2")
 	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_7.62x54_7h1")
 end
 

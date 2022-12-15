@@ -50,9 +50,9 @@ inv_weight						= 3.43
 hud								= wpn_ak12_hud
 visual							= dynamics\weapons\wpn_ak12\wpn_ak12.ogf
 
-upgrades                		= up_gr_firstab_abakan, up_gr_seconab_abakan, up_gr_thirdab_abakan, up_gr_fourtab_abakan, up_gr_fifthab_abakan
-installed_upgrades      		=
-upgrade_scheme          		= upgrade_scheme_abakan
+upgrades                = up_gr_firstab_ak74, up_gr_seconab_ak74, up_gr_thirdab_ak74, up_gr_fourtab_ak74, up_gr_fifthab_abakan, up_gr_fifthcd_ak74
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_ak74
 
 ph_mass							= 3
 
@@ -88,8 +88,8 @@ misfire_start_condition			= 0.6
 misfire_end_condition			= 0.1
 misfire_start_prob	 			= 0.003
 misfire_end_prob		 		= 0.043
-condition_shot_dec 				= 0.0001
-condition_queue_shot_dec		= 0.0002
+condition_shot_dec 				= 0.0005
+condition_queue_shot_dec		= 0.0006
 
 zoom_dof						= 0.5,1,180
 reload_dof						= 0,0.5,5,2
@@ -99,30 +99,30 @@ fire_dispersion_condition_factor	= 2
 control_inertion_factor 		= 1.25f
 crosshair_inertion				= 5.75
 
-cam_return						= 0
-cam_relax_speed					= 5
-cam_relax_speed_ai				= 360
-cam_dispersion					= 0.8
-cam_dispersion_inc 				= 0.4
-cam_dispersion_frac				= 1
-cam_max_angle					= 50
-cam_max_angle_horz				= 50
-cam_step_angle_horz				= 1.5
+cam_return					= 0
+cam_relax_speed             = 10		
+cam_relax_speed_ai      	= 360
+cam_dispersion              = 1		
+cam_dispersion_inc         	= 0.5	
+cam_dispersion_frac        	= 1	   
+cam_max_angle				= 50      
+cam_max_angle_horz         	= 5      
+cam_step_angle_horz        	= 0.35		
 
-zoom_cam_relax_speed			= 5
-zoom_cam_relax_speed_ai			= 360
-zoom_cam_dispersion				= 0.6
-zoom_cam_dispersion_inc			= 0.3
-zoom_cam_max_angle_horz			= 50
-zoom_cam_dispersion_frac		= 0.7
-zoom_cam_max_angle				= 50
-zoom_cam_step_angle_horz		= 0.2
+zoom_cam_relax_speed         = 10	 
+zoom_cam_relax_speed_ai      = 360
+zoom_cam_dispersion          = 0.9
+zoom_cam_dispersion_inc      = 0.45
+zoom_cam_dispersion_frac     = 0.7
+zoom_cam_max_angle           = 50
+zoom_cam_max_angle_horz      = 5
+zoom_cam_step_angle_horz     = 0.3
 
-PDM_disp_base 					= 0.5
-PDM_disp_vel_factor 			= 2
-PDM_disp_accel_factor 			= 2
-PDM_disp_crouch	 				= 1
-PDM_disp_crouch_no_acc 			= 1
+PDM_disp_base 				= 0.5
+PDM_disp_vel_factor 		= 2
+PDM_disp_accel_factor 		= 2
+PDM_disp_crouch	 			= 1
+PDM_disp_crouch_no_acc 		= 1
 
 min_radius						= 30
 max_radius						= 50
@@ -196,26 +196,26 @@ zoom_hide_crosshair				= true
 attach_place_idx				= 0
 item_visual						= dynamics\weapons\wpn_ak12\wpn_ak12_hud.ogf
 
-hands_position					= -0.000500,0.004500,-0.167500
-hands_orientation				= 0.700001,0.550000,0.000000
+hands_position					= -0.008000,0.002000,-0.147000
+hands_orientation				= -0.029998,0.060000,0.000000
 
-hands_position_16x9				= -0.000500,0.004500,-0.167500
-hands_orientation_16x9			= 0.700001,0.550000,0.000000
+hands_position_16x9				= -0.008000,0.002000,-0.147000
+hands_orientation_16x9				= -0.029998,0.060000,0.000000
 
 item_position					= 0,0,0
 item_orientation				= 0,0,0
 
-aim_hud_offset_pos				= -0.065225,0.019850,-0.14
-aim_hud_offset_rot				= 0.007000,0.012462,-0.002500
+aim_hud_offset_pos				= -0.060125,0.024050,-0.120200
+aim_hud_offset_rot				= 0,0,0
 
-aim_hud_offset_pos_16x9			= -0.065225,0.019850,-0.14
-aim_hud_offset_rot_16x9			= 0.007000,0.012462,-0.002500
+aim_hud_offset_pos_16x9				= -0.060125,0.024050,-0.120200
+aim_hud_offset_rot_16x9				= 0,0,0
 
-gl_hud_offset_pos				= -0.026100,-0.179159,-0.263999
-gl_hud_offset_rot				= -0.351604,0.009978,0.002500
+gl_hud_offset_pos				= -0.023100,-0.181159,-0.263999
+gl_hud_offset_rot				= -0.356604,-0.000000,0.000000
 
-gl_hud_offset_pos_16x9			= -0.026100,-0.179159,-0.263999
-gl_hud_offset_rot_16x9			= -0.351604,0.009978,0.002500
+gl_hud_offset_pos_16x9				= -0.023100,-0.181159,-0.263999
+gl_hud_offset_rot_16x9				= -0.356604,-0.000000,0.000000
 
 shell_point                 	= 0,0,0
 shell_dir               		= 0,1,0
@@ -280,11 +280,8 @@ scope_y							= -4
 [wpn_ak12_ac10632_hud]:wpn_ak12_hud
 item_visual            	 		= dynamics\weapons\wpn_ak12\wpn_ak12_barska_hud.ogf
 
-aim_hud_offset_pos				= -0.062225,0.011850,-0.138100
-aim_hud_offset_rot				= 0.043050,0.012312,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.062225,0.011850,-0.138100
-aim_hud_offset_rot_16x9			= 0.043050,0.012312,-0.002500
+aim_hud_offset_pos				= -0.057125,0.005550,-0.120200
+aim_hud_offset_pos_16x9				= -0.057125,0.005550,-0.120200
 
 [wpn_ak12_acog]:wpn_ak12
 $spawn							= "weapons\ak12_acog"
@@ -294,11 +291,9 @@ scope_x							= 79
 scope_y							= -5
 
 [wpn_ak12_acog_hud]:wpn_ak12_hud
-aim_hud_offset_pos				= -0.065225,-0.000150,-0.180100
-aim_hud_offset_rot				= 0.006875,0.011562,-0.002500
 
-aim_hud_offset_pos_16x9			= -0.065225,-0.000150,-0.180100
-aim_hud_offset_rot_16x9			= 0.006875,0.011562,-0.002500
+aim_hud_offset_pos				= -0.060125,0.004050,-0.203199
+aim_hud_offset_pos_16x9				= -0.060125,0.004050,-0.203199
 
 [wpn_ak12_eot]:wpn_ak12
 $spawn							= "weapons\ak12_eot"
@@ -311,11 +306,8 @@ scope_y							= -4
 [wpn_ak12_eot_hud]:wpn_ak12_hud
 item_visual						= dynamics\weapons\wpn_ak12\wpn_ak12_eot_hud.ogf
 
-aim_hud_offset_pos				= -0.062025,0.000750,-0.110100
-aim_hud_offset_rot				= 0.043500,0.011712,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.062025,0.000750,-0.110100
-aim_hud_offset_rot_16x9			= 0.043500,0.011712,-0.002500
+aim_hud_offset_pos				= -0.057125,-0.003950,-0.100700
+aim_hud_offset_pos_16x9				= -0.057125,-0.003950,-0.100700
 
 [wpn_ak12_specter]:wpn_ak12
 $spawn							= "weapons\ak12_specter"
@@ -328,11 +320,8 @@ scope_y							= -6
 [wpn_ak12_specter_hud]:wpn_ak12_hud
 item_visual						= dynamics\weapons\wpn_ak12\wpn_ak12_specter_hud.ogf
 
-aim_hud_offset_pos				= -0.065225,-0.005450,-0.151100
-aim_hud_offset_rot				= 0.006550,0.012462,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.065225,-0.005450,-0.151100
-aim_hud_offset_rot_16x9			= 0.006550,0.012462,-0.002500
+aim_hud_offset_pos				= -0.060125,0.021550,-0.120200
+aim_hud_offset_pos_16x9				= -0.060125,0.021550,-0.120200
 
 [wpn_ak12_pn23]:wpn_ak12
 $spawn							= "weapons\ak12_pn23"
@@ -345,11 +334,8 @@ scope_y							= -9
 [wpn_ak12_pn23_hud]:wpn_ak12_hud
 item_visual						= dynamics\weapons\wpn_ak12\wpn_ak12_pn23_hud.ogf
 
-aim_hud_offset_pos				= -0.065425,-0.009650,-0.131100
-aim_hud_offset_rot				= 0.007000,0.012562,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.065425,-0.009650,-0.131100
-aim_hud_offset_rot_16x9			= 0.007000,0.012562,-0.002500
+aim_hud_offset_pos				= -0.060125,-0.005450,-0.191699
+aim_hud_offset_pos_16x9				= -0.060125,-0.005450,-0.191699
 ;-----------------------------------------------------------------------------
 ; ”никальные
 ;-----------------------------------------------------------------------------
@@ -389,11 +375,8 @@ grenade_launcher_status			= 0
 [wpn_ak12_m1_hud]:wpn_ak12_hud
 item_visual                		= dynamics\weapons\wpn_ak12\wpn_ak12_m1_hud.ogf
 
-aim_hud_offset_pos				= -0.063225,0.018850,-0.140000
-aim_hud_offset_rot				= 0.006400,0.012262,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.063225,0.018850,-0.140000
-aim_hud_offset_rot_16x9			= 0.006400,0.012262,-0.002500
+aim_hud_offset_pos				= -0.058125,0.023550,-0.120200
+aim_hud_offset_pos_16x9				= -0.058125,0.023550,-0.120200
 
 anm_show						= ak74_ins_vgrip_draw
 anm_hide                		= ak74_ins_vgrip_hide
@@ -419,11 +402,8 @@ hud								= wpn_ak12_m1_ac10632_hud
 [wpn_ak12_m1_ac10632_hud]:wpn_ak12_m1_hud
 item_visual            	 		= dynamics\weapons\wpn_ak12\wpn_ak12_m1_barska_hud.ogf
 
-aim_hud_offset_pos				= -0.063225,0.009850,-0.191000
-aim_hud_offset_rot				= 0.034950,0.012162,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.063225,0.009850,-0.191000
-aim_hud_offset_rot_16x9			= 0.034950,0.012162,-0.002500
+aim_hud_offset_pos				= -0.058125,0.004550,-0.120200
+aim_hud_offset_pos_16x9				= -0.058125,0.004550,-0.120200
 
 [wpn_ak12_m1_acog]:wpn_ak12_m1,wpn_ak12_acog
 $spawn							= "weapons\ak12_m1_acog"
@@ -432,11 +412,8 @@ hud								= wpn_ak12_m1_acog_hud
 [wpn_ak12_m1_acog_hud]:wpn_ak12_m1_hud
 item_visual            	 		= dynamics\weapons\wpn_ak12\wpn_ak12_m1_hud.ogf
 
-aim_hud_offset_pos				= -0.063225,-0.001150,-0.176000
-aim_hud_offset_rot				= 0.005500,0.011812,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.063225,-0.001150,-0.176000
-aim_hud_offset_rot_16x9			= 0.005500,0.011812,-0.002500
+aim_hud_offset_pos				= -0.058125,0.003550,-0.203199
+aim_hud_offset_pos_16x9				= -0.058125,0.003550,-0.203199
 
 [wpn_ak12_m1_eot]:wpn_ak12_m1,wpn_ak12_eot
 $spawn							= "weapons\ak12_m1_eot"
@@ -446,11 +423,8 @@ hud								= wpn_ak12_m1_eot_hud
 [wpn_ak12_m1_eot_hud]:wpn_ak12_m1_hud
 item_visual						= dynamics\weapons\wpn_ak12\wpn_ak12_m1_eot_hud.ogf
 
-aim_hud_offset_pos				= -0.063225,0.002850,-0.096000
-aim_hud_offset_rot				= 0.055300,0.012862,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.063225,0.002850,-0.096000
-aim_hud_offset_rot_16x9			= 0.055300,0.012862,-0.002500
+aim_hud_offset_pos				= -0.058125,-0.004450,-0.100700
+aim_hud_offset_pos_16x9				= -0.058125,-0.004450,-0.100700
 
 [wpn_ak12_m1_pn23]:wpn_ak12_m1,wpn_ak12_pn23
 $spawn							= "weapons\ak12_m1_pn23"
@@ -462,8 +436,5 @@ scope_y							= -3
 [wpn_ak12_m1_pn23_hud]:wpn_ak12_m1_hud
 item_visual						= dynamics\weapons\wpn_ak12\wpn_ak12_m1_pn23_hud.ogf
 
-aim_hud_offset_pos				= -0.063225,-0.011150,-0.124000
-aim_hud_offset_rot				= 0.005850,0.012262,-0.002500
-
-aim_hud_offset_pos_16x9			= -0.063225,-0.011150,-0.124000
-aim_hud_offset_rot_16x9			= 0.005850,0.012262,-0.002500
+aim_hud_offset_pos				= -0.058125,-0.006950,-0.191699
+aim_hud_offset_pos_16x9				= -0.058125,-0.006950,-0.191699

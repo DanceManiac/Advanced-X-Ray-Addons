@@ -277,7 +277,7 @@ function save(package)
 	package:w_u32(actor_statistic.killed_monsters)
 	package:w_u32(actor_statistic.killed_stalkers)
 	package:w_u16(actor_statistic.founded_secrets)
-	package:w_u16(actor_statistic.artefacts_founded)
+	package:w_u32(actor_statistic.artefacts_founded)
 	package:w_u32(actor_statistic.best_monster_rank)
 	package:w_stringZ(tostring(actor_statistic.best_monster))
 	package:w_stringZ(tostring(actor_statistic.favorite_weapon_sect))
@@ -294,7 +294,7 @@ function save(package)
 	for k,v in pairs(artefacts_table) do
 		i = i + 1
 	end
-	package:w_u8(i)
+	package:w_u16(i)
 	for k,v in pairs(artefacts_table) do
 		package:w_stringZ(tostring(k))
 		package:w_bool(v)
@@ -303,7 +303,7 @@ function save(package)
 	for k,v in pairs(taken_artefacts) do
 		i = i + 1
 	end
-	package:w_u8(i)
+	package:w_u16(i)
 	for k,v in pairs(taken_artefacts) do
 		package:w_u32(k)
 	end
@@ -316,7 +316,7 @@ function load(package)
 	actor_statistic.killed_monsters  	= package:r_u32()
 	actor_statistic.killed_stalkers  	= package:r_u32()
 	actor_statistic.founded_secrets  	= package:r_u16()
-	actor_statistic.artefacts_founded	= package:r_u16()
+	actor_statistic.artefacts_founded	= package:r_u32()
 	actor_statistic.best_monster_rank 	= package:r_u32()
 	local str = package:r_stringZ()
 	if(str~="nil") then
@@ -334,7 +334,7 @@ function load(package)
 		weapons_table[k] = v
 	end
 	artefacts_table = {}
-	n = package:r_u8()
+	n = package:r_u16()
 	for i = 1,n do
 		log("n "..tostring(n))
 		local k = package:r_stringZ()
@@ -343,7 +343,7 @@ function load(package)
 	end
 
 		taken_artefacts = {}
-	n = package:r_u8()
+	n = package:r_u16()
 	for i = 1,n do
 		local k = package:r_u32()
 		taken_artefacts[k] = k
@@ -548,7 +548,7 @@ end
 
 function balance_advocate_functor()
 	if not has_alife_info("balance_advocate_gained") then
-		if has_alife_info("jup_b46_duty_founder_pda_to_owl")
+		if has_alife_info("jup_b46_duty_founder_pda_to_stalkers")
 				and has_alife_info("jup_b207_dealers_pda_sold_owl")
 				and has_alife_info("zat_b106_found_soroka_done") then
 			db.actor:give_info_portion("balance_advocate_gained")
@@ -623,6 +623,7 @@ function information_dealer_functor()
 		if count >= 10 then
 			news_manager.send_tip(db.actor, "st_ach_information_dealer", nil, "information_dealer", nil, nil)
 			db.actor:give_info_portion("actor_information_dealer")
+			return true
 		end
 	end
 	return has_alife_info("actor_information_dealer")
