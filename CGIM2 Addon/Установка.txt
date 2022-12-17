@@ -1,0 +1,19 @@
+На чистый Advanced X-Ray:
+
+1. Скачать версию CGIM2 для Зова Припяти.
+2. Перенести из папки "gamedata" CGIM2 без замены файла "rain.dds" папки textures и configs (папку shaders не трогать!)
+в папку "gamedata" от Advanced X-Ray.
+3. Перенести папку "gamedata" аддона в директорию Advanced X-Ray, подтверждая замену всех файлов.
+4. Удалить папку mfs_userdata/shaders_cache
+5. Удалить файл user.ltx
+
+На Global Stalker Weather Rework:
+
+1. Скачать версию CGIM2 для Зова Припяти.
+2. Удалить папку gamedata/textures/sky из G.S.W.R.
+3. Перенести из папки "gamedata" CGIM2 без замены файла "rain.dds" папки textures и configs (папку shaders не трогать!)
+в папку "gamedata" от Advanced X-Ray.
+4. Перенести папку "gamedata" аддона в директорию Advanced X-Ray, подтверждая замену всех файлов.
+5. Перенести папку "G.S.W.R/<CallOfPripyat ИЛИ ClearSky>/gamedata" аддона в директорию Advanced X-Ray, подтверждая замену всех файлов. 
+6. Удалить папку mfs_userdata/shaders_cache
+7. Удалить файл user.ltx
