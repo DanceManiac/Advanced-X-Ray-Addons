@@ -1,8 +1,6 @@
-﻿!!!ФИКСЫ STCOP 3.4 ВХОДЯТ В АДДОН!!!
-
-1. Скачать STCoP 3.4
+﻿1. Скачать STCoP 3.5
 2. Сделать резервную копию папки gamedata с необходимыми ресурсами для движка.
-3. Переместить из gamedata STCoP c заменой в gamedata движка всё, кроме папок scripts и shaders и файла shaders.xr.
+3. Переместить из gamedata STCoP 3.5 c заменой в gamedata движка всё, кроме папок scripts и shaders и файла shaders.xr.
 4. Переместить gamedata из STCoP Addon в корень игры, подтверждая замену всех файлов.
 5. Если производится установка на Global Stalker Weather Rework, то после 4-ого пункта перенести с заменой
 папку scripts из папки GSWR.
