@@ -204,11 +204,12 @@ function main_menu:StartGame()
 end
 
 function main_menu:OnButton_load_spawn()
-	self.god_dlg = ui_god_dialog.god_dialog()
-	self.god_dlg.owner = self
+	if self.spawn_dlg == nil then
+		self.spawn_dlg = ui_spawn_dialog.spawn_dialog()
+		self.spawn_dlg.owner = self
+	end
 
-	self.god_dlg:FillList()
-	self.god_dlg:ShowDialog(true)
+	self.spawn_dlg:ShowDialog(true)
 	self:HideDialog()
 	self:Show(false)
 end
@@ -236,17 +237,18 @@ function main_menu:OnButton_options_clicked()
 	self:HideDialog()
 	self:Show(false)
 end
- --'Повелитель Зоны 5.0'--
+
 function main_menu:OnButton_load_clicked()
-	self.load_dlg = ui_load_dialog.load_dialog()
-	self.load_dlg.owner = self
+	if self.load_dlg ==nil then
+		self.load_dlg = ui_load_dialog.load_dialog()
+		self.load_dlg.owner = self
+	end
 
 	self.load_dlg:FillList()
 	self.load_dlg:ShowDialog(true)
 	self:HideDialog()
 	self:Show(false)
 end
- --'Повелитель Зоны 5.0'--
 
 function main_menu:OnButton_network_game_clicked()
 	self.shniaga:ShowPage(CUIMMShniaga.epi_new_network_game)
@@ -338,21 +340,9 @@ function main_menu:OnKeyboard(dik, keyboard_action)  --virtual function
 			end
 		end
 
-                  --'Повелитель Зоны 5.0'--
-		if dik == DIK_keys.DIK_F1 then
-                if db.actor then
-			self:OnButton_load_spawn()
-                end
-		end
-                  --'Повелитель Зоны 5.0'--
-
 		if dik == DIK_keys.DIK_Q then
 			self:OnMessageQuitWin()
 		end
-
-                  --'Повелитель Зоны 5.0'--
-	            god.key_binder(dik, keyboard_action, self)
-                  --'Повелитель Зоны 5.0'--
 	end
 
 	return true
