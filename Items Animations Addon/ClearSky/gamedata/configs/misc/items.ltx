@@ -111,6 +111,9 @@ animation_slot		= 4
 ;hud item
 hud = wpn_vodka_hud
 
+has_anim = true
+use_cam_effector = use_bread
+hud_section = hud_bread
 
 [kolbasa]:identity_immunities
 GroupControlSection	= spawn_group
@@ -164,6 +167,10 @@ animation_slot		= 4
 
 ;hud item
 hud = wpn_vodka_hud
+
+has_anim = true
+use_cam_effector = use_bread
+hud_section = hud_kolbasa
 
 [conserva]:identity_immunities
 GroupControlSection	= spawn_group
@@ -219,8 +226,8 @@ position_offset			 = 0.0,0.0,0.0
 angle_offset			 = 1.570790,1.570790,3.92699
 
 has_anim = true
-use_cam_effector = aptechka_use
-hud_section = hud_conserva_beef
+use_cam_effector = use_conserva
+hud_section = hud_conserva
 
 [vodka]:identity_immunities
 GroupControlSection	= spawn_group
@@ -239,7 +246,7 @@ inv_name_short		= st_vodka
 inv_weight			= 0.2	;0.2
 
 inv_grid_width		= 1
-inv_grid_height		= 2
+inv_grid_height		= 1
 inv_grid_x			= 5
 inv_grid_y			= 2
 cost				= 100
@@ -282,7 +289,7 @@ break_particles		= destroy_fx\destroy_bottle
 break_sound			= material\bottle\collide\bottle_break_1
 
 has_anim = true
-use_cam_effector = vodka_use
+use_cam_effector = use_vodka
 hud_section = hud_vodka
 
 [guitar_a]:identity_immunities
@@ -372,9 +379,8 @@ animation_slot		= 4
 hud = wpn_vodka_hud
 
 has_anim = true
-use_cam_effector = antirad_use
+use_cam_effector = use_antirad
 hud_section = hud_antirad
-
 
 [medkit]:identity_immunities
 GroupControlSection	= spawn_group
@@ -389,7 +395,7 @@ inv_name			= st_medkit
 inv_name_short		= st_medkit
 inv_weight			= 0.1
 
-inv_grid_width		= 2
+inv_grid_width		= 1
 inv_grid_height		= 1
 inv_grid_x			= 6
 inv_grid_y			= 14
@@ -419,7 +425,7 @@ animation_slot		= 4
 hud = wpn_vodka_hud
 
 has_anim = true
-use_cam_effector = medkit_use
+use_cam_effector = use_medkit
 hud_section = hud_medkit
 
 [medkit_army]:identity_immunities
@@ -435,9 +441,9 @@ inv_name			= st_medkit_army
 inv_name_short		= st_medkit_army
 inv_weight			= 0.1	;0.2
 
-inv_grid_width		= 2
+inv_grid_width		= 1
 inv_grid_height		= 1
-inv_grid_x			= 16
+inv_grid_x			= 15
 inv_grid_y			= 20
 cost				= 500
 
@@ -465,7 +471,7 @@ animation_slot		= 4
 hud = wpn_vodka_hud
 
 has_anim = true
-use_cam_effector = medkit_use
+use_cam_effector = use_medkit
 hud_section = hud_medkit_army
 
 [medkit_scientic]:identity_immunities
@@ -481,7 +487,7 @@ inv_name			= st_medkit_science
 inv_name_short		= st_medkit_science
 inv_weight			= 0.1	;0.2
 
-inv_grid_width		= 2
+inv_grid_width		= 1
 inv_grid_height		= 1
 inv_grid_x			= 14
 inv_grid_y			= 20
@@ -511,7 +517,7 @@ animation_slot		= 4
 hud = wpn_vodka_hud
 
 has_anim = true
-use_cam_effector = medkit_use
+use_cam_effector = use_medkit
 hud_section = hud_medkit_scientic
 
 [energy_drink]:vodka
@@ -551,7 +557,7 @@ attach_bone_name		= bip01_r_hand
 auto_attach				= false
 
 has_anim = true
-use_cam_effector = banka_use
+use_cam_effector = use_energy_drink
 hud_section = hud_energy_drink
 
 [bandage]:identity_immunities
@@ -597,7 +603,7 @@ animation_slot		= 4
 hud = wpn_vodka_hud
 
 has_anim = true
-use_cam_effector = bandage_use
+use_cam_effector = use_bandage
 hud_section = hud_bandage
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -925,6 +931,6 @@ animation_slot		= 4
 ;hud item
 hud = wpn_vodka_hud
 
-has_anim = true
-use_cam_effector = antigas_filter_use
-hud_section = hud_antigas_filter
+has_anim            = true
+use_cam_effector    = use_antigas_filter
+hud_section         = hud_antigas_filter
