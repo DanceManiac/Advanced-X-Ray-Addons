@@ -1,0 +1,69 @@
+#include "common.h"
+
+struct vf
+{
+	float4 hpos : POSITION;
+	float2 tbase : TEXCOORD0;  // base
+	float2 tnorm0 : TEXCOORD1; // nm0
+	float2 tnorm1 : TEXCOORD2; // nm1
+	half3 M1 : TEXCOORD3;
+	half3 M2 : TEXCOORD4;
+	half3 M3 : TEXCOORD5;
+	half3 v2point : TEXCOORD6;
+	half4 c0 : COLOR0;
+};
+
+uniform sampler2D s_nmap;
+uniform samplerCUBE s_env0;
+uniform samplerCUBE s_env1;
+
+float3 skycube(float3 vreflect)
+{
+	//half3 a = abs(vreflect);
+	//vreflect /= max(a.x, max(a.y, a.z));
+
+	//if (vreflect.y < 0.99)
+		vreflect.y = vreflect.y * 2 - 1;
+	
+	half3 env0 = texCUBE(s_env0, vreflect);
+	half3 env1 = texCUBE(s_env1, vreflect);
+	return lerp(env0, env1, L_ambient.w);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel
+
+half4 main(vf I) : COLOR
+{
+	half4 base = tex2D(s_base, I.tbase);
+	half3 n0 = tex2D(s_nmap, I.tnorm0);
+	half3 n1 = tex2D(s_nmap, I.tnorm1);
+	half3 Navg = n0 + n1 - 1;
+
+	half3 Nw = mul(half3x3(I.M1, I.M2, I.M3), Navg);
+	Nw = normalize(Nw);
+
+	half3 v2point = normalize(I.v2point);
+	half3 vreflect = reflect(v2point, Nw);
+
+	half3 env = skycube(vreflect);
+	env	*= env * 2.f;
+	
+	half fresnel = saturate(dot(vreflect, v2point));
+	half power = pow(fresnel, 9);
+	half amount = 0.15h + 0.25h * power;	// 1=full env, 0=no env
+
+	//half3 halfVec = normalize(v2point + L_sun_dir_w);
+	half light = dot(I.c0.rgb, 0.33);
+	//half specular = pow(abs(dot(halfVec, Nw)), 64);
+
+
+	half3 final = lerp(env * amount, base.rgb, base.a);
+
+	final *= I.c0.rgb * 2.0; //light * 2.0f;
+	//final *= 1.0 + specular * 3.0 * L_sun_color * saturate(pow(light * 4, 20));
+
+	half alpha = 0.75h + 0.25h * power;
+
+	return half4(final, alpha * I.c0.a * I.c0.a);
+}
