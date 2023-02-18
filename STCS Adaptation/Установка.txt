@@ -1,0 +1,4 @@
+﻿1. Скачать STCS Weapon Pack
+2. Перенести с заменой в gamedata Advanced X-Ray или G.S.W.R. всё, кроме папок scripts и configs, 
+а также файлов particles.xr и shaders.xr
+3. Перенести с заменой в gamedata Advanced X-Ray или G.S.W.R. содержимое gamedata с адаптацией.
