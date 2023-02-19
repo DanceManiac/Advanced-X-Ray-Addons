@@ -1,8 +1,8 @@
-1. Установить Advanced X-Ray 1.8.61 или Global Stalker Weather Rework 1.4.82
+1. Установить Advanced X-Ray 1.9.26 или Global Stalker Weather Rework 1.4.85
 2. Перенести папку gamedata из папки All в корень игры с заменой всех файлов
 3. В зависимости от части игры, перенести папку gamedata из CallOfPripyat|ClearSky с заменой всех файлов.
 
 Только Зов Припяти:
 
-4. Если установлен STCoP Addon, то после 3-го пункта, перенести в корень игры папку gamedata
-из папки CallOfPripyat\STCoP Addon
+4. Если установлен STCoP, то после 3-го пункта, перенести в корень игры папку gamedata
+из папки CallOfPripyat\STCoP Adaptation
