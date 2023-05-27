@@ -1060,7 +1060,8 @@ function surge_complete()
 end
 
 function surge_started()
-	return surge_manager.is_started()
+	--return surge_manager.is_started()
+	return surge_manager.is_started() or psi_storm_manager.is_started() or fallout_manager.is_started()
 end
 
 function surge_kill_all()

@@ -1424,12 +1424,6 @@
 	<string id="st_wpn_m16a4_camo_descr">
 		<text>Вариант M16A4 с пустынным камуфляжем и прицелом Leupold Mark4.</text>
 	</string>
-	<string id="st_wpn_m16a4_camo">
-		<text>M16A4 (камуфляж)</text>
-	</string>
-	<string id="st_wpn_m16a4_camo_descr">
-		<text>Вариант M16A4 с пустынным камуфляжем и прицелом Leupold Mark4.</text>
-	</string>
 <!-- Ruger SR-556-->
 	<string id="st_wpn_ru556">
 		<text>Ruger SR-556</text>
