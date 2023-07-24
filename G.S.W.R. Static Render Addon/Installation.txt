@@ -1,0 +1,15 @@
+G.S.W.R. Static Render Addon: Аддон возвращает статическое освещение в игру.
+
+Перенести папку bin в корень игры.
+
+Если у Вас стоит Mixed или Debug сборка движка - перенести содержимое соответсвующей папки из OtherBinaries в 
+папку bin из корня игры.
+
+_____________________________________________________________________________________________________________
+
+G.S.W.R. Static Render Addon: The addon returns static lighting to the game.
+
+Move the bin folder to the root of the game.
+
+If you have a Mixed or Debug engine build, move the contents of the corresponding folder from OtherBinaries to the
+bin folder from the root of the game.
