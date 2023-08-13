@@ -3,7 +3,7 @@ engine_mode = cop 				;; Режим работы движка cop|cs (Зов Припяти|Чистое Небо)
 discord_app_id = 745402574810906675	;; ID приложения для Discord Rich Presense
 discord_show_task = true		;; Выводить в статус Дискорда текущий квест
 ls_tips_enabled = true			;; Включены ли 100 советов по выживанию в Зоне
-developer_mode = true			;; Режим разработчика (больше команд, телепортация в демо рекорде, редактор погоды)
+developer_mode = false			;; Режим разработчика (больше команд, телепортация в демо рекорде, редактор погоды)
 block_console = false			;; Заблокировать использование консоли
 auto_snd_targets = true			;; Автоматическое определение кол-ва источников звука
 
@@ -86,20 +86,35 @@ clr_zone 			= 4
 clr_warm_tone 		= 5
 clr_blue 			= 6
 
+[variables_modifiers];Модификаторы переменных
+;;Модификаторы команд для DX9 освещения
+mod_tonemap_middlegray	= 0.25	;На DX9 прибавит это значение к установленному в команде
+mod_tonemap_low_lum	= 0.6	;На DX9 убавит это значение у установленного в команде
+mod_sun_lumscale	= 2.0	;На DX9 убавит это значение у установленного в команде
+mod_sun_lumscale_amb	= 0.5	;На DX9 прибавит это значение к установленному в команде
+
 [start_settings];Стартовые значения необходимых настроек
-tonemap_middlegray = 0.5
+tonemap_middlegray = 0.25
 tonemap_adaptation = 1.0
-tonemap_low_lum = 0.1
-tonemap_amount = 0.7
+tonemap_low_lum = 0.7
+tonemap_amount = 1.0
 bloom_kernel_g = 3.0
 bloom_kernel_b = 0.7
 bloom_speed = 100.0
 bloom_kernel_scale = 0.7
 bloom_threshold = 0.00001
-sun_lumscale = 1.0
-sun_lumscale_hemi = 0.75
-sun_lumscale_amb = 1.0
+sun_lumscale = 3.0
+sun_lumscale_hemi = 1.0
+sun_lumscale_amb = 0.5
+
+;Gloss
+gloss_factor = 0.05
+gloss_min = 0.5
 
 ;FOV
 Camera_FOV = 75.0
 HUD_FOV = 0.7
+
+;Enchanted Shaders color grading
+
+color_grading_es = 0.5, 0.5, 0.5
