@@ -1,3 +1,47 @@
+[anim_mask_clean]
+hands_position			= 0.021,-0.16,-0.1025
+hands_orientation		= -0.5,1,1.15
+hands_position_16x9		= 0.053,-0.1805,-0.1
+hands_orientation_16x9		= 2.35,2.75,2.85
+
+anm_use				= _gasmask_swipe2
+anm_use_weapon			= _gasmask_swipe2
+anim_timing 			= 150
+anim_camera_effector		= camera_effects\items_animations_addon\gasmask.anm
+anim_camera_effector_weapon	= camera_effects\items_animations_addon\gasmask.anm
+
+snd_using			= mfs_team\item_use\inv_mask_clean.ogg
+
+[hud_switch_torch]
+hands_position			= 0.05,-0.2,0.0025
+hands_orientation		= -0.5,1,1.15
+hands_position_16x9		= 0.03,-0.225,0.039
+hands_orientation_16x9		= 2.35,2.75,2.85
+
+anm_use 			= _unarmed_headlamp
+anm_use_weapon			= _unarmed_headlamp
+anim_timing 			= 500
+anim_camera_effector		= camera_effects\items_animations_addon\headlamp.anm
+
+anim_camera_effector_weapon	= camera_effects\items_animations_addon\headlamp.anm
+
+[hud_take_item]
+hands_position                  = 0, 0.00, -0.1
+hands_position_16x9             = 0, 0.00, -0.1
+
+item_position			= -0.072424,0.030392,-0.012213
+item_orientation		= 0.607000, -14.089000, -126.571999 ;324.640503,-189.627350,-183.009415
+
+anm_use				= take_anim_enhanced
+anm_use_weapon			= take_anim_enhanced
+anim_speed			= 1.4
+anim_timing 			= 750
+anim_camera_effector		= camera_effects\items_animations_addon\two_handed_weapon_effect.anm
+anim_camera_effector_weapon	= camera_effects\items_animations_addon\two_handed_weapon_effect.anm
+
+item_visible			= false
+attach_place_idx		= 1
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Bread
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -32,6 +76,8 @@ hands_orientation		    = 0.0, 16.4738, 0.0
 hands_position_16x9			= 0.003000,-0.165296,0.185578
 hands_orientation_16x9		= 0.000000,16.473801,0.000000
 
+hud_fov = 0.65
+
 anm_use = use_conserva
 snd_using = interface\inv_conserva
 single_handed_anim = 2
@@ -46,6 +92,8 @@ hands_orientation			= -0.500000,1.000000,1.149999
 hands_position_16x9         = -0.0055,-0.09, 0.27
 hands_orientation_16x9		= 2.349998,2.749999,2.849998
 
+hud_fov = 0.65
+
 anm_use = use_vodka
 snd_using = interface\inv_vodka
 single_handed_anim = 2
@@ -58,6 +106,8 @@ item_visual             	= dynamics\devices\dev_energy_drink\dev_energy_drink_hu
 anm_use = use_energy_drink
 snd_using = interface\inv_energy_drink
 
+hud_fov = 0.65
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Bandage
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -67,6 +117,8 @@ hands_position              = -0.0055,-0.05, 0.35
 hands_orientation			= -0.500000,1.000000,1.149999
 hands_position_16x9         = -0.0055,-0.05, 0.35
 hands_orientation_16x9		= 2.349998,2.749999,2.849998
+
+hud_fov = 0.65
 
 anm_use = use_bandage
 snd_using = interface\inv_bandage
@@ -82,6 +134,8 @@ hands_orientation			= -0.500000,1.000000,1.149999
 hands_position_16x9         = -0.0055,-0.05, 0.32
 hands_orientation_16x9		= 2.349998,2.749999,2.849998
 
+hud_fov = 0.65
+
 anm_use = use_antirad
 snd_using = interface\inv_antirad
 single_handed_anim = 2
@@ -95,6 +149,8 @@ hands_position              = -0.0055,-0.07, 0.36
 hands_orientation			= -0.500000,1.000000,1.149999
 hands_position_16x9         = -0.0055,-0.07, 0.36
 hands_orientation_16x9		= 2.349998,2.749999,2.849998
+
+hud_fov = 0.65
 
 anm_use = use_medkit
 snd_using = interface\inv_medkit
@@ -127,6 +183,8 @@ hands_position              = -0.0055,-0.07, 0.32
 hands_orientation			= -0.500000,1.000000,1.149999
 hands_position_16x9         = -0.0055,-0.07, 0.32
 hands_orientation_16x9		= 2.349998,2.749999,2.849998
+
+hud_fov = 0.65
 
 anm_use = use_drug_coagulant
 snd_using = interface\inv_pills
@@ -169,6 +227,8 @@ snd_using = interface\inv_anabiotic
 item_visual 		        = dynamics\devices\dev_antigas_filter\dev_antigas_filter_hud.ogf
 hands_position              = -0.005,-0.185, 0
 hands_position_16x9         = -0.005,-0.185, 0
+
+hud_fov = 0.65
 
 anm_use	= use_antigas_filter
 snd_using = inv_antigas_filter
