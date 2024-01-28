@@ -1,0 +1,257 @@
+<w>
+  <main x="0" y="0" width="1024" height="768">
+    <_auto_static x="512" y="384" width="115" height="115" alignment="c" stretch="1" heading="1" xform_anim="xfrom_rotate_3sec" xform_anim_cyclic="1">
+      <texture>ui_icons_newPDA_Crclbig_h</texture>
+    </_auto_static>
+  </main>
+	<speech_menu x="260" y="550" width="300" height="265" always_show_scroll="0">
+		<text font="letterica16" r="238" g="224" b="198"/>		
+	</speech_menu>
+	
+	<progress_bar_health x="33" y="5" width="110" height="10" horz="1" min="0" max="100" pos="0">
+		<progress>
+			<texture>ui_hud_shk_health</texture>
+		</progress>
+	</progress_bar_health>
+
+	
+	<static_armor x="860" y="622" width="155" height="34" stretch="1">
+		<texture>ui_hud_shkala_armor</texture>		
+		<auto_static x="4" y="6" width="15" height="18" stretch="1">
+			<texture>ui_hud_icon_armour</texture>
+		</auto_static>
+	</static_armor>
+
+	<progress_bar_armor x="33" y="24" width="110" height="10" horz="1" min="0" max="100" pos="0">
+		<progress>
+			<texture>ui_hud_shk_armour</texture>
+		</progress>
+	</progress_bar_armor>
+	
+	<quick_info x="1" y="700" width="1022" height="50" complex_mode="1" light_anim="ui_btn_hint"  la_cyclic="0" la_texture="0" la_text="1" la_alpha="1">
+		<text align="c" font="graffiti22" r="225" g="225" b="250" a="255" />
+	</quick_info>
+	
+	<hud_info>
+		<position x="0" y="0" />
+		<item_name x="0" y1="0.44" y2="0.48" y3="0.55" />
+		<font font="graffiti19" />
+	</hud_info>
+
+    <indicator_booster_psy x="16" y="710" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Psy</texture>
+	</indicator_booster_psy>
+    <indicator_booster_radia x="49" y="710" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Radiation</texture>
+	</indicator_booster_radia>
+    <indicator_booster_chem x="83" y="710" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_biological</texture>
+	</indicator_booster_chem>
+    <indicator_booster_wound x="116" y="710" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_blood</texture>
+	</indicator_booster_wound>
+    <indicator_booster_weight x="150" y="710" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_force</texture>
+	</indicator_booster_weight>
+    <indicator_booster_health x="184" y="710" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_health</texture>
+	</indicator_booster_health>
+    <indicator_booster_power x="217" y="710" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_stamina</texture>
+	</indicator_booster_power>
+    <indicator_booster_rad x="251" y="710" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_radiation_cleanup</texture>
+	</indicator_booster_rad>
+	
+	<indicator_booster_satiety x="16" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Satiety</texture>
+	</indicator_booster_satiety>
+	<indicator_booster_thirst x="49" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Thirst</texture>
+	</indicator_booster_thirst>
+	<indicator_booster_psy_health x="83" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Psy_Health</texture>
+	</indicator_booster_psy_health>
+	<indicator_booster_intoxication x="116" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Intoxication</texture>
+	</indicator_booster_intoxication>
+	<indicator_booster_sleepeness x="150" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Sleepeness</texture>
+	</indicator_booster_sleepeness>
+	<indicator_booster_alcoholism x="184" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Alcoholism</texture>
+	</indicator_booster_alcoholism>
+	<indicator_booster_hangover x="217" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Hangover</texture>
+	</indicator_booster_hangover>
+	<indicator_booster_narcotism x="251" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Narcotism</texture>
+	</indicator_booster_narcotism>
+	<indicator_booster_withdrawal x="285" y="660" width="24" height="41" stretch="1">
+		<texture>ui_inGame2_shield_Withdrawal</texture>
+	</indicator_booster_withdrawal>
+	
+	<icons_scroll_view  x="900" y="350" width="55" height="270" right_ident="2" always_show_scroll="0" vert_interval="16" inverse_dir="1" flip_vert="0"/>
+
+	<weapon_jammed_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_weapon</texture>
+	</weapon_jammed_static>
+
+	<radiation_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_radiation</texture>
+	</radiation_static>
+
+	<wound_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_drop</texture>
+	</wound_static>
+
+	<starvation_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_eat</texture>
+	</starvation_static>
+
+	<psy_health_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_psycho</texture>
+	</psy_health_static>
+
+	<invincible_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_goodmode</texture>
+	</invincible_static>
+	
+	<can_sleep_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_sleep</texture>
+	</can_sleep_static>
+
+	<artefact_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_artefact</texture>
+	</artefact_static>
+
+	<disk_io x="760" y="750" width="14" height="16" stretch="1">
+		<texture>ui\ui_disk_io</texture>
+	</disk_io>
+
+	<flashing_icons>
+		<flashing_icon x="13" y="210" width="48" height="29" type="pda" light_anim="ui_slow_blinking_alpha">
+			<texture>ui_hud_icon_PDA</texture>
+		</flashing_icon>
+		<flashing_icon x="13" y="210" width="48" height="29" type="encyclopedia" light_anim="ui_slow_blinking_alpha">
+			<texture>ui_hud_icon_PDA</texture>
+		</flashing_icon>
+		<flashing_icon x="13" y="210" width="48" height="29" type="journal" light_anim="ui_slow_blinking_alpha">
+			<texture>ui_hud_icon_PDA</texture>
+		</flashing_icon>
+	</flashing_icons>
+
+	<pick_up_item  x="512" y="478" scale="1"/>
+
+	<artefact_panel x="-25" y="710" width="200" height="50" cell_width="50" cell_height="50" scale="0.75"/>
+	
+	<new_contact_snd>detectors\contact_1</new_contact_snd>	
+
+	<hud_states x="802" y="647" width="222" height="121">
+
+		<back x="0" y="0" width="222" height="121" stretch="1">
+			<texture>ui_hud2_rad01_back</texture>
+			<!--text x ="10" y="0" align="c" font="letterica16" r="238" g="155" b="225" a="0"/-->
+		</back>
+		<back_v x="203" y="-219" width="19" height="219" stretch="1">
+			<texture>ui_hud2_rad01_back2v</texture>
+		</back_v>
+		<back_over_arrow x="150" y="70" width="55" height="51" stretch="1">
+			<texture>ui_hud2_rad01_over</texture>
+      <auto_static x="-15" y="14"  width="86" height="37" stretch="1">
+        <texture>ui_hud2_stamina_bk</texture>
+      </auto_static>
+    </back_over_arrow>
+
+		<arrow x="175" y="48" width="8" height="97" heading="1" clockwise="1" begin_angle="0.75" end_angle="-0.75" ang_velocity="0.75" stretch="1">
+			<texture a="255">ui_hud2_rad01_arrow</texture>
+		</arrow>
+		<arrow_shadow x="177" y="50" width="8" height="97" heading="1" clockwise="1" begin_angle="0.75" end_angle="-0.8" ang_velocity="0.75" stretch="1">
+			<texture>ui_hud2_rad01_arrow_shadow</texture>
+		</arrow_shadow>
+
+		<bleeding x="3" y="50" width="19" height="22" light_anim="ui_slow_blinking" la_cyclic="1" la_texture="1" la_text="0" la_alpha="1" stretch="1">
+			<texture a="255">ui_char_bleeding</texture>
+		</bleeding>
+		
+		<progress x="138" y="55" width="80" height="96" sector_count="36" clockwise="1" blend="0" begin_angle="0.75" end_angle="-0.75">
+			<front x="0" y="0" width="80" height="96">
+				<texture>ui_hud2_rad01_progress</texture>
+			</front>
+		</progress>
+
+		<resist_back_rad x="198" y="-25" width="23" height="28" stretch="1">
+			<texture>ui_hud2_res_back</texture>
+		</resist_back_rad>
+		<resist_back_fire x="198" y="-55" width="23" height="28" stretch="1">
+			<texture>ui_hud2_res_back</texture>
+		</resist_back_fire>
+		<resist_back_acid x="198" y="-85" width="23" height="28" stretch="1">
+			<texture>ui_hud2_res_back</texture>
+		</resist_back_acid>
+		<resist_back_psi x="198" y="-115" width="23" height="28" stretch="1">
+			<texture>ui_hud2_res_back</texture>
+		</resist_back_psi>
+
+		<indik_rad  x="200" y="-22" width="18" height="22" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_hud2_res_rad</texture>
+		</indik_rad>
+		<indik_fire x="200" y="-52" width="18" height="22" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_hud2_res_fire</texture>
+		</indik_fire>
+		<indik_acid x="200" y="-82" width="18" height="22" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_hud2_res_acid</texture>
+		</indik_acid>
+		<indik_psi x="200" y="-112" width="18" height="22" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_hud2_res_psi</texture>
+		</indik_psi>
+
+
+		<progress_bar_health x="29" y="56" width="95" height="9" horz="1" min="0" max="100" pos="0">
+			<progress>
+				<texture>ui_hud_shk_health</texture>
+			</progress>
+		</progress_bar_health>
+		<progress_bar_armor x="29" y="37" width="95" height="9" horz="1" min="0" max="100" pos="0">
+			<progress>
+				<texture>ui_hud_shk_armour</texture>
+			</progress>
+		</progress_bar_armor>
+		<static_armor x="0" y="20" width="138" height="28" stretch="1">
+			<texture>ui_hud_shkala_armor</texture>
+			<__auto_static x="3" y="5" width="16" height="18" stretch="1">
+				<texture>ui_hud_icon_armour</texture>
+			</__auto_static>
+		</static_armor>
+
+    <progress_bar_stamina x="150" y="85" width="57" height="14" horz="1" min="0" max="100" pos="0">
+      <progress>
+        <texture>ui_hud_shk_stamina_new</texture>
+      </progress>
+    </progress_bar_stamina>
+	
+		<static_cur_ammo x="59" y="75" width="60" height="28" stretch="1">
+			<text complex_mode="0" font="graffiti32" color="ui_7" align="c" vert_align="c">Ammo</text>
+		</static_cur_ammo>
+
+	    <static_fmj_ammo x="45" y="90" width="60" height="28" stretch="1">
+	        <text align="c" complex_mode="0" font="graffiti19" color="ui_7" vert_align="c">fmj</text>
+	    </static_fmj_ammo>
+
+	    <static_ap_ammo x="75" y="90" width="60" height="28" stretch="1">
+	        <text align="c" complex_mode="0" font="graffiti19" r="238" g="155" b="23" a="150" vert_align="c">ap</text>
+	    </static_ap_ammo>
+
+	    <static_grenade x="59" y="90" width="60" height="28" stretch="1">
+	        <text align="c" complex_mode="0" font="letterica16" color="ui_7" vert_align="c">gr</text>
+	    </static_grenade>
+
+		<static_wpn_icon x="17" y="76" width="25" height="30" stretch="1" scale="1.00"/>
+	
+		<static_fire_mode x="122" y="105" width="8" height="14" stretch="1">
+			<text font="arial_14" color="ui_2" />
+		</static_fire_mode>
+	
+	</hud_states>
+
+</w>
