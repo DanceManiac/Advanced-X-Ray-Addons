@@ -79,6 +79,18 @@ slot					= 11
 default_to_ruck				= false
 sprint_allowed				= true
 control_inertion_factor			= 1
+
+[shader_nightvision_1]
+shader_nightvision_type = 1
+shader_nightvision_lum_factor = 3.0
+
+[shader_nightvision_2]
+shader_nightvision_type = 2
+shader_nightvision_lum_factor = 6.0
+
+[shader_nightvision_3]
+shader_nightvision_type = 3
+shader_nightvision_lum_factor = 10.0
 ;---------------------------------------------------------------------------------------------
 ;		Куртка новчика
 ;---------------------------------------------------------------------------------------------
@@ -300,7 +312,7 @@ control_inertion_factor			= 1.5
 power_loss				= 0.85
 helmet_avaliable	 		= false
 nightvision_sect			= effector_nightvision_3
-night_vision_type 			= 3
+shader_nightvision_sect	= shader_nightvision_3
 
 upgrades				= up_gr_firstab_scientific_outfit, up_gr_seconab_scientific_outfit, up_gr_thirdab_scientific_outfit, up_gr_fourtab_scientific_outfit, up_gr_fifthab_scientific_outfit
 installed_upgrades			=
@@ -1047,7 +1059,7 @@ sprint_allowed						= false			;запрещение режима Sprint для Актера
 helmet_avaliable			 		= false			;-->>
 
 nightvision_sect					= effector_nightvision_1
-night_vision_type 			= 1
+shader_nightvision_sect				= shader_nightvision_1
 
 has_glass			= true
 use_filter			= true
@@ -1250,7 +1262,7 @@ chemical_burn_protection 	= 0.0500
 telepatic_protection 		= 0.060
 
 nightvision_sect	= effector_nightvision_2
-night_vision_type 	= 2
+shader_nightvision_sect	= shader_nightvision_2
 upgrades                = up_gr_firstab_helm_protective, up_gr_seconab_helm_protective
 installed_upgrades      =
 upgrade_scheme          = upgrade_scheme_helm_protective
@@ -1296,7 +1308,7 @@ upgr_icon_height   	= 143
 cost			= 7000
 
 nightvision_sect	= effector_nightvision_1
-night_vision_type 	= 1
+shader_nightvision_sect	= shader_nightvision_1
 
 immunities_sect 	= sect_helm_tactic_immunities
 bones_koeff_protection		= actor_helm_tactic
@@ -1356,7 +1368,7 @@ upgr_icon_height   	= 143
 cost			= 6000
 
 nightvision_sect	= effector_nightvision_1
-night_vision_type 	= 1
+shader_nightvision_sect	= shader_nightvision_1
 
 immunities_sect 	= sect_helm_battle_immunities
 bones_koeff_protection		= actor_helm_battle
@@ -1396,7 +1408,7 @@ inv_name_short						= exo_outfit_name
 description							= exo_outfit_description
 cost								= 80000
 nightvision_sect					= effector_nightvision_3
-night_vision_type 					= 3
+shader_nightvision_sect				= shader_nightvision_3
 artefact_count          			= 3
 upgrades							= up_gr_firstab_exo_outfit, up_gr_seconab_exo_outfit, up_gr_thirdab_exo_outfit, up_gr_fourtab_exo_outfit, up_gr_fifthab_exo_outfit
 installed_upgrades					= up_fourtc_exo_outfit, up_sect_fourta_exo_outfit, up_fifthd_exo_outfit
@@ -1910,7 +1922,7 @@ additional_inventory_weight2		= 30
 sprint_allowed				= false
 helmet_avaliable			= false
 nightvision_sect			= effector_nightvision_1
-night_vision_type 			= 1
+shader_nightvision_sect		= shader_nightvision_1
 
 upgrades				= up_gr_firstab_merc_exo_outfit, up_gr_seconab_merc_exo_outfit, up_gr_thirdab_merc_exo_outfit, up_gr_fourtab_merc_exo_outfit, up_gr_fifthab_merc_exo_outfit
 installed_upgrades			=
@@ -2079,7 +2091,7 @@ control_inertion_factor			= 1.5
 power_loss				= 0.85
 helmet_avaliable	 		= false
 nightvision_sect			= effector_nightvision_2
-night_vision_type 			= 2
+shader_nightvision_sect		= shader_nightvision_2
 
 upgrades				= up_gr_firstab_svoboda_scientific_outfit, up_gr_seconab_svoboda_scientific_outfit, up_gr_thirdab_svoboda_scientific_outfit, up_gr_fourtab_svoboda_scientific_outfit, up_gr_fifthab_svoboda_scientific_outfit
 installed_upgrades			=
@@ -2172,7 +2184,7 @@ additional_inventory_weight2		= 30
 sprint_allowed				= false
 helmet_avaliable			= false
 nightvision_sect			= effector_nightvision_1
-night_vision_type 			= 1
+shader_nightvision_sect		= shader_nightvision_1
 
 upgrades				= up_gr_firstab_svoboda_exo_outfit, up_gr_seconab_svoboda_exo_outfit, up_gr_thirdab_svoboda_exo_outfit, up_gr_fourtab_svoboda_exo_outfit, up_gr_fifthab_svoboda_exo_outfit
 installed_upgrades			=
@@ -2262,7 +2274,7 @@ power_loss				= 0.85
 helmet_avaliable	 		= false
 
 nightvision_sect			= effector_nightvision_2
-night_vision_type 			= 2
+shader_nightvision_sect		= shader_nightvision_2
 
 upgrades				= up_gr_firstab_dolg_scientific_outfit, up_gr_seconab_dolg_scientific_outfit, up_gr_thirdab_dolg_scientific_outfit, up_gr_fourtab_dolg_scientific_outfit, up_gr_fifthab_dolg_scientific_outfit
 installed_upgrades			=
@@ -2353,7 +2365,7 @@ additional_inventory_weight2		= 30
 sprint_allowed				= false
 helmet_avaliable			= false
 nightvision_sect			= effector_nightvision_1
-night_vision_type 			= 1
+shader_nightvision_sect		= shader_nightvision_1
 
 upgrades				= up_gr_firstab_dolg_exo_outfit, up_gr_seconab_dolg_exo_outfit, up_gr_thirdab_dolg_exo_outfit, up_gr_fourtab_dolg_exo_outfit, up_gr_fifthab_dolg_exo_outfit
 installed_upgrades			=
@@ -2700,7 +2712,7 @@ power_loss				= 0.85
 helmet_avaliable	 		= false
 
 nightvision_sect			= effector_nightvision_2
-night_vision_type 			= 2
+shader_nightvision_sect		= shader_nightvision_2
 
 upgrades				=
 installed_upgrades			=
@@ -2830,7 +2842,7 @@ explosion_protection 				= 0.0
 wound_protection					= 0.0
 
 nightvision_sect					= effector_nightvision_1
-night_vision_type 				= 1
+shader_nightvision_sect				= shader_nightvision_1
 
 upgrades							= up_gr_firstab_helm_battle, up_gr_seconab_helm_battle
 installed_upgrades					=

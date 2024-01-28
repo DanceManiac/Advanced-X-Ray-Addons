@@ -2,6 +2,7 @@
 ; Mod: TrickSR & STCoP Weapon Pack 
 ; Autor: steelrat & Ga2z
 ;-------------------------------------------------------------------------------
+#include "addon_tactical.ltx"
 #include "weapons_addons.ltx"			;-->> 'TrickSR'
 #include "weapons_sounds.ltx"			;-->> 'TrickSR'
 #include "weapons_sounds_up.ltx"			;-->> 'TrickSR'
@@ -480,3 +481,43 @@ force_explode_time				= 10000
 [wpn_fake_missile]:wpn_fake_vog-25
 [wpn_fake_missile1]:wpn_fake_vog-25p
 [wpn_fake_missile2]:wpn_fake_m209
+
+[wpn_addon_red_laser]:identity_immunities,red_laser
+GroupControlSection	= spawn_group
+discovery_dependency =
+$spawn				= "weapons\addons\laser_designator" ; option for Level Editor
+class				= WP_LASER
+cform           	= skeleton
+visual          	= dynamics\weapons\wpn_upgrade\wpn_silencer.ogf
+description			= st_addon_laser_descr
+$prefetch 			= 32
+slot = -1
+cost				= 200
+inv_name			= st_addon_laser
+inv_name_short		= st_addon_laser
+inv_weight			= 0.1
+
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 18
+inv_grid_y			= 1
+
+[wpn_addon_tactical_torch]:identity_immunities,tactical_torch
+GroupControlSection	= spawn_group
+discovery_dependency =
+$spawn				= "weapons\addons\wpn_addon_tactical_torch" ; option for Level Editor
+class				= WP_TORCH
+cform           	= skeleton
+visual          	= dynamics\weapons\wpn_upgrade\wpn_silencer.ogf
+description			= st_addon_tactical_torch_descr
+$prefetch 			= 32
+slot = -1
+cost				= 200
+inv_name			= st_addon_tactical_torch
+inv_name_short		= st_addon_tactical_torch
+inv_weight			= 0.1
+
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 18
+inv_grid_y			= 1
