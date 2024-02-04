@@ -4,9 +4,13 @@
 
 Только Зов Припяти:
 
-4. Если установлен STCoP, то после 3-го пункта, перенести в корень игры папку gamedata
-из папки CallOfPripyat\STCoP Adaptation
+4.1. Если установлен STCoP, то после 3-го пункта, перенести в корень игры папку gamedata
+из папки CallOfPripyat\STCoP <версия> Adaptation
 
+Только Чистое Небо:
+
+4.2. Если установлен STCS, то после 3-го пункта, перенести в корень игры папку gamedata
+из папки ClearSky\STCS Adaptation
 Упрощённая установка:
 
 ВНИМАНИЕ! ПАПКА ADDONS ИМЕЕТ ПРИОРИТЕТ НАД GAMEDATA И ПЕРЕЗАПИШЕТ ЕЁ.
@@ -17,5 +21,5 @@
 
 3. Если установлен оружейный пак STCoP|STCS:
 
-В зависимости от оружейного пака, перенести "2.1 Items Animations Addon - STCoP Adaptation" 
+В зависимости от оружейного пака, перенести "2.1 Items Animations Addon - STCoP <версия> Adaptation" 
 или "2.1 Items Animations Addon - STCS Adaptation" в папку addons в корне игры.
