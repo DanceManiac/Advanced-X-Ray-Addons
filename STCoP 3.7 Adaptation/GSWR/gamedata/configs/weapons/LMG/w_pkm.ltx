@@ -203,11 +203,11 @@ hands_orientation_16x9						= 0,0,0
 item_position								= 0,0,0
 item_orientation							= 0,0,0
 
-aim_hud_offset_pos							= -0.054500,0.030380,-0.021996
-aim_hud_offset_rot							= -0.001140,0.000325,-0.099879
+aim_hud_offset_pos							= 0.008500,0.005880,0.045004
+aim_hud_offset_rot							= -0.000490,0.000325,0.009321
 
-aim_hud_offset_pos_16x9						= -0.054500,0.030380,-0.021996
-aim_hud_offset_rot_16x9						= -0.001140,0.000325,-0.099879
+aim_hud_offset_pos_16x9						= 0.008500,0.005880,0.045004
+aim_hud_offset_rot_16x9						= -0.000490,0.000325,0.009321
 
 shell_bone                 	 				= gilza
 shell_dir                   				= 0,11,0
@@ -221,11 +221,11 @@ fire_point2                 				= 0,0,0
 
 anm_hide                    				= wpn_hand_pkm_siber_out,              idle
 anm_idle                    				= wpn_hand_pkm_siber_idle,             idle
-anm_idle_aim                				= pkm_idle_aim, idle
-anm_idle_aim_moving         				= wpn_hand_pkm_siber_idle, idle, 2.0
-anm_idle_aim_moving_slow  					= wpn_hand_pkm_siber_idle, idle, 1.75
-anm_idle_aim_moving_crouch  				= wpn_hand_pkm_siber_idle, idle, 1.5
-anm_idle_aim_moving_crouch_slow  			= wpn_hand_pkm_siber_idle, idle, 1.25
+anm_idle_aim                				= wpn_hand_pkm_siber_idle_aim, idle
+;anm_idle_aim_moving         				= wpn_hand_pkm_siber_idle, idle, 2.0
+;anm_idle_aim_moving_slow  					= wpn_hand_pkm_siber_idle, idle, 1.75
+;anm_idle_aim_moving_crouch  				= wpn_hand_pkm_siber_idle, idle, 1.5
+;anm_idle_aim_moving_crouch_slow  			= wpn_hand_pkm_siber_idle, idle, 1.25
 anm_idle_moving             				= wpn_hand_pkm_siber_walk, wpn_pkm_siber_walk
 anm_idle_moving_slow             			= wpn_hand_pkm_siber_walk, wpn_pkm_siber_walk, 0.8
 anm_idle_moving_crouch      				= wpn_hand_pkm_siber_walk, wpn_pkm_siber_walk, 0.6
@@ -237,19 +237,19 @@ anm_reload_empty            				= wpn_hand_pkm_siber_reload_empty,     wpn_pkm_s
 anm_shots                   				= wpn_hand_pkm_siber_shoot,            wpn_pkm_siber_shoot
 anm_show                    				= wpn_hand_pkm_siber_in,               wpn_pkm_siber_in
 anm_bore                    				= wpn_hand_pkm_siber_boring,           wpn_pkm_siber_boring
-;anm_shots_aim               				= wpn_hand_pkm_siber_shoot_aim,        wpn_pkm_siber_shoot
-;anm_idle_aim_start          				= wpn_hand_pkm_siber_in_aim,           wpn_pkm_siber_in_aim ; 1.06
-;anm_idle_aim_end            				= wpn_hand_pkm_siber_out_aim,          wpn_pkm_siber_out_aim ; 1.06
+anm_shots_aim               				= wpn_hand_pkm_siber_shoot_aim,        wpn_pkm_siber_shoot
+anm_idle_aim_start          				= wpn_hand_pkm_siber_in_aim,           wpn_pkm_siber_in_aim ; 1.06
+anm_idle_aim_end            				= wpn_hand_pkm_siber_out_aim,          wpn_pkm_siber_out_aim ; 1.06
 
 ;EMPTY
 ;--------------------------------------------------------------------
 anm_hide_empty                  			= wpn_hand_pkm_siber_out, wpn_pkm_siber_idle_empty
 anm_idle_empty								= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty
-anm_idle_aim_empty							= pkm_idle_aim, wpn_pkm_siber_idle_empty
-anm_idle_aim_moving_empty					= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty, 2.0
-anm_idle_aim_moving_slow_empty   			= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty, 1.75
-anm_idle_aim_moving_crouch_empty   			= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty, 1.5
-anm_idle_aim_moving_crouch_slow_empty   	= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty, 1.25
+anm_idle_aim_empty							= wpn_hand_pkm_siber_idle_aim, wpn_pkm_siber_idle_empty
+;anm_idle_aim_moving_empty					= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty, 2.0
+;anm_idle_aim_moving_slow_empty   			= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty, 1.75
+;anm_idle_aim_moving_crouch_empty   			= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty, 1.5
+;anm_idle_aim_moving_crouch_slow_empty   	= wpn_hand_pkm_siber_idle, wpn_pkm_siber_idle_empty, 1.25
 anm_idle_moving_empty						= wpn_hand_pkm_siber_walk, wpn_pkm_siber_idle_empty
 anm_idle_moving_slow_empty					= wpn_hand_pkm_siber_walk, wpn_pkm_siber_idle_empty, 0.8
 anm_idle_moving_crouch_empty				= wpn_hand_pkm_siber_walk, wpn_pkm_siber_idle_empty, 0.6
@@ -258,9 +258,9 @@ anm_idle_sprint_empty						= wpn_hand_pkm_siber_run, wpn_pkm_siber_idle_empty
 anm_shot_l									= wpn_hand_pkm_siber_shoot, wpn_pkm_siber_shoot_empty
 anm_show_empty								= wpn_hand_pkm_siber_in, wpn_pkm_siber_idle_empty
 anm_bore_empty								= wpn_hand_pkm_siber_boring, wpn_pkm_siber_idle_empty
-;anm_idle_aim_start_empty					= wpn_hand_pkm_siber_in_aim, wpn_pkm_siber_idle_empty
-;anm_idle_aim_end_empty						= wpn_hand_pkm_siber_out_aim, wpn_pkm_siber_idle_empty
-;anm_shots_aim_l							= wpn_hand_pkm_siber_shoot_aim, wpn_pkm_siber_shoot_empty
+anm_idle_aim_start_empty					= wpn_hand_pkm_siber_in_aim, wpn_pkm_siber_idle_empty
+anm_idle_aim_end_empty						= wpn_hand_pkm_siber_out_aim, wpn_pkm_siber_idle_empty
+anm_shots_last_aim							= wpn_hand_pkm_siber_shoot_aim, wpn_pkm_siber_shoot_empty
 
 gl_hud_offset_pos 							= 0,0,0
 gl_hud_offset_rot 							= 0,0,0
@@ -317,19 +317,19 @@ silencer_y                  				= 11
 [wpn_pkp_hud]:wpn_pkm_hud
 item_visual             					= dynamics\weapons\wpn_pkp\wpn_pkp_hud.ogf
 
-aim_hud_offset_pos							= -0.054300,0.029880,-0.021996
-aim_hud_offset_rot							= -0.002340,-0.000765,-0.099879
+aim_hud_offset_pos							= 0.008600,0.005880,0.045004
+aim_hud_offset_rot							= 0.001760,0.000325,0.009321
 
-aim_hud_offset_pos_16x9						= -0.054300,0.029880,-0.021996
-aim_hud_offset_rot_16x9						= -0.002340,-0.000765,-0.099879
+aim_hud_offset_pos_16x9						= 0.008600,0.005880,0.045004
+aim_hud_offset_rot_16x9						= 0.001760,0.000325,0.009321
 
 anm_hide                    				= wpn_hand_pkm_siber_out,  idle
 anm_idle                    				= wpn_hand_pkm_siber_idle, idle
-anm_idle_aim                				= pkm_idle_aim, idle
-anm_idle_aim_moving         				= wpn_hand_pkm_siber_idle, idle, 2.0
-anm_idle_aim_moving_slow  					= wpn_hand_pkm_siber_idle, idle, 1.75
-anm_idle_aim_moving_crouch  				= wpn_hand_pkm_siber_idle, idle, 1.5
-anm_idle_aim_moving_crouch_slow  			= wpn_hand_pkm_siber_idle, idle, 1.25
+anm_idle_aim                				= wpn_hand_pkm_siber_idle_aim, idle
+;anm_idle_aim_moving         				= wpn_hand_pkm_siber_idle, idle, 2.0
+;anm_idle_aim_moving_slow  					= wpn_hand_pkm_siber_idle, idle, 1.75
+;anm_idle_aim_moving_crouch  				= wpn_hand_pkm_siber_idle, idle, 1.5
+;anm_idle_aim_moving_crouch_slow  			= wpn_hand_pkm_siber_idle, idle, 1.25
 anm_idle_moving             				= wpn_hand_pkm_siber_walk, wpn_pkp_siber_walk
 anm_idle_moving_slow             			= wpn_hand_pkm_siber_walk, wpn_pkp_siber_walk, 0.8
 anm_idle_moving_crouch      				= wpn_hand_pkm_siber_walk, wpn_pkp_siber_walk, 0.6
@@ -341,19 +341,19 @@ anm_reload_empty            				= wpn_hand_pkm_siber_reload_empty,     wpn_pkp_s
 anm_shots                   				= wpn_hand_pkm_siber_shoot,            wpn_pkp_siber_shoot
 anm_show                    				= wpn_hand_pkm_siber_in,               wpn_pkp_siber_in
 anm_bore                    				= wpn_hand_pkm_siber_boring,           wpn_pkp_siber_boring
-;anm_shots_aim               				= wpn_hand_pkm_siber_shoot_aim,        wpn_pkp_siber_shoot
-;anm_idle_aim_start          				= wpn_hand_pkm_siber_in_aim,           wpn_pkp_siber_in_aim ; 1.06
-;anm_idle_aim_end            				= wpn_hand_pkm_siber_out_aim,          wpn_pkp_siber_out_aim ; 1.06
+anm_shots_aim               				= wpn_hand_pkm_siber_shoot_aim,        wpn_pkp_siber_shoot
+anm_idle_aim_start          				= wpn_hand_pkm_siber_in_aim,           wpn_pkp_siber_in_aim ; 1.06
+anm_idle_aim_end            				= wpn_hand_pkm_siber_out_aim,          wpn_pkp_siber_out_aim ; 1.06
 
 ;EMPTY
 ;--------------------------------------------------------------------
 anm_hide_empty                  			= wpn_hand_pkm_siber_out, wpn_pkp_siber_idle_empty
 anm_idle_empty								= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty
-anm_idle_aim_empty							= pkm_idle_aim, wpn_pkp_siber_idle_empty
-anm_idle_aim_moving_empty					= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty, 2.0
-anm_idle_aim_moving_slow_empty   			= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty, 1.75
-anm_idle_aim_moving_crouch_empty   			= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty, 1.5
-anm_idle_aim_moving_crouch_slow_empty   	= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty, 1.25
+anm_idle_aim_empty							= wpn_hand_pkm_siber_idle_aim, wpn_pkp_siber_idle_empty
+;anm_idle_aim_moving_empty					= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty, 2.0
+;anm_idle_aim_moving_slow_empty   			= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty, 1.75
+;anm_idle_aim_moving_crouch_empty   			= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty, 1.5
+;anm_idle_aim_moving_crouch_slow_empty   	= wpn_hand_pkm_siber_idle, wpn_pkp_siber_idle_empty, 1.25
 anm_idle_moving_empty						= wpn_hand_pkm_siber_walk, wpn_pkp_siber_idle_empty
 anm_idle_moving_slow_empty					= wpn_hand_pkm_siber_walk, wpn_pkp_siber_idle_empty, 0.8
 anm_idle_moving_crouch_empty				= wpn_hand_pkm_siber_walk, wpn_pkp_siber_idle_empty, 0.6
@@ -362,9 +362,9 @@ anm_idle_sprint_empty						= wpn_hand_pkm_siber_run, wpn_pkp_siber_idle_empty
 anm_shot_l									= wpn_hand_pkm_siber_shoot, wpn_pkp_siber_shoot_empty
 anm_show_empty								= wpn_hand_pkm_siber_in, wpn_pkp_siber_idle_empty
 anm_bore_empty								= wpn_hand_pkm_siber_boring, wpn_pkp_siber_idle_empty
-;anm_idle_aim_start_empty					= wpn_hand_pkm_siber_in_aim, wpn_pkp_siber_idle_empty
-;anm_idle_aim_end_empty						= wpn_hand_pkm_siber_out_aim, wpn_pkp_siber_idle_empty
-;anm_shots_last_aim							= wpn_hand_pkm_siber_shoot_aim, wpn_pkp_siber_shoot_empty
+anm_idle_aim_start_empty					= wpn_hand_pkm_siber_in_aim, wpn_pkp_siber_idle_empty
+anm_idle_aim_end_empty						= wpn_hand_pkm_siber_out_aim, wpn_pkp_siber_idle_empty
+anm_shots_last_aim							= wpn_hand_pkm_siber_shoot_aim, wpn_pkp_siber_shoot_empty
 
 ;-----------------------------------------------------------------------------
 ; ְההמםû

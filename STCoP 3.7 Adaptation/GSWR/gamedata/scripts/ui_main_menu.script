@@ -44,7 +44,7 @@ function main_menu:InitControls()
     local ConfVer = utils.cfg_get_string(ini_file("modification_info.ltx"), "modification_info", "version", db.actor, false, "", "")
     local Year = utils.cfg_get_string(ini_file("modification_info.ltx"), "modification_info", "year", db.actor, false, "", "")
 	
-	_mfsVer:TextControl():SetText("STCoP Weapon Pack 3.7.02 + Global Stalker Weather Rework ver: "..ConfVer.." ")
+	_mfsVer:TextControl():SetText("STCoP Weapon Pack 3.7.03 + Global Stalker Weather Rework ver: "..ConfVer.." ")
 	_mfs_team:TextControl():SetText("Ga2z & M.F.S. Team "..Year.."©. ")
 --/--==game_and_mod_ver==--
 
