@@ -1,0 +1,22 @@
+﻿ВНИМАНИЕ! Патч 3.5.06 уже встроен в адаптацию!
+
+Стандартная установка:
+
+1. Скачать STCoP 3.5
+2. Сделать резервную копию папки gamedata с необходимыми ресурсами для движка.
+3. Удалить из gamedata Advanced X-Ray или G.S.W.R. папку gamedata\configs\weapons
+4. Переместить из gamedata мода STCoP 3.5 c заменой в gamedata Advanced X-Ray или G.S.W.R. всё, кроме папок scripts и shaders.
+5. Переместить gamedata из адаптации STCoP в корень игры, подтверждая замену всех файлов.
+6. Если производится установка на Global Stalker Weather Rework, то после 5-ого пункта перенести с заменой
+папку scripts из папки GSWR от скачанной адаптации.
+
+Упрощённая установка:
+
+ВНИМАНИЕ! ПАПКА ADDONS ИМЕЕТ ПРИОРИТЕТ НАД GAMEDATA И ПЕРЕЗАПИШЕТ ЕЁ.
+
+1. Скачать STCoP 3.5
+2. Сделать резервную копию папки gamedata с необходимыми ресурсами для движка.
+3. Удалить из gamedata Advanced X-Ray или G.S.W.R. папку gamedata\configs\weapons
+4. Перенести архив "1. STCoP 3.5 Adaptation" в папку addons в корне игры
+5. Если производится установка на Global Stalker Weather Rework, 
+перенести архив "1.2. STCoP 3.5 Adaptation GSWR" в папку addons в корне игры

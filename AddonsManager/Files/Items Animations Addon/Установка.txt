@@ -1,0 +1,25 @@
+1. Установить Advanced X-Ray 2.5.40 или Global Stalker Weather Rework 1.5.14
+2. Перенести папку gamedata из папки All в корень игры с заменой всех файлов
+3. В зависимости от части игры, перенести папку gamedata из CallOfPripyat|ClearSky с заменой всех файлов.
+
+Только Зов Припяти:
+
+4.1. Если установлен STCoP, то после 3-го пункта, перенести в корень игры папку gamedata
+из папки CallOfPripyat\STCoP <версия> Adaptation
+
+Только Чистое Небо:
+
+4.2. Если установлен STCS, то после 3-го пункта, перенести в корень игры папку gamedata
+из папки ClearSky\STCS Adaptation
+Упрощённая установка:
+
+ВНИМАНИЕ! ПАПКА ADDONS ИМЕЕТ ПРИОРИТЕТ НАД GAMEDATA И ПЕРЕЗАПИШЕТ ЕЁ.
+
+1. Перенести все архив "2. Items Animations Addon - Base" в папку addons в корне игры.
+2. В зависимости от части игры, перенести архив "2.1 Items Animations Addon - CoP" (Зов Припяти)
+или "2.1 Items Animations Addon - CS" (Чистое Небо) в папку addons в корне игры.
+
+3. Если установлен оружейный пак STCoP|STCS:
+
+В зависимости от оружейного пака, перенести "2.1 Items Animations Addon - STCoP <версия> Adaptation" 
+или "2.1 Items Animations Addon - STCS Adaptation" в папку addons в корне игры.

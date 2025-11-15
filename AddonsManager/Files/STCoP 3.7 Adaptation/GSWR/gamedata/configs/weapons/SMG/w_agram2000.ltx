@@ -1,0 +1,247 @@
+; Хорватский пистолет-пулемёт Agram 2000
+;-(TrickSR, Ga2z)-----------------------------------------
+; калибр										9x19 мм
+; длина ствола 									200 мм
+; магазин										22/32
+; вес с пустым магазином						1.8 кг
+; максимальная дальность стрельбы				-- м
+; эффективная дальность стрельбы				-- м
+; прицельная дальность							150 м
+; дульная скорость пули							330 м/с
+; темп стрельбы									800 в/м
+;---------------------------------------------------
+[wpn_agram2000]:weapon_probability,default_weapon_params,wpn_agram2000_sounds
+GroupControlSection								= spawn_group
+$spawn											= "weapons\agram2000"
+$npc											= on
+$prefetch										= 8
+scheduled										= off
+cform											= skeleton
+class											= WP_AK74
+description										= st_wpn_agram2000_descr
+
+scopes 											= none
+parent_section  								= wpn_agram2000
+
+ef_main_weapon_type								= 2
+ef_weapon_type									= 8
+
+inv_name										= st_wpn_agram2000
+inv_name_short									= st_wpn_agram2000
+
+inv_grid_width									= 3
+inv_grid_height									= 2
+inv_grid_x										= 32
+inv_grid_y										= 32
+
+upgr_icon_x										= 1150
+upgr_icon_y										= 1650
+upgr_icon_width									= 200
+upgr_icon_height 								= 150
+
+kill_msg_x										= 0
+kill_msg_y										= 28
+kill_msg_width									= 84
+kill_msg_height									= 28
+
+cost 											= 2500
+weapon_class									= assault_rifle
+inv_weight										= 1.8
+hud												= wpn_agram2000_hud
+visual											= dynamics\weapons\wpn_agram2000\wpn_agram2000.ogf
+
+upgrades                						= up_gr_firstab_mp5, up_gr_seconab_mp5, up_gr_thirdab_mp5, up_gr_fourtab_mp5, up_gr_fifthab_mp5, up_gr_fifthcd_mp5
+installed_upgrades      						=
+upgrade_scheme          						= upgrade_scheme_mp5
+
+ph_mass											= 3
+
+ammo_class										= ammo_9x19_fmj, ammo_9x19_pbp
+
+startup_ammo									= 90
+ammo_current									= 180
+ammo_elapsed									= 32
+ammo_limit										= 210
+ammo_mag_size									= 32
+
+fire_modes										= 1, -1
+
+grenade_class									= ammo_vog-25, ammo_vog-25p
+
+launch_speed									= 76
+hand_dependence									= 1
+single_handed									= 0
+
+hit_power										= 0.23
+;hit_impulse									= 10
+hit_type										= fire_wound
+fire_distance									= 1000
+bullet_speed									= 330
+rpm												= 800
+rpm_empty_click									= 200
+	
+use_aim_bullet									= false
+time_to_aim										= 3
+
+misfire_probability								= 0.005
+misfire_start_condition							= 0.6
+misfire_end_condition							= 0.1
+misfire_start_prob	 							= 0.003
+misfire_end_prob		 						= 0.043
+condition_shot_dec 								= 0.0015
+condition_queue_shot_dec						= 0.0016
+
+zoom_dof										= 0.5,1,180
+reload_dof										= 0,0.5,5,2
+
+fire_dispersion_base 							= 0.4
+fire_dispersion_condition_factor				= 2
+control_inertion_factor 						= 1.2f
+crosshair_inertion								= 5.75
+
+cam_return										= 0
+cam_relax_speed									= 5
+cam_relax_speed_ai								= 120.75
+cam_dispersion									= 0.5
+cam_dispersion_inc								= 0.25
+cam_dispersion_frac								= 1.0
+cam_max_angle									= 50.0
+cam_max_angle_horz								= 50.0
+cam_step_angle_horz								= 1.5
+
+zoom_cam_relax_speed							= 10
+zoom_cam_relax_speed_ai							= 120.75
+zoom_cam_dispersion								= 0.5
+zoom_cam_dispersion_inc							= 0.25
+zoom_cam_dispersion_frac						= 1
+zoom_cam_max_angle								= 50
+zoom_cam_max_angle_horz							= 50
+zoom_cam_step_angle_horz						= 1.5
+
+PDM_disp_base 									= 0.5
+PDM_disp_vel_factor 							= 1.5
+PDM_disp_accel_factor 							= 1.5
+PDM_disp_crouch	 								= 1
+PDM_disp_crouch_no_acc 							= 1
+
+min_radius										= 30
+max_radius										= 50
+holder_range_modifier							= 1
+holder_fov_modifier								= 1
+
+slot											= 2
+animation_slot									= 8
+
+position                						= -0.026, -0.13, 0
+orientation             						= 0, 6, 0
+
+fire_point              						= 0.0, 0.188, 0.392
+fire_point2             						= 0.0, 0.188, 0.392
+
+flame_particles									= amik\weapons\ak_shoot_00
+smoke_particles									= ghost_particles\weapons\flame_eft_ak
+grenade_flame_particles 						= amik\weapons\grenade_flame_particles\grenade_flame_particles_00
+silencer_smoke_particles   						= ghost_particles\weapons\generic_smoke_eft_sil
+
+shell_point										= 0,0.216,0.174
+shell_dir										= 0,0,0.4
+;shell_particles								= ghost_particles\weapons\shells\shells_9x19_right
+
+strap_position									= -0.26,-0.11,0.25
+strap_orientation								= -15,-9,110
+strap_bone0										= bip01_spine2
+strap_bone1										= bip01_spine1
+
+light_disabled									= false
+light_color										= 0.6,0.5,0.3
+light_range										= 5
+light_var_color									= 0.05
+light_var_range									= 0.5
+light_time										= 0.2
+
+scope_status									= 0
+silencer_status									= 0
+grenade_launcher_status							= 0
+
+zoom_enabled									= true
+zoom_rotate_time								= 0.2
+scope_zoom_factor								= 83.3
+
+scope_name 										= acog
+scope_x											= 74
+scope_y											= -5
+
+silencer_name									= sil_pbs1
+silencer_x                  					= 181
+silencer_y                  					= 15
+
+silencer_hit_power								= 0.22
+silencer_hit_impulse							= 20
+silencer_fire_distance							= 1000
+silencer_bullet_speed							= 850
+
+silencer_light_color							= 0.6,0.5,0.3
+silencer_light_range							= 0.01
+silencer_light_var_color						= 0.05
+silencer_light_var_range						= 0.5
+silencer_light_time								= 0.2
+
+[wpn_agram2000_hud]:hud_base
+zoom_hide_crosshair 							= true
+attach_place_idx	    						= 0
+item_visual	         							= dynamics\weapons\wpn_agram2000\wpn_agram2000_hud.ogf
+
+hands_position                   				= 0.067058, -0.118375, 0.17
+hands_orientation                				= 0.3424, 0.132263, 0
+
+hands_position_16x9              				= 0.067058, -0.118375, 0.17
+hands_orientation_16x9           				= 0.3424, 0.132263, 0
+
+item_position                           	 	= 0, 0, 0
+item_orientation                         		= 0, 0, 0
+
+aim_hud_offset_pos               				= -0.055133, 0.019098, -0.045
+aim_hud_offset_rot               				= -0.008991, 0.005856, 0
+
+aim_hud_offset_pos_16x9          				= -0.055133, 0.019098, -0.045
+aim_hud_offset_rot_16x9          				= -0.008991, 0.005856, 0
+
+shell_point										= 0,0,0
+shell_bone              						= shell
+
+fire_bone                                		= muzzle
+fire_bone2                               		= wpn_body
+fire_point                               		= 0, 0, 0
+fire_point2                              		= 0, 0, 0
+
+anm_bore                                 		= agram_inspect, idle
+anm_show                                 		= agram_draw, idle
+anm_hide                                		= agram_holster, idle
+anm_idle                                 		= agram_idle, idle
+anm_idle_aim_moving                      		= agram_walk, idle, 0.6
+anm_idle_aim_moving_slow	              		= agram_walk, idle, 0.5
+anm_idle_aim_moving_crouch               		= agram_walk, idle, 0.4
+anm_idle_aim_moving_crouch_slow               	= agram_walk, idle, 0.3
+anm_idle_moving                          		= agram_walk, idle
+anm_idle_moving_slow                   			= agram_walk, idle, 0.8
+anm_idle_moving_crouch                   		= agram_walk, idle, 0.6
+anm_idle_moving_crouch_slow                   	= agram_walk, idle, 0.4
+anm_idle_sprint                          		= agram_sprint, idle
+anm_reload                               		= agram_reload, reload
+anm_reload_empty                         		= agram_reload_empty, reload_empty
+anm_reload_misfire          			 		= agram_unjam, unjam
+anm_changefiremode                 		 		= agram_switch_mode, switch_mode
+anm_shots                                		= agram_aim_shoot, aim_shoot
+anm_shot_l                                		= agram_aim_shoot, aim_shoot
+anm_idle_aim                             		= agram_aim, aim
+
+gl_hud_offset_pos                       		= 0, 0, 0
+gl_hud_offset_pos_16x9                   		= 0, 0, 0
+
+gl_hud_offset_rot                        		= 0, 0, 0
+gl_hud_offset_rot_16x9                   		= 0, 0, 0
+
+lean_hud_offset_pos                      		= 0, 0, 0
+lean_hud_offset_rot                      		= 0, 0, 0
+
+freelook_z_offset_mul					 		= 0.1
