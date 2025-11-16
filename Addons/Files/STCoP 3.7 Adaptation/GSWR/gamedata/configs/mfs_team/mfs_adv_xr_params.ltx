@@ -18,9 +18,10 @@ anomaly_detector_use_battery = false ;; Ограниченный заряд детектора аномалий
 limited_bolts = false				;; Лимитированные болты
 actor_thirst_enabled = false		;; Жажда ГГ
 actor_intoxication_enabled = false	;; Интоксикация ГГ
-actor_sleepeness_enabled = false	;; Потребность гг во сне
-actor_alcoholism_enabled = false	;; Алкогольная зависимость
+actor_sleepeness_enabled = false	;; Потребность ГГ во сне
+actor_alcoholism_enabled = false	;; Алкоголизм
 actor_narcotism_enabled = false		;; Наркомания
+actor_frostbite_enabled = false		;; Обморожение
 artefacts_degradation = false		;; Деградация артефактов
 artefacts_degradation_mode = from_belt	;; Режим деградации артефактов (from_belt|from_ruck)
 enable_artefacts_ranks = false		;; Ранги артефактов
@@ -36,11 +37,13 @@ hide_hud_on_master = false			;; Скрывать худ и перекрестие на самой высокой слож
 actor_skills_enabled = false		;; Система навыков героя
 sleepeness_infl_on_psy_health = false ;; Влияние сонливости на пси-здоровье
 enable_limited_inventory = false	;; Лимитированный инвентарь
+enable_limited_inv_boxes = false	;; Лимитированные ящики
 items_auto_volume = false			;; Автоматический расчёт объёма вещей для лимитированного инвентаря (экспериментальная опция, могут быть баги)
 enable_food_irradiation = false		;; Облучение пищи
 enable_food_rotting = false			;; Порча еды со временем
 ogse_weapons_zoom_system = false 	;; OGSE система зума
 enable_quick_throw_grenades = true	;; Быстрый бросок гранат
+enable_global_achievements = false	;; Глобальные достижения
 
 [inventory]
 enable_knife_slot = false			;; Включен ли слот ножа
@@ -64,6 +67,8 @@ enable_artefact_panel = false		;; Вкл.\выкл. панель артефактов на худе
 enable_hud_used_item_text = true	;; Вкл.\выкл. надпись об использованном предмете на HUD 
 enable_pda_info_icons = false		;; Вкл.\выкл. HUD иконку оповещения о новой информации в КПК 
 enable_new_task_icon = false		;; Вкл.\выкл. HUD иконку оповещения при получении квеста 
+show_saved_game_name = false		;; Вкл.\выкл. отображение имени сделанного сохранения на экране
+enable_smooth_scrolling = false		;; Вкл.\выкл. плавный скролл
 
 [hud_movement_layers]; Эффекты камеры при ходьбе из Anomaly
 ;types: 0 = aim_walk, 1 = aim_crouch, 2 = crouch, 3 = walk, 4 = run, 5 = sprint
@@ -98,10 +103,11 @@ clr_warm_tone 		= 5
 clr_blue 			= 6
 
 [start_settings];Стартовые значения необходимых настроек
-
 ;FOV
 Camera_FOV = 75
 HUD_FOV = 0.7
+gloss_factor = 0.12
+weather_fog_clamping = 750.0
 
-;Enchanted Shaders color grading
+;Enhanced Shaders color grading
 color_grading_es = 0.5, 0.5, 0.5

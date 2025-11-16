@@ -409,6 +409,18 @@ function actor_binder:update(delta)
 
 	xr_s.on_actor_update(delta)
 	
+	-- Если до выброса меньше 7200 секунд (2 часа) и больше 0 секунд
+	if self.weather_manager then
+		if db.actor and (level.get_custom_timer("SurgeTimer") >= 6) then
+			-- Активируем pre_blowout период в менеджере погоды
+			self.weather_manager.pre_blowout_period = true
+			-- printf("DBG_SURGE: Pre-blowout period ACTIVATED. Time to surge: %s seconds", diff_s)
+		else
+			-- Деактивируем, если время вышло или выброс прошел
+			self.weather_manager.pre_blowout_period = false
+		end
+	end
+	
 			--' end  --
 	if xr_surge_hide.start_surge then
 		if not xr_surge_hide.weather_surge then
@@ -449,6 +461,16 @@ function actor_binder:update(delta)
 	end
 	if guiders.teleported_to_another_level and not guiders.level_changed then
 		guiders.action_teleport_to_point()
+	end
+	
+	if xr_surge_hide.surge_activated then
+		if not game.get_saves_lock_status() then
+			game.set_lock_saves(true)
+		end
+	else
+		if game.get_saves_lock_status() then
+			game.set_lock_saves(false)
+		end	
 	end
 end
 ----------------------------------------------------------------------------------------------------------------------

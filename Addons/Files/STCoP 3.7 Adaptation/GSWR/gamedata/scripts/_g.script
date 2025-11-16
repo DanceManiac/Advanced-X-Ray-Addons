@@ -85,6 +85,7 @@ function printf(fmt,...)
 		local is_g = 0
 		local result = fmt
 		if debug == nil then
+			
 			if swe_debug.log_mode == 1 then
 				log("# SWE: "..string.format(fmt,...))
 			else
@@ -661,6 +662,7 @@ end
 function on_actor_sleepeness()
 end
 
+
 --' Алкоголизм
 function on_actor_alcoholism()
 end
@@ -675,6 +677,10 @@ end
 
 --' Ломка
 function on_actor_withdrawal()
+end
+
+--' Обморожение
+function on_actor_frostbite()
 end
 
 --' іадиация

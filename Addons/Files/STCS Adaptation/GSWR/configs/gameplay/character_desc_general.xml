@@ -13,7 +13,6 @@
       sleeping_bag \n
       device_torch \n
       wpn_binoc \n
-	  bolt \n
     </supplies>
 
     <money min="200"  max="200"  infinitive="0"/>
