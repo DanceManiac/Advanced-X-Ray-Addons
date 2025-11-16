@@ -1,9 +1,0 @@
-local ini = ini_file("stcop_config.ltx")
-
-function init()
-	for i = 0, ini:line_count("default_console_settings") - 1 do
-		result, key, value = ini:r_line("default_console_settings", i, "", "")
-		
-		get_console():execute(key.." "..value)
-	end
-end
