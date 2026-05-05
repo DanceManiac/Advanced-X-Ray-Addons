@@ -3,7 +3,7 @@ engine_mode = cs						;; Режим работы движка cop|cs (Зов Припяти|Чистое Небо)
 discord_app_id = 745402574810906675		;; ID приложения для Discord Rich Presense
 discord_show_task = true				;; Выводить в статус Дискорда текущий квест
 ls_tips_enabled = true					;; Включены ли 100 советов по выживанию в Зоне
-developer_mode = true					;; Режим разработчика (больше команд, телепортация в демо рекорде, редактор погоды)
+developer_mode = false					;; Режим разработчика (больше команд, телепортация в демо рекорде, редактор погоды)
 block_console = false					;; Заблокировать использование консоли
 auto_snd_targets = true					;; Автоматическое определение кол-ва источников звука
 
@@ -18,8 +18,8 @@ anomaly_detector_use_battery = false 	;; Ограниченный заряд детектора аномалий
 limited_bolts = false					;; Лимитированные болты
 actor_thirst_enabled = false			;; Жажда ГГ
 actor_intoxication_enabled = false		;; Интоксикация ГГ
-actor_sleepeness_enabled = false		;; Потребность ГГ во сне
-actor_alcoholism_enabled = false		;; Алкоголизм
+actor_sleepeness_enabled = false		;; Потребность гг во сне
+actor_alcoholism_enabled = false		;; Алкогольная зависимость
 actor_narcotism_enabled = false			;; Наркомания
 actor_frostbite_enabled = false			;; Обморожение
 artefacts_degradation = false			;; Деградация артефактов
@@ -69,6 +69,9 @@ enable_pda_info_icons = false		;; Вкл.\выкл. HUD иконку оповещения о новой инфор
 enable_new_task_icon = false		;; Вкл.\выкл. HUD иконку оповещения при получении квеста 
 show_saved_game_name = false		;; Вкл.\выкл. отображение имени сделанного сохранения на экране
 enable_smooth_scrolling = false		;; Вкл.\выкл. плавный скролл
+enable_monsters_inventory = true	;; Вкл.\выкл. инвентарь монстров
+enable_mini_map = true				;; Вкл.\выкл. миникарту
+enable_compass_panel = false		;; Вкл.\выкл. панель горизонтального компаса (отключает миникарту)
 
 [hud_movement_layers]; Эффекты камеры при ходьбе из Anomaly
 ;types: 0 = aim_walk, 1 = aim_crouch, 2 = crouch, 3 = walk, 4 = run, 5 = sprint
@@ -109,5 +112,5 @@ HUD_FOV = 0.7
 gloss_factor = 0.12
 weather_fog_clamping = 750.0
 
-;Enhanced Shaders color grading
+;Enchanted Shaders color grading
 color_grading_es = 0.5, 0.5, 0.5

@@ -36,6 +36,7 @@
 		<command id="kb_laser_on"					exe="laser_on"/>
 		<command id="kb_flashlight_on"				exe="flashlight"/>
 		<command id="kb_wpn_alt_aim"				exe="wpn_alt_aim"/>
+		<command id="kb_switch_nv"					exe="wpn_switch_nv"/>
 		<command id="kb_quick_kick"					exe="quick_kick"/>
 		<command id="kb_quick_grenade"				exe="quick_grenade"/>
 	</group>
